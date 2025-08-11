@@ -1,0 +1,18 @@
+[
+    {
+        "predicate": {
+            "items": [ "lm_extra:staff_of_homa" ]
+        },
+        "item": "tetra:staff_of_homa",
+        "modules": {
+            "staff_of_homa/staff_of_homa1": [
+                "staff_of_homa/staff_of_homa1",
+                "staff_of_homa1/oak"
+            ],
+            "sword/basic_hilt": [
+                "sword/basic_hilt",
+                "basic_hilt/oak"
+            ]
+        }
+    }
+]

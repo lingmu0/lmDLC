@@ -3891,3 +3891,5 @@ config/touhou_little_maid/sites/llm.json
 config/touhou_little_maid/sites/stt.json
 config/touhou_little_maid/sites/tts.json
 config/underground_village/common.json5
+kubejs/.gitignore
+kubejs/README.md

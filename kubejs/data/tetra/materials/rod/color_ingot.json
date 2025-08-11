@@ -1,0 +1,29 @@
+{
+    "key": "color_ingot",
+    "primary": 1,
+    "secondary": 4,
+    "tertiary": 1,
+    "durability": 1000,
+    "integrityCost": 1,
+    "integrityGain": 13,
+    "magicCapacity": 108,
+    "toolLevel": 0,
+    "toolEfficiency": 0,
+    "effects": {
+        "intuit": 3,
+        "quickStrike": 6
+    },
+    "tints": {
+        "glyph": "A48CDB",
+        "texture": "A48CDB"
+    },
+    "textures": [
+        "default"
+    ],
+    "material": {
+        "items": [ "lm_extra:color_ingot" ]
+    },
+    "requiredTools": {
+        "hammer_dig": 5
+    }
+}

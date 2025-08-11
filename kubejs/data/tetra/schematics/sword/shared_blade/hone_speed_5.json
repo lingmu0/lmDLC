@@ -1,0 +1,30 @@
+{
+    "replace": true,
+    "slots": [
+        "sword/blade",
+        "staff_of_homa1"
+    ],
+    "materialSlotCount": 0,
+    "hone": true,
+    "rarity": "hone",
+    "displayType": "major",
+    "glyph": {
+        "textureX": 16,
+        "textureY": 240
+    },
+    "requirement": {
+        "type": "tetra:improvement",
+        "improvement": "blade_hone/speed",
+        "level": 4
+    },
+    "outcomes": [
+        {
+            "requiredTools": {
+                "hammer_dig": "minecraft:stone"
+            },
+            "improvements": {
+                "blade_hone/speed": 5
+            }
+        }
+    ]
+}

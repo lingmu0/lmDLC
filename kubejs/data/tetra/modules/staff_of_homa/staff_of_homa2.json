@@ -1,0 +1,24 @@
+{
+    "replace": true,
+    "slots": [
+        "staff_of_homa2"
+    ],
+    "type": "tetra:basic_major_module",
+    "variants": [
+        {
+            "materials":[ "tetra:socket/" ],
+            "key": "staff_of_homa2/",
+            "extract": {
+                "durability": 1,
+                "integrity": -1,
+                "tools": {
+                    "axe_dig": [ 0, 1 ],
+                    "shovel_dig": [ 0, 1 ],
+                    "pickaxe_dig": [ 0, 1 ],
+                    "hammer_dig": [ 0, 1 ],
+                    "cut": [ 0, 1 ]
+                }
+            }
+        }
+    ]
+}

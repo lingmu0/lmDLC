@@ -1,0 +1,23 @@
+{
+    "slots": [ "sword/blade" ],
+    "materialSlotCount": 1,
+    "materialRevealSlot":0,
+    "rarity": "temporary",
+    "displayType": "major",
+    "translation": {
+        "primaryAttributes": {
+            "generic.attack_damage": 3
+        },
+        "durability": 4,
+        "integrity": -3,
+        "magicCapacity": 3
+    },
+    "outcomes": [
+        {
+            "materials": ["tetra:lm_extra/sacred_sword"],
+            "countFactor": 1,
+            "moduleKey": "sword/sacred_sword_blade",
+            "moduleVariant": "sacred_sword_blade/"
+        }
+    ]
+}

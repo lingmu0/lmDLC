@@ -1,0 +1,25 @@
+{
+    "key": "nature_heart",
+    "category": "gem",
+    "primary": 10,
+    "secondary": 2,
+    "tertiary": 2,
+    "durability": 0,
+    "integrityCost": 1,
+    "integrityGain": 2,
+    "magicCapacity": 60,
+    "toolLevel": 0,
+    "toolEfficiency": 0,
+    "tints": {
+        "glyph": "2B771D",
+        "texture": "2B771D"
+    },
+    "effects": {
+        "nature_heart": 1
+    },
+    "textures": [
+        "default"
+    ],
+    "material": {"items": [ "lm_extra:nature_heart" ]},
+    "requiredTools": {"hammer_dig": 3}
+}

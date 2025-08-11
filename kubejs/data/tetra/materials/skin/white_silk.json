@@ -1,0 +1,30 @@
+{
+    "key": "white_silk",
+    "category": "skin",
+    "primary": 5,
+    "secondary": 2,
+    "tertiary": 1,
+    "durability": 400,
+    "integrityCost": 1,
+    "integrityGain": 4,
+    "magicCapacity": 100,
+    "toolLevel": 0,
+    "toolEfficiency": 0,
+    "tints": {
+        "glyph": "FFFFFF",
+        "texture": "FFFFFF" 
+    },
+    "textures": [ 
+        "bone",
+        "crude" 
+    ],
+    "attributes":{
+      "minecraft:generic.attack_speed": 1
+    },
+    "material": {
+        "items": [ "lm_extra:white_silk" ]
+    },
+    "requiredTools": {
+        "cut": "minecraft:gold"
+    }
+}

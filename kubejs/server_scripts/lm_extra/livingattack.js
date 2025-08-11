@@ -2,7 +2,7 @@
 const lmtetraPlayerAttackStrategies = {
     /**
      * 
-     * @param {Internal.LivingHurtEvent} event 
+     * @param {Internal.LivingAttackEvent} event 
      * @param {Internal.Player} player 
      * @param {*} effectValue 
      * @param {*} item 

@@ -1,0 +1,18 @@
+{
+    "haqi": {
+        "sounds": [
+            {
+                "name": "lm_extra:haqi",
+                "stream": true
+            }
+        ]
+    },
+    "manbo": {
+        "sounds": [
+            {
+                "name": "lm_extra:manbo",
+                "stream": true
+            }
+        ]
+    }
+}

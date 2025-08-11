@@ -1,0 +1,31 @@
+{
+    "key": "black_silk",
+    "category": "skin",
+    "primary": 5,
+    "secondary": 2,
+    "tertiary": 1,
+    "durability": 400,
+    "integrityCost": 1,
+    "integrityGain": 4,
+    "magicCapacity": 100,
+    "toolLevel": 0,
+    "toolEfficiency": 0,
+    "tints": {
+        "glyph": "blackstone_glyph",
+        "texture": "blackstone"
+    },
+    "textures": [
+        "grainy",
+        "crude",
+        "default"
+    ],
+    "effects": {
+        "criticalStrike": [25, 1.2]
+    },
+    "material": { 
+        "items": [ "lm_extra:black_silk" ] 
+    },
+    "requiredTools": {
+         "cut": "minecraft:gold"
+    }
+  }

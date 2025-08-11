@@ -1,0 +1,18 @@
+{
+    "replace": true,
+    "slots": [
+        "staff_of_homa2"
+    ],
+    "materialSlotCount": 1,
+    "displayType": "minor",
+    "outcomes": [
+        {
+            "materials": [
+                "tetra:socket/"
+            ],
+            "moduleKey": "staff_of_homa/staff_of_homa2",
+            "moduleVariant": "staff_of_homa2/",
+            "experienceFactor": 1
+        }
+    ]
+}

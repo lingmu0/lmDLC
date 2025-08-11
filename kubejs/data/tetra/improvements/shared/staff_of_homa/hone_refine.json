@@ -1,0 +1,52 @@
+[
+    {
+        "key": "staff_of_homa/hone_refine",
+        "level": 1,
+        "aspects": {
+            "honed": 1
+        },
+        "effects": {
+            "butterfly_of_zhuchi": [1, 1]
+        }
+    },
+    {
+        "key": "staff_of_homa/hone_refine",
+        "level": 2,
+        "aspects": {
+            "honed": 2
+        },
+        "effects": {
+            "butterfly_of_zhuchi": [2, 2]
+        }
+    },
+    {
+        "key": "staff_of_homa/hone_refine",
+        "level": 3,
+        "aspects": {
+            "honed": 3
+        },
+        "effects": {
+            "butterfly_of_zhuchi": [3, 3]
+        }
+    },
+    {
+        "key": "staff_of_homa/hone_refine",
+        "level": 4,
+        "aspects": {
+            "honed": 4
+        },
+        "effects": {
+            "butterfly_of_zhuchi": [4, 4]
+        }
+    },
+    {
+        "key": "staff_of_homa/hone_refine",
+        "level": 5,
+        "aspects": {
+            "honed": 5
+        },
+        "effects": {
+            "butterfly_of_zhuchi": [5, 5]
+        }
+    }
+]

@@ -1,0 +1,22 @@
+{
+    "key": "sacred_sword",
+    "category": "lm_extra",
+    "primary": 30,
+    "secondary": 15,
+    "tertiary": 10,
+    "durability": 1200,
+    "integrityCost": 1,
+    "integrityGain": 9,
+    "magicCapacity": 225,
+    "toolLevel": 4,
+    "toolEfficiency": 9.0,
+    "tints": {
+        "glyph": "iron_glyph",
+        "texture": "iron"
+    },
+    "textures": ["sacred_sword"],
+    "material": {
+        "items": ["lm_extra:sacred_sword"]
+    },
+    "requiredTools": {"hammer_dig": "minecraft:diamond"}
+} 

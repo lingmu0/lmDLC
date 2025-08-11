@@ -1,0 +1,49 @@
+{
+    "replace": true,
+    "slots": [
+        "staff_of_homa1"
+    ],
+    "materialSlotCount": 1,
+    "hone": true,
+    "rarity": "hone",
+    "displayType": "major",
+    "glyph": {
+        "textureX": 32,
+        "textureY": 240
+    },
+    "requirement": {
+        "type": "tetra:and",
+        "requirements": [
+            {
+                "type": "tetra:improvement",
+                "improvement": "staff_of_homa/hone_refine",
+                "level": 2
+            },
+            {
+                "type":"mr:entities",
+                "x":5,
+                "y":5,
+                "z":5,
+                "entities":{
+                    "cataclysm:netherite_monstrosity": 1
+                }
+            }
+        ]
+    },
+    "outcomes": [
+        {
+            "material": {
+                "items": [
+                    "lm_extra:staff_of_homa",
+                    "tetra:staff_of_homa"
+                ]
+            },
+            "requiredTools": {
+                "hammer_dig": "minecraft:gold"
+            },
+            "improvements": {
+                "staff_of_homa/hone_refine": 3
+            }
+        }
+    ]
+}

@@ -1,0 +1,61 @@
+{
+    "replace": true,
+    "slots": [
+        "staff_of_homa1"
+    ],
+    "type": "tetra:basic_major_module",
+    "improvements": [
+        "tetra:sword/basic_blade/",
+        "tetra:sword/shared_blade/",
+        "tetra:sword/shared/",
+        "tetra:shared/"
+    ],
+    "variants": [
+        {
+            "materials": [
+                "tetra:wood/",
+                "tetra:stone/",
+                "tetra:metal/",
+                "tetra:gem/",
+                "tetra:bone/",
+                "tetra:misc/clear_shard"
+            ],
+            "attributes": {
+                "generic.attack_damage": 12,
+                "generic.attack_speed": -1.9,
+                "forge:entity_reach": 1
+            },
+            "effects": {
+                "sweeping": [2, 1],
+                "butterfly_of_zhuchi": [1, 1]
+            },
+            "tools": {
+                "cut": [
+                    1,
+                    2
+                ]
+            },
+            "aspects": {
+                "edged_weapon": 2,
+                "breakable": 2
+            },
+            "tags": [
+                "forge:swords"
+            ],
+            "key": "staff_of_homa1/",
+            "durability": 10000,
+            "extract": {
+                "primaryAttributes": {
+                    "generic.attack_damage": 1
+                },
+                "durability": 0.9,
+                "integrity": -1,
+                "magicCapacity": 1,
+                "glyph": {
+                    "textureX": 72,
+                    "textureY": 112
+                }
+            }
+        }
+    ]
+}

@@ -1,0 +1,19 @@
+{
+    "key": "maodie_breathe_out",
+    "hidden":false,
+    "category": "toulu",
+    "primary": 0,
+    "secondary": 0,
+    "tertiary": 0,
+    "durability": 10,
+    "integrityCost": 0,
+    "integrityGain": 0,
+    "magicCapacity": 0,
+    "toolLevel": 0,
+    "toolEfficiency": 0,
+    "tints": {"glyph": "AD6B46","texture": "AD6B46"},
+    "effects": {"maodie_breathe_out": 1},
+    "textures": [ "default" ],
+    "experienceCost": 10,
+    "material": {"items": [ "lm_extra:maodie_breathe_out" ]}
+}

@@ -1,0 +1,22 @@
+{
+    "key": "rage_blade",
+    "hidden":false,
+    "category": "socket",
+    "primary": 0,
+    "secondary": 0,
+    "tertiary": 0,
+    "durability": 100,
+    "integrityCost": 3,
+    "integrityGain": 0,
+    "magicCapacity": 0,
+    "toolLevel": 0,
+    "toolEfficiency": 0,
+    "tints": {
+        "glyph": "E9822D",
+        "texture": "E9822D"
+    },
+    "effects": {"rage_blade": 1},
+    "textures": [ "default" ],
+    "experienceCost": 30,
+    "material": {"items": [ "lm_extra:rage_blade" ]}
+}

@@ -1,0 +1,27 @@
+{
+    "replace": true,
+    "slots": [
+        "staff_of_homa1"
+    ],
+    "materialSlotCount": 1,
+    "displayType": "major",
+    "glyph": {
+        "textureX": 72,
+        "textureY": 112
+    },
+    "outcomes": [
+        {
+            "materials": [
+                "tetra:wood/",
+                "tetra:stone/",
+                "tetra:metal/",
+                "tetra:gem/",
+                "tetra:bone/",
+                "tetra:misc/clear_shard"
+            ],
+            "countFactor": 2,
+            "moduleKey": "staff_of_homa/staff_of_homa1",
+            "moduleVariant": "staff_of_homa1/"
+        }
+    ]
+}
