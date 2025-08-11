@@ -9,7 +9,7 @@ EntityEvents.spawned(event => {
     let player = entity.getLevel().getNearestPlayer(entity, 240)
     let entityName = entity.type
     if (!player) return
-    if (!entity.isLiving() || !entity.isMonster()) return
+    if ((!entity.isLiving() || !entity.isMonster()) && entityName !== "jerotesvillage:second_rounder_golem") return
     if (entity.persistentData.contains('diffLevel') || entity.persistentData.contains("owner")) return
     // let diffStage = player.stages.getAll().toArray().find(ele => ele.startsWith('difficult_level_'))
     // if (!diffStage) {
@@ -39,7 +39,7 @@ NativeEvents.onEvent($LivingHurtEvent, (/** @type{Internal.LivingHurtEvent} */ev
     let {source, amount, entity} = event
     if(entity.level.dimension.toString() !== "twilightforest:twilight_forest") return
     let sourceActual = source.actual
-    if(sourceActual && sourceActual.isLiving() && sourceActual.isMonster()) {
+    if((sourceActual && sourceActual.isLiving() && sourceActual.isMonster()) || sourceActual.type === "jerotesvillage:second_rounder_golem") {
         if(sourceActual.persistentData.contains("owner")) return
         let diffLevelNum = 10
         let diffLevel = difficultLevelDef[diffLevelNum - 1]

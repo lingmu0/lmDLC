@@ -7,23 +7,45 @@
 	id: "4B6FEDD595B1A8C4"
 	order_index: 2
 	quest_links: [ ]
-	quests: [{
-		description: ["进入暮色森林的方式已发生改变，以原本的方式搭建出传送门，即2x2的水，周围插上一圈花，然后投入蛇龙执战者勋章而不是钻石激活"]
-		id: "3387D35ED4D88118"
-		rewards: [{
-			exclude_from_claim_all: true
-			id: "54C0493889691FEC"
-			table_id: 2463423102353827886L
-			type: "random"
-		}]
-		tasks: [{
-			dimension: "twilightforest:twilight_forest"
-			id: "104AD94EED762FF1"
-			title: "进入暮色森林"
-			type: "dimension"
-		}]
-		x: -3.0d
-		y: 0.0d
-	}]
+	quests: [
+		{
+			description: ["进入暮色森林的方式已发生改变，以原本的方式搭建出传送门，即2x2的水，周围插上一圈花，然后投入蛇龙执战者勋章而不是钻石激活"]
+			id: "3387D35ED4D88118"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "54C0493889691FEC"
+				table_id: 2463423102353827886L
+				type: "random"
+			}]
+			tasks: [{
+				dimension: "twilightforest:twilight_forest"
+				id: "104AD94EED762FF1"
+				title: "进入暮色森林"
+				type: "dimension"
+			}]
+			x: -3.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"&b材料种类&r：头颅"
+				"&d可用槽位&r：京观"
+				"攻击造成伤害后随机触发以下四种效果中的两个："
+				"①获得10点伤害吸收的黄心(最多增加到50)"
+				"②对目标额外造成等同于武器攻击力*武器攻速的魔法伤害"
+				"③使以玩家为圆心半径5格内的生物身上的凋零等级+2"
+				"④使此次攻击伤害乘以（1+当前额外生命值），并且减少5点额外生命值"
+				"内置0.5秒cd"
+			]
+			id: "12997355B939CAEE"
+			tasks: [{
+				id: "0E6BD11AB79F42D7"
+				item: "twilightforest:lich_trophy"
+				type: "item"
+			}]
+			x: 0.5d
+			y: -2.5d
+		}
+	]
 	title: "暮色DLC"
 }

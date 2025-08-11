@@ -188,15 +188,88 @@ let lmTetraPlayerHurtStrategies = {
             if(effectValue != 6) {
                 entity.invulnerableTime = 0
                 entity.attack(player.damageSources().source(createDamagetype('attributeslib',"fire_damage"), player), (attack_damage + fire_damage) * 3)
-                lmdrawSlashParticleLine(entity, 30, 0.1, 'minecraft:flame')
+                //lmdrawSlashParticleLine(entity, 30, 0.1, 'minecraft:flame')
+                lmdrawSingleRandomSlashLineWithOffset(entity, 'minecraft:flame', 0 , player)
+                lmdrawSingleRandomSlashLineWithOffset(entity, 'minecraft:flame', 0 , player)
                 lmdrawSingleRandomSlashLineWithOffset(entity, 'minecraft:flame', 0 , player)
             } else {
                 entity.invulnerableTime = 0
                 entity.attack(player.damageSources().source(createDamagetype('attributeslib',"fire_damage"), player), (attack_damage + fire_damage) * 6)
-                lmdrawSlashParticleLine(entity, 30, 0.1, 'minecraft:soul_fire_flame')
+                //lmdrawSlashParticleLine(entity, 30, 0.1, 'minecraft:soul_fire_flame')
+                lmdrawSingleRandomSlashLineWithOffset(entity, 'minecraft:soul_fire_flame', 0 , player)
+                lmdrawSingleRandomSlashLineWithOffset(entity, 'minecraft:soul_fire_flame', 0 , player)
                 lmdrawSingleRandomSlashLineWithOffset(entity, 'minecraft:soul_fire_flame', 0 , player)
             }
         }
+    },
+    /**
+     * 巫妖奖杯
+     * @param {Internal.LivingAttackEvent} event 
+     * @param {Internal.Player} player 
+     * @param {*} effectValue 
+     * @param {*} item 
+     * @param {*} originalEffectName 
+     */
+    'lich_trophy': function (event, player, effectValue, item, originalEffectName) {
+        let {entity, amount} = event
+        if(event.source.getType() !== "player") return
+        let time = player.persistentData.getInt(originalEffectName) ?? 0
+        let CD = Math.abs(player.age - time)
+        if (CD < 10) return
+        player.persistentData.putInt(originalEffectName, player.age)
+        // 定义所有可能的效果函数（按原逻辑拆分）
+        let effects = [
+            // 效果1：增加10点吸收值
+            () => {
+                if(player.absorptionAmount>=50) return
+                player.absorptionAmount += 10
+            },
+            // 效果2：执行魔法攻击
+            () => {
+                simpleAttackEntity(
+                    true, 
+                    player, 
+                    entity, 
+                    "magic", 
+                    Math.min(amount, player.getAttributeValue("generic.attack_damage")) * player.getAttributeValue('generic.attack_speed')
+                );
+            },
+            // 效果3：对范围内实体施加凋零效果
+            () => {
+                let entityList = getLivingWithinRadius(player.getLevel(), player.position(), 5);
+                entityList.forEach(entity => {
+                    if (entity.isLiving() && entity !== player) {
+                        if (entity.hasEffect('wither')) {
+                            let amplifier = entity.getEffect('wither').getAmplifier();
+                            entity.potionEffects.add('wither', 20 * 5, amplifier + 2);
+                        } else {
+                            entity.potionEffects.add('wither', 20 * 5, 1);
+                        }
+                    }
+                });
+            },
+            // 效果4：基于吸收值提升伤害并清空吸收值
+            () => {
+                event.setAmount(amount * (1 + player.absorptionAmount * 0.1));
+                player.absorptionAmount = Math.max(0, player.absorptionAmount-5);
+            }
+        ];
+
+        // 随机选择2个不同的效果（无重复）
+        let selectedEffects = [];
+        // 生成两个不重复的随机索引（0-3）
+        while (selectedEffects.length < 2) {
+            let randomIndex = Math.floor(Math.random() * effects.length);
+            // 确保不重复选择同一个效果
+            if (!selectedEffects.includes(randomIndex)) {
+                selectedEffects.push(randomIndex);
+            }
+        }
+
+        // 执行选中的两个效果
+        selectedEffects.forEach(index => {
+            effects[index]();
+        });
     },
     //覆盖幸运横扫
     'lucky_sweep': function (event, player, effectValue, item, originalEffectName) {

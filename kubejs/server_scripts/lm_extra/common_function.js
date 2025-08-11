@@ -182,10 +182,9 @@ function lmdrawSingleRandomSlashLineWithOffset(entity, particleType, angleOffset
         return
     }
 
-    let steps = Math.min(Math.floor(totalDistance * 1.2), 18)
-
-    if (steps < 5) {
-        steps = 16 // 最少粒子数为8
+    let steps = Math.min(Math.floor(totalDistance * 3.0), 40) // 最大步数限制为40（避免过多性能消耗）
+    if (steps < 32) {
+        steps = 32 // 最少粒子数提升至32（原16）
     }
 
     // 绘制倾斜的斩击线
