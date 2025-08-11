@@ -15,6 +15,13 @@ const newLMMaterials = [
     { material: '', ftb_id: '', effect_name: 'final_metal_ingot' ,tags:[]},
     { material: '', ftb_id: '', effect_name: 'naga_trophy' ,tags:[]},
     { material: '', ftb_id: '', effect_name: 'lich_trophy' ,tags:[]},
+    { material: '', ftb_id: '', effect_name: 'minoshroom_trophy' ,tags:[]},
+    { material: '', ftb_id: '', effect_name: 'hydra_trophy' ,tags:[]},
+    { material: '', ftb_id: '', effect_name: 'knight_phantom_trophy' ,tags:[]},
+    { material: '', ftb_id: '', effect_name: 'ur_ghast_trophy' ,tags:[]},
+    { material: '', ftb_id: '', effect_name: 'alpha_yeti_trophy' ,tags:[]},
+    { material: '', ftb_id: '', effect_name: 'snow_queen_trophy' ,tags:[]},
+    { material: '', ftb_id: '', effect_name: 'naga_scale' ,tags:[]},
 ];
 newLMMaterials.forEach(material => {
     global.materials.push(material);

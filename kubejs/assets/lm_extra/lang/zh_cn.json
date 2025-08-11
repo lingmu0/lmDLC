@@ -71,6 +71,16 @@
     "tetra.stats.wildly_arrogant.tooltip_short": "对满血生物造成10倍伤害",
     "tetra.stats.butterfly_of_zhuchi": "朱赤之蝶",
     "tetra.stats.butterfly_of_zhuchi.tooltip_short": "护摩之杖的专属词条\n右键释放战技蝶引来生：12sCD，消耗当前30%%的生命值，提供10s §e%s §fx 30%%独立乘区攻击力加成，持续时间内普攻触发火伤协同攻击，数值为（攻击伤害+火焰伤害）x 3\n主手技能键（默认为Z）释放大招安神秘法：30sCD，对周围半径为6的范围生物造成一段火伤，数值为（攻击伤害+火焰伤害）x 30 x §e%s§f，每击中一个生物回复30%%最大生命值的血量\n\n§c对着护摩之杖查看合成/用途可查看精炼方法，精炼可提高该词条数值，并且满精时火焰变为灵魂火，造成的火伤数值x2",
+    "tetra.stats.final_metal_ingot": "终焉",
+    "tetra.stats.naga_trophy": "娜迦",
+    "tetra.stats.lich_trophy": "巫妖",
+    "tetra.stats.minoshroom_trophy": "米诺陶",
+    "tetra.stats.hydra_trophy": "九头蛇",
+    "tetra.stats.knight_phantom_trophy": "幻影骑士",
+    "tetra.stats.ur_ghast_trophy": "暮初恶魂",
+    "tetra.stats.alpha_yeti_trophy": "雪怪首领",
+    "tetra.stats.snow_queen_trophy": "冰雪女王",
+    "tetra.stats.naga_scale": "角质化",
 
 
     "tetra.module.staff_of_homa/staff_of_homa1.material_name": "§c%s护摩头部",
@@ -115,6 +125,8 @@
     "effect.lm_extra.luck.description": "每级提供10%幸运增加",
     "effect.lm_extra.butterfly_rebirth": "蝶引来生",
     "effect.lm_extra.butterfly_rebirth.description": "每级提供10%攻击力增加",
+    "effect.lm_extra.naga_speed": "娜迦冲锋",
+    "effect.lm_extra.naga_speed.description": "每级提供10%移动速度增加",
 
     "information.lm_extra.staff_of_homa": "放在加工台上可转化为护摩之杖武器类型(类似于剑，但是双镶嵌位，无圆头，无法使用剑刃的某些特殊改造)\n当打磨进度满后，可使用其他护摩之杖进行精炼\n\n精炼I：需要周围半径为5的范围有8个岩浆块，8个熔炉\n精炼II：需要在沙漠群系\n精炼III：需要周围半径为5的范围有1个下届合金巨兽\n精炼IV：需要周围半径为5的范围有2个焰魔\n精炼V：需要在下界基岩层上方，拥有抗火buff，强化时有75%概率失败"
 

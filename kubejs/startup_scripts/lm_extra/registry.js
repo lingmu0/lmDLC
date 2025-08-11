@@ -51,4 +51,30 @@ StartupEvents.registry('mob_effect', event => {
     
     event.create("lm_extra:butterfly_rebirth").beneficial().color(Color.RED)
         .modifyAttribute("generic.attack_damage","rebirth_attack_damage",0.1, "multiply_total")
+    
+    event.create("lm_extra:naga_speed").beneficial().color(Color.DARK_GREEN)
+        .modifyAttribute("generic.movement_speed","naga_speed_movement_speed",0.1, "multiply_total")
 })
+
+const $RangedAttribute = Java.loadClass(
+    'net.minecraft.world.entity.ai.attributes.RangedAttribute'
+)
+
+StartupEvents.registry('attribute', event => {
+    event.createCustom('kubejs:generic.naga_speed', () => {
+        return new $RangedAttribute(
+            'attribute.name.generic.naga_speed',
+            0.0,
+            0.0,
+            1000.0
+        )
+    })
+})
+
+ForgeModEvents.onEvent(
+    'net.minecraftforge.event.entity.EntityAttributeModificationEvent', event => {
+        if(!event.has('player','kubejs:generic.naga_speed')) {
+            event.add('player','kubejs:generic.naga_speed')
+        }
+    }
+)

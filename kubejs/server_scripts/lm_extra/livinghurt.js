@@ -171,7 +171,7 @@ let lmTetraPlayerHurtStrategies = {
     },
     /**
      * 朱赤之蝶
-     * @param {Internal.LivingAttackEvent} event 
+     * @param {Internal.LivingHurtEvent} event 
      * @param {Internal.Player} player 
      * @param {*} effectValue 
      * @param {*} item 
@@ -204,7 +204,7 @@ let lmTetraPlayerHurtStrategies = {
     },
     /**
      * 巫妖奖杯
-     * @param {Internal.LivingAttackEvent} event 
+     * @param {Internal.LivingHurtEvent} event 
      * @param {Internal.Player} player 
      * @param {*} effectValue 
      * @param {*} item 
@@ -270,6 +270,21 @@ let lmTetraPlayerHurtStrategies = {
         selectedEffects.forEach(index => {
             effects[index]();
         });
+    },
+    /**
+     * 娜迦奖杯
+     * @param {Internal.LivingHurtEvent} event 
+     * @param {Internal.Player} player 
+     * @param {*} effectValue 
+     * @param {*} item 
+     * @param {*} originalEffectName 
+     */
+    "naga_trophy": function (event, player, effectValue, itemstack, originalEffectName) {
+        let {entity, amount}= event
+        if(player.hasEffect('lm_extra:naga_speed')) {
+            event.setAmount(amount * (1+ player.getAttributeValue('generic.movement_speed')))
+            player.removeEffect('lm_extra:naga_speed')
+        }
     },
     //覆盖幸运横扫
     'lucky_sweep': function (event, player, effectValue, item, originalEffectName) {
