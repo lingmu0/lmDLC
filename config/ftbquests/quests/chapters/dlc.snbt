@@ -1,0 +1,28 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "dlc"
+	group: "147866ECC0F93DF0"
+	id: "4B6FEDD595B1A8C4"
+	order_index: 2
+	quest_links: [ ]
+	quests: [{
+		description: ["进入暮色森林的方式已发生改变，以原本的方式搭建出传送门，即2x2的水，周围插上一圈花，然后投入蛇龙执战者勋章而不是钻石激活"]
+		id: "3387D35ED4D88118"
+		rewards: [{
+			exclude_from_claim_all: true
+			id: "54C0493889691FEC"
+			table_id: 2463423102353827886L
+			type: "random"
+		}]
+		tasks: [{
+			dimension: "twilightforest:twilight_forest"
+			id: "104AD94EED762FF1"
+			title: "进入暮色森林"
+			type: "dimension"
+		}]
+		x: -3.0d
+		y: 0.0d
+	}]
+	title: "暮色DLC"
+}

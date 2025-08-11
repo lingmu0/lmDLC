@@ -3824,7 +3824,6 @@ config/ftbquests/quests/chapters/43BCEBAA70CD4361.snbt
 config/ftbquests/quests/chapters/746DC68F6DD0D73B.snbt
 config/ftbquests/quests/chapters/116207D0D0BFDFBD.snbt
 config/ftbquests/quests/chapters/75422074D420826D.snbt
-config/ftbquests/quests/chapters/dlc.snbt
 config/ftbquests/quests/reward_tables/222fd642834a682e.snbt
 config/ftbquests/quests/reward_tables/3751205e53ba0a61.snbt
 config/functionalstorage/functionalstorage-client.toml
