@@ -1,9 +1,24 @@
-// priority: 9
+// priority: 1000
 let $LMDamageTypes = Java.loadClass('net.minecraft.world.damagesource.DamageTypes')
 let $LMResourceKey = Java.loadClass('net.minecraft.resources.ResourceKey');
 let $LMRegistries = Java.loadClass('net.minecraft.core.registries.Registries')
 let $LMCriticalHitEvent = Java.loadClass('net.minecraftforge.event.entity.player.CriticalHitEvent')
 let $LMFlame_Strike_Entity = Java.loadClass('com.github.L_Ender.cataclysm.entity.effect.Flame_Strike_Entity')
+
+const difficultLevelDef = [
+    { healthMulti: 1, attackMulti: 1, armorMulti: 1, toughnessMulti: 1 },
+    { healthMulti: 2, attackMulti: 1, armorMulti: 1, toughnessMulti: 1 },
+    { healthMulti: 3, attackMulti: 1, armorMulti: 1, toughnessMulti: 1 },
+    { healthMulti: 5, attackMulti: 1.5, armorMulti: 1, toughnessMulti: 1 },
+    { healthMulti: 10, attackMulti: 1.5, armorMulti: 1, toughnessMulti: 1 },
+    { healthMulti: 20, attackMulti: 2, armorMulti: 1.5, toughnessMulti: 1.5 },
+    { healthMulti: 30, attackMulti: 3, armorMulti: 1.5, toughnessMulti: 1.5 },
+    { healthMulti: 50, attackMulti: 4, armorMulti: 2, toughnessMulti: 2 },
+    { healthMulti: 100, attackMulti: 5, armorMulti: 2, toughnessMulti: 2 },
+    { healthMulti: 300, attackMulti: 6, armorMulti: 2.5, toughnessMulti: 2.5 },
+    { healthMulti: 500, attackMulti: 7, armorMulti: 2.5, toughnessMulti: 2.5 },
+    { healthMulti: 1000, attackMulti: 8, armorMulti: 3, toughnessMulti: 3 },
+]
 
 /**
  * 创建伤害类型

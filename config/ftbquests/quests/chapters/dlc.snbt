@@ -3,6 +3,7 @@
 	default_quest_shape: ""
 	filename: "dlc"
 	group: "147866ECC0F93DF0"
+	icon: "twilightforest:twilight_portal_miniature_structure"
 	id: "4B6FEDD595B1A8C4"
 	order_index: 2
 	quest_links: [ ]

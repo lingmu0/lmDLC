@@ -8,7 +8,7 @@ kubejs/.datapack/functionsTag.json
 kubejs/.datapack/itemsTag.json
 kubejs/.datapack/objectives.json
 kubejs/.datapack/sounds.json
-kubejs/.datapack/teams.json
+kubejs/.datapack/
 kubejs/assets/art_of_forging/lang/zh_cn.json
 kubejs/assets/borun_in_chaos/lang/zh_cn.json
 kubejs/assets/dzzl_1/lang/zh_cn.json
@@ -1839,7 +1839,7 @@ kubejs/assets/tetra/textures/item/module/sword/blade/heavy/kobole/kobole2.png
 kubejs/assets/tetra/textures/item/module/sword/blade/heavy/kobole/kobole3.png
 kubejs/assets/tetra/textures/item/module/sword/blade/heavy/kobole/kobole4.png
 usercache.json
-mods/\[精致存储附属] refinedstorageaddons-0.10.0.jar
+mods/
 mods/\[暮色森林] twilightforest-1.20.1-4.3.2508-universal.jar
 mods/\[forge]ctov-3.4.14.jar
 mods/\[Forge1.20.1]TetraClip-1.0.5.jar
@@ -2014,7 +2014,7 @@ resourcepacks/fix8_Tetra_GUI_v.0.8.1.zip
 resourcepacks/Minecraft-Mod-Language-Modpack-Converted-1.20.1.zip
 resourcepacks/Quark Programmer Art.zip
 resourcepacks/Takia-汉化材质包.zip
-saves/maoxian/icon.png
+saves/
 saves/maoxian/kubejs_persistent_data.nbt
 saves/maoxian/level.dat
 saves/maoxian/level.dat_old
@@ -2461,7 +2461,7 @@ saves/新的世界/serverconfig/sophisticatedbackpacks-server.toml
 saves/新的世界/stats/7a776748-e631-47b3-8334-ad332553e3bf.json
 shaderpacks/BSL_v8.4.zip
 shaderpacks/ComplementaryReimagined_r5.5.1.zip
-xaero/minimap/maoxian/config.txt
+xaero/
 xaero/minimap/maoxian/dim%0/waypoints.txt
 xaero/minimap/新的世界/config.txt
 xaero/minimap/新的世界/dim%-1/waypoints.txt
@@ -3250,8 +3250,8 @@ modernfix/structureCacheV1/tetra_forged_ruins_stonecutter_schematic_2ca6d79690.n
 modernfix/structureCacheV1/tetra_forged_ruins_transfer_unit_d4edde5145.nbt
 modernfix/structureCacheV1/tetra_forged_ruins_vent_bff7ca9b41.nbt
 modernfix/structureCacheV1/waystones_village_common_waystone_8018c9c611.nbt
-modernfix/structureCacheV1/waystones_village_desert_waystone_5acb5b0605.nbt
-logs/2025-07-25-2.log.gz
+modernfix/
+logs/
 logs/2025-07-25-3.log.gz
 logs/2025-07-25-4.log.gz
 logs/2025-07-25-5.log.gz
@@ -3476,7 +3476,7 @@ crash-reports/crash-2025-07-30_17.29.39-client.txt
 .vscode/probe.lang-schema.json
 .vscode/probe.registry-definitions.json
 .vscode/settings.json
-锻造之旅1.0.12-natives/glfw.dll
+锻造之旅1.0.12-natives/
 锻造之旅1.0.12-natives/jemalloc.dll
 锻造之旅1.0.12-natives/jna11506678605466787135.dll
 锻造之旅1.0.12-natives/jna11506678605466787135.dll.x
@@ -3892,3 +3892,4 @@ config/touhou_little_maid/sites/tts.json
 config/underground_village/common.json5
 kubejs/.gitignore
 kubejs/README.md
+config/smartkeyprompts-client.toml

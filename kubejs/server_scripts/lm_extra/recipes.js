@@ -49,8 +49,8 @@ ServerEvents.recipes(event =>{
 
     create.mixing('lm_extra:color_ingot',[
         Fluid.of({fluid: 'create:tea', amount: 1000}),
-        Fluid.of({fluid: 'netherexp:ectoplasm', amount: 1000}),
         Fluid.of({fluid: 'biofactory:nutrients_fluid', amount: 1000}),
+        'minecraft:netherite_ingot',
         'refinedstorage:quartz_enriched_iron'
     ]).superheated()
 
