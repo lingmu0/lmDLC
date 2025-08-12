@@ -1,0 +1,29 @@
+{
+    "key": "naga_scale",
+    "category": "skin",
+    "primary": 5,
+    "secondary": 5,
+    "tertiary": 1,
+    "durability": 400,
+    "integrityCost": 1,
+    "integrityGain": 2,
+    "magicCapacity": 100,
+    "toolLevel": 0,
+    "toolEfficiency": 0,
+    "tints": {
+        "glyph": "416935",
+        "texture": "416935"
+    },
+    "textures": [
+        "default"
+    ],
+    "effects": {
+        "naga_scale": 1
+    },
+    "material": { 
+        "items": [ "twilightforest:naga_scale" ] 
+    },
+    "requiredTools": {
+         "cut": 3
+    }
+  }

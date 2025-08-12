@@ -61,6 +61,21 @@
 			x: -1.0d
 			y: -2.5d
 		}
+		{
+			description: [
+				"&b材料种类&r：皮革"
+				"&d可用槽位&r：盔甲内衬"
+				"提供娜迦速度属性,用于搭配娜迦奖杯"
+			]
+			id: "470075E26BA69E3F"
+			tasks: [{
+				id: "79C19C3F7CB43963"
+				item: "twilightforest:naga_scale"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -2.5d
+		}
 	]
 	title: "暮色DLC"
 }

@@ -17,6 +17,22 @@ TetraAdditionEvents.craft(event => {
     level.addFreshEntity(flame_strike_entity)
 })
 
+//防止精炼重置
+TetraAdditionEvents.craft(event => {
+    let { player, level, currentSchematic, currentSlot, targetStack, upgradedStack, materials, workbenchTile } = event
+    if (level.clientSide) return
+
+    if(hasModuleKey(currentSchematic)){
+        let targetModule = targetStack.getItem().getModuleFromSlot(targetStack, currentSlot)
+        let upgradedModule = upgradedStack.getItem().getModuleFromSlot(upgradedStack, currentSlot)
+
+        if(targetModule.getImprovement(targetStack, "staff_of_homa/hone_refine") != null) {
+            upgradedModule.addImprovement(upgradedStack, 'staff_of_homa/hone_refine', targetModule.getImprovementLevel(targetStack, "staff_of_homa/hone_refine"))
+            $ModularItem.updateIdentifier(upgradedStack)
+        }
+    }
+})
+
 // 修复护摩之杖锻造师等级加成高质量
 //不同等级的锻造师获取加成
 TetraAdditionEvents.craft(event =>{
