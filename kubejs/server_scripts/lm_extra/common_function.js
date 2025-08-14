@@ -4,6 +4,8 @@ let $LMResourceKey = Java.loadClass('net.minecraft.resources.ResourceKey');
 let $LMRegistries = Java.loadClass('net.minecraft.core.registries.Registries')
 let $LMCriticalHitEvent = Java.loadClass('net.minecraftforge.event.entity.player.CriticalHitEvent')
 let $LMFlame_Strike_Entity = Java.loadClass('com.github.L_Ender.cataclysm.entity.effect.Flame_Strike_Entity')
+let $LMDeath_Laser_Beam_Entity = Java.loadClass('com.github.L_Ender.cataclysm.entity.projectile.Death_Laser_Beam_Entity')
+let $LMModEntities = Java.loadClass('com.github.L_Ender.cataclysm.init.ModEntities')
 
 const difficultLevelDef = [
     { healthMulti: 1, attackMulti: 1, armorMulti: 1, toughnessMulti: 1 },

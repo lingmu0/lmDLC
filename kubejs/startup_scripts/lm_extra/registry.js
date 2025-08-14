@@ -54,6 +54,10 @@ StartupEvents.registry('mob_effect', event => {
     
     event.create("lm_extra:naga_speed").beneficial().color(Color.DARK_GREEN)
         .modifyAttribute("generic.movement_speed","naga_speed_movement_speed",0.1, "multiply_total")
+
+    event.create("lm_extra:forbid_heal").harmful().color(Color.RED)
+        .modifyAttribute("attributeslib:healing_received","forbid_heal_healing_received",-0.1, "multiply_base")
+
 })
 
 const $RangedAttribute = Java.loadClass(
