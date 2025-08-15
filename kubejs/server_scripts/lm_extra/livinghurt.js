@@ -3,7 +3,7 @@
 // 玩家对生物造成伤害事件(livinghurt)
 let lmTetraPlayerHurtStrategies = {
     /**
-     * 
+     * 羊刀
      * @param {Internal.LivingHurtEvent} event 
      * @param {Internal.Player} player 
      * @param {*} effectValue 
@@ -22,7 +22,7 @@ let lmTetraPlayerHurtStrategies = {
         }
     },
     /**
-     * 
+     * 耄耋哈气
      * @param {Internal.LivingHurtEvent} event 
      * @param {Internal.Player} player 
      * @param {*} effectValue 
@@ -55,7 +55,7 @@ let lmTetraPlayerHurtStrategies = {
         }
     },
     /**
-     * 
+     * 神圣之剑
      * @param {Internal.LivingHurtEvent} event 
      * @param {Internal.Player} player 
      * @param {*} effectValue 
@@ -99,7 +99,7 @@ let lmTetraPlayerHurtStrategies = {
         }
     },
     /**
-     * 
+     * 曼波
      * @param {Internal.LivingHurtEvent} event 
      * @param {Internal.Player} player 
      * @param {*} effectValue 
@@ -133,7 +133,7 @@ let lmTetraPlayerHurtStrategies = {
         )
     },
     /**
-     * 
+     * 珠光护手
      * @param {Internal.LivingHurtEvent} event 
      * @param {Internal.Player} player 
      * @param {*} effectValue 
@@ -141,8 +141,7 @@ let lmTetraPlayerHurtStrategies = {
      * @param {*} originalEffectName 
      */
     "pearlescent_hand_protection": function (event, player, effectValue, itemstack, originalEffectName) {
-        let {source, amount}= event
-        if(source.getType() === "player") return
+        let {source, amount, entity}= event
         let effects = getAllEffects(itemstack);
         for(let effectName of effects){
             if(effectName.key == "criticalStrike"){
@@ -150,11 +149,15 @@ let lmTetraPlayerHurtStrategies = {
                 let efficiency = itemstack.item.getEffectEfficiency(itemstack, "criticalStrike")
                 if(efficiency < 1) return
                 if(player.getRandom().nextDouble() < critEffectValue/100) {
+                    if(source.getType() === "player") {
+                        critHit(player, entity)
+                    }
                     event.setAmount(amount * efficiency)
                 }
             }
         };
     },
+    // 赌徒
     "gambling": function (event, player, effectValue, itemstack, originalEffectName) {
         let {amount}= event
         if(player.getRandom().nextDouble() < 0.4) {
@@ -163,6 +166,7 @@ let lmTetraPlayerHurtStrategies = {
             event.setAmount(amount * 4)
         }
     },
+    // 狂妄
     "wildly_arrogant": function (event, player, effectValue, itemstack, originalEffectName) {
         let {entity,amount}= event
         if(entity.getMaxHealth() == entity.getHealth()) {
@@ -310,17 +314,17 @@ let lmTetraPlayerHurtStrategies = {
             let sweepDamage = Math.max(1, baseDamage * 0.5) * Math.max(1, luckValue * 1.75)
             
             //珠光护手暴击
-            if(event.source.getType() === "player") {
-                let pearlescentLevel = simpleGetTetraEffectLevel(item,"pearlescent_hand_protection")
-                if(pearlescentLevel) {
-                    let critLevel = simpleGetTetraEffectLevel(item,"criticalStrike")
-                    let critEfficiency = lmGetEffectEfficiency(item,"criticalStrike")
-                    if(critEfficiency < 1) return
-                    if(player.getRandom().nextDouble() < critLevel/100) {
-                        sweepDamage *= critEfficiency
-                    }
-                }
-            }
+            // if(event.source.getType() === "player") {
+            //     let pearlescentLevel = simpleGetTetraEffectLevel(item,"pearlescent_hand_protection")
+            //     if(pearlescentLevel) {
+            //         let critLevel = simpleGetTetraEffectLevel(item,"criticalStrike")
+            //         let critEfficiency = lmGetEffectEfficiency(item,"criticalStrike")
+            //         if(critEfficiency < 1) return
+            //         if(player.getRandom().nextDouble() < critLevel/100) {
+            //             sweepDamage *= critEfficiency
+            //         }
+            //     }
+            // }
 
             
             // 横扫范围

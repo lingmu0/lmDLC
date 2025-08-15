@@ -65,7 +65,7 @@
     "tetra.stats.nature_heart": "自然之力 [饰品]",
     "tetra.stats.nature_heart.tooltip_short": "(唯一生效)站在草方块上获得20%%减伤,30%%增伤",
     "tetra.stats.pearlescent_hand_protection": "珠光护手",
-    "tetra.stats.pearlescent_hand_protection.tooltip_short": "使所有伤害都能暴击",
+    "tetra.stats.pearlescent_hand_protection.tooltip_short": "使所有伤害都能暴击，并禁止跳劈暴击",
     "tetra.stats.sacred_sword": "神圣之剑",
     "tetra.stats.sacred_sword.tooltip_short": "使暴击每超过100%%的部分可以多次触发",
     "tetra.stats.manbo": "曼波",

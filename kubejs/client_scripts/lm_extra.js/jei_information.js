@@ -7,7 +7,7 @@ JEIEvents.information(event =>{
     event.addItem('lm_extra:glory',Text.black("在背包时每击杀一只怪物，积累一点荣耀值，右键查看当前荣耀值，潜行右键释放，对周围造成等同于荣耀值的普攻伤害"))
     
     event.addItem('lm_extra:nature_heart', Text.black("(饰品) 唯一生效，站在草方块上获得20%减伤与30%增伤"));
-    event.addItem('lm_extra:pearlescent_hand_protection', Text.black("(镶嵌材料) 使所有伤害都能触发暴击"));
+    event.addItem('lm_extra:pearlescent_hand_protection', Text.black("(镶嵌材料) 使所有伤害都能触发暴击，并禁止跳劈暴击"));
     event.addItem('lm_extra:sacred_sword', Text.black("(剑刃材料) 使暴击率每超过100%的部分可多次触发额外暴击"));
     event.addItem('lm_extra:manbo', Text.black("(头颅材料) 普攻时触发曼波效果，强运等级+1（提升10%幸运），最高不超过当前暴击率×5"));
     event.addItem('lm_extra:dominate', Text.black("(灾变之心强化) 根据最大生命值与临时生命值提供增伤，超过20点的部分每点提升4%伤害"));

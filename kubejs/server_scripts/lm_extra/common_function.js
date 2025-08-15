@@ -212,3 +212,36 @@ function lmdrawSingleRandomSlashLineWithOffset(entity, particleType, angleOffset
             0, 0, 0, 0.05, 4) // 每个位置粒子数为4
     }
 }
+
+/**
+ * 暴击特效
+ * @param {Internal.Player} player 
+ * @param {Internal.Entity} entity 
+ */
+let critHit = (player, entity) => {
+    let { level, x, y, z, soundSource } = player
+
+    level.playSound(
+        null,
+        x,
+        y,
+        z,
+        'minecraft:entity.player.attack.crit',
+        soundSource,
+        1,
+        1
+    )
+    player.crit(entity)
+}
+
+NativeEvents.onEvent(Java.loadClass('net.minecraftforge.event.entity.player.CriticalHitEvent'), (/** @type{Internal.CriticalHitEvent} */event)=>{
+    let player = event.entity
+    if(!player.isPlayer()) return
+
+    let item = player.getMainHandItem();
+    if (!item.item instanceof $ModularItem) return;
+
+    let effect = simpleGetTetraEffectLevel(item, "pearlescent_hand_protection")
+    if(!effect) return
+    event.setResult('deny')
+})

@@ -111,6 +111,70 @@
 			x: 0.0d
 			y: -3.5d
 		}
+		{
+			id: "0E0A715473E2BA46"
+			tasks: [{
+				id: "56B2198CF4AAF355"
+				item: {
+					Count: 1
+					id: "twilightforest:twilight_scepter"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 0.0d
+			y: -1.5d
+		}
+		{
+			id: "366065E47D10B7BF"
+			tasks: [{
+				id: "76D38E336EE8CB89"
+				item: {
+					Count: 1
+					id: "twilightforest:lifedrain_scepter"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 0.0d
+			y: -0.5d
+		}
+		{
+			id: "01722487B3A40212"
+			tasks: [{
+				id: "79665A251B30BA32"
+				item: {
+					Count: 1
+					id: "twilightforest:zombie_scepter"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.5d
+		}
+		{
+			id: "34F49397061FD754"
+			tasks: [{
+				id: "4C826E898C137DA3"
+				item: {
+					Count: 1
+					id: "twilightforest:fortification_scepter"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 0.0d
+			y: 1.5d
+		}
 	]
 	title: "暮色DLC"
 }
