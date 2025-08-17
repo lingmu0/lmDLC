@@ -100,6 +100,9 @@
     "tetra.stats.snow_queen_trophy": "冰雪女王",
     "tetra.stats.naga_scale": "娜迦速度【盔甲】",
 
+    "tetra.stats.towerwood": "塔木",
+    "tetra.stats.towerwood.tooltip_short": "箭矢攻击无视敌方无敌帧",
+
 
     "attribute.name.generic.naga_speed": "娜迦速度",
 

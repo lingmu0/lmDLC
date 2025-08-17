@@ -38,7 +38,7 @@ ServerEvents.recipes(event =>{
         [
             create.deploying(incomplete,[incomplete,'refinedstorage:64k_storage_part']),
             create.deploying(incomplete,[incomplete,'functionalstorage:netherite_upgrade']),
-            create.deploying(incomplete,[incomplete,'quark:blue_corundum_cluster']),
+            create.deploying(incomplete,[incomplete,'pasterdream:blue_heart_of_the_sea']),
             create.deploying(incomplete,[incomplete,'minecraft:echo_shard']),
             create.cutting(incomplete,incomplete),
             create.pressing(incomplete,incomplete)
