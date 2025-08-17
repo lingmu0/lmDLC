@@ -33,6 +33,25 @@ function createDamagetype(modId, damageTypeName) {
 }
 
 /**
+* 获取某个半径内的生物
+* @param {Internal.Level} level
+* @param {Vec3} pos
+* @param {Number} radius
+* @returns {Array<Internal.LivingEntity>}
+*/
+function lmgetLivingWithinRadius(level, pos, radius) {
+    let area = new AABB.of(pos.x() - radius, pos.y() - radius, pos.z() - radius, pos.x() + radius, pos.y() + radius, pos.z() + radius)
+    let entityAABBList = level.getEntitiesWithin(area)
+    let entityList = []
+    entityAABBList.forEach(entity => {
+        if (entity.position() && entity.position().distanceTo(pos) <= radius) {
+            entityList.push(entity)
+        }
+    })
+    return entityList
+}
+
+/**
  * 检测生物脚下方块
  * @param {Internal.LivingEntity} entity 
  * @param {String} block 

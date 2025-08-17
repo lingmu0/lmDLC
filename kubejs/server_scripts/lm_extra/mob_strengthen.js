@@ -33,6 +33,9 @@ EntityEvents.spawned(event => {
     if (diffLevel.toughnessMulti != 0 && entity.attributes.hasAttribute('minecraft:generic.armor_toughness')) {
         entity.setAttributeBaseValue('minecraft:generic.armor_toughness', entity.getAttribute('minecraft:generic.armor_toughness').getValue() * diffLevel.toughnessMulti)
     }
+    if (entityName === 'twilightforest:naga') {
+        entity.modifyAttribute('generic.movement_speed', 'naga_movement_speed', 1, 'multiply_total')
+    }
 })
 
 NativeEvents.onEvent($LivingHurtEvent, (/** @type{Internal.LivingHurtEvent} */event) =>{
@@ -47,6 +50,20 @@ NativeEvents.onEvent($LivingHurtEvent, (/** @type{Internal.LivingHurtEvent} */ev
     }
 })
 
+NativeEvents.onEvent($LivingTickEvent, (/** @type{Internal.LivingEvent$LivingTickEvent} */event) => {
+    /** @type{Internal.LivingEntity} */
+    let entity = event.entity
+    if (entity.age % 150 != 0) return
+    if (entity.type === 'twilightforest:naga') {
+        let target = entity.getTarget();
+        if (!target || !target.isLiving()) {
+            return; // 没有仇恨目标则不生成
+        }
+        
+        entity.potionEffects.add('invisibility', 20 * 5, 0);
+        
+    }
+})
 
 NativeEvents.onEvent($LivingTickEvent, (/** @type{Internal.LivingEvent$LivingTickEvent} */event) => {
     /** @type{Internal.LivingEntity} */
@@ -164,7 +181,7 @@ NativeEvents.onEvent($LivingTickEvent, (/** @type{Internal.LivingEvent$LivingTic
                     surfaceY, 
                     spawnZ, 
                     entity.YHeadRot, 
-                    60, 0, 0, 4, 6, 0, false, 
+                    60, 20, 0, 4, 20, 0, false, 
                     entity
                 );
                 level.addFreshEntity(flameStrike);

@@ -87,6 +87,11 @@
 			y: -2.5d
 		}
 		{
+			description: [
+				"&b材料种类&r：头颅"
+				"&d可用槽位&r：京观"
+				"右键时发射死亡激光，持续5s，基础伤害100，cd15s"
+			]
 			id: "1F2F0FF92F0D1FFD"
 			tasks: [{
 				id: "469B9A67F02C3D79"
@@ -100,7 +105,7 @@
 			description: [
 				"&b材料种类&r：头颅"
 				"&d可用槽位&r：京观"
-				"右键时使用烈焰轰击，对周围半径为10的范围持续造成伤害"
+				"右键时使用魂火轰击，对周围半径为10的范围持续造成7.5伤害，数值等于火焰伤害，cd15s"
 			]
 			id: "7AB32C05A8BB8C7A"
 			tasks: [{
@@ -174,6 +179,175 @@
 			}]
 			x: 0.0d
 			y: 1.5d
+		}
+		{
+			id: "0AB22DF5BA386F2D"
+			tasks: [{
+				id: "0A88EE22E5ACBAFC"
+				item: "twilightforest:knightmetal_ingot"
+				type: "item"
+			}]
+			x: 3.0d
+			y: -2.5d
+		}
+		{
+			id: "057570C6A7210AED"
+			tasks: [{
+				id: "1CE3B711B977BB74"
+				item: {
+					Count: 1
+					id: "twilightforest:triple_bow"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 3.0d
+			y: -1.5d
+		}
+		{
+			id: "74D4EC8171A7CCBA"
+			tasks: [{
+				id: "4A93B531D368EE1A"
+				item: {
+					Count: 1
+					id: "twilightforest:ice_bow"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 3.0d
+			y: -0.5d
+		}
+		{
+			id: "473B7CB385FDBA03"
+			tasks: [{
+				id: "3AF264CA7EB50EA2"
+				item: {
+					Count: 1
+					id: "twilightforest:ender_bow"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 3.0d
+			y: 0.5d
+		}
+		{
+			id: "541E0BC6F5FD210F"
+			tasks: [{
+				id: "426E33AE292407E6"
+				item: {
+					Count: 1
+					id: "twilightforest:seeker_bow"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 3.0d
+			y: 1.5d
+		}
+		{
+			description: [
+				"&b材料种类&r：头颅"
+				"&d可用槽位&r：京观"
+				"主手技能键（默认为Z）：CD20s，提供5s虚化buff（不受到任何伤害）"
+			]
+			id: "498A93367032DBA4"
+			tasks: [{
+				id: "46CBDB942305E663"
+				item: "twilightforest:knight_phantom_trophy"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -4.5d
+		}
+		{
+			id: "15C3296A03D6A566"
+			tasks: [{
+				id: "15C0E66F1EB7DB60"
+				item: "twilightforest:ur_ghast_trophy"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -4.5d
+		}
+		{
+			id: "05006C4DB747116F"
+			tasks: [{
+				id: "00249C8D0436C6D8"
+				item: "twilightforest:alpha_yeti_trophy"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -5.5d
+		}
+		{
+			id: "007080E70233BFE6"
+			tasks: [{
+				id: "415C386EC798F42C"
+				item: "twilightforest:snow_queen_trophy"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -5.5d
+		}
+		{
+			id: "618554C72B5FF270"
+			tasks: [{
+				id: "3298FC6B35B77589"
+				item: "twilightforest:quest_ram_trophy"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -6.5d
+		}
+		{
+			description: [
+				"现在娜迦移速翻倍，并且会间歇性隐身"
+				"建议使用佩戴奇异饰品，并使用萤石粉做材料，可让攻击使其发光"
+			]
+			id: "4D6DF2B64EAE208B"
+			tasks: [{
+				entity: "twilightforest:naga"
+				id: "603F28D5DAAFE450"
+				type: "kill"
+				value: 1L
+			}]
+			x: -1.0d
+			y: 3.5d
+		}
+		{
+			description: [
+				"&b材料种类&r：木"
+				"&d可用槽位&r：大部分槽位"
+				"减少0.4拉弓耗时，箭矢攻击无视敌方无敌帧"
+			]
+			id: "454418C9CF4F675D"
+			tasks: [{
+				id: "0495A67F82E0018F"
+				item: "twilightforest:towerwood"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -4.5d
+		}
+		{
+			id: "75BB4D577B5AF92F"
+			tasks: [{
+				id: "10EA2C3AC2451CBD"
+				item: "lm_extra:final_metal_ingot"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -2.5d
 		}
 	]
 	title: "暮色DLC"

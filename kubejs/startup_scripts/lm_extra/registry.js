@@ -58,6 +58,7 @@ StartupEvents.registry('mob_effect', event => {
     event.create("lm_extra:forbid_heal").harmful().color(Color.RED)
         .modifyAttribute("attributeslib:healing_received","forbid_heal_healing_received",-0.1, "multiply_base")
 
+    event.create("lm_extra:blurring").beneficial().color(Color.BLACK)
 })
 
 const $RangedAttribute = Java.loadClass(

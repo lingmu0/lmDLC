@@ -8,6 +8,25 @@ let lmtetraPlayerkeybindStrategies = {
      * @param {*} item 
      * @param {*} originalEffectName 
      */
+    'knight_phantom_trophy': function (event, player, effectValue, item, originalEffectName) {
+        let time = player.persistentData.getInt(originalEffectName) ?? 0
+        let CD = Math.abs(player.age - time)
+        if (CD < 20 * 20){
+            player.tell("虚化还在冷却中")
+            return
+        } 
+        player.persistentData.putInt(originalEffectName, player.age)
+
+        player.potionEffects.add('lm_extra:blurring', 20 * 5, 0);
+    },
+    /**
+     * 朱赤之蝶
+     * @param {*} event 
+     * @param {Internal.Player} player 
+     * @param {*} effectValue 
+     * @param {*} item 
+     * @param {*} originalEffectName 
+     */
     'butterfly_of_zhuchi': function (event, player, effectValue, item, originalEffectName) {
         let time = player.persistentData.getInt("anxin_secret_method") ?? 0
         let CD = Math.abs(player.age - time)

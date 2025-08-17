@@ -1,0 +1,27 @@
+{
+    "key": "final_metal_ingot",
+    "category": "metal",
+    "primary": 8.5,
+    "secondary": 2.8,
+    "tertiary": 2,
+    "durability": 1000,
+    "integrityCost": 1,
+    "integrityGain": 8,
+    "magicCapacity": 100,
+    "toolLevel": "minecraft:diamond",
+    "toolEfficiency": 10,
+    "tints": {
+      "glyph": "806164",
+      "texture": "695e5f"
+    },
+    "effects": {
+        "final_metal_ingot": 1
+    },
+    "attributes":{
+      "**generic.attack_damage":1
+    },
+    "textures": ["default"],
+    "material": {"items": [ "lm_extra:final_metal_ingot" ]},
+    "requiredTools": { "hammer_dig": 10}
+    
+}

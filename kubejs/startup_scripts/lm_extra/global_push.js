@@ -22,6 +22,8 @@ const newLMMaterials = [
     { material: '', ftb_id: '', effect_name: 'alpha_yeti_trophy' ,tags:[]},
     { material: '', ftb_id: '', effect_name: 'snow_queen_trophy' ,tags:[]},
     { material: '', ftb_id: '', effect_name: 'naga_scale' ,tags:[]},
+    { material: '', ftb_id: '', effect_name: 'towerwood' ,tags:[]},
+    { material: '', ftb_id: '', effect_name: 'quest_ram_trophy' ,tags:[]},
 ];
 newLMMaterials.forEach(material => {
     global.materials.push(material);
