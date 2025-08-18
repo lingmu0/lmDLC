@@ -1,0 +1,32 @@
+{
+    "key": "alpha_yeti_fur",
+    "category": "skin",
+    "primary": 5,
+    "secondary": 2,
+    "tertiary": 1,
+    "durability": 400,
+    "integrityCost": 1,
+    "integrityGain": 4,
+    "magicCapacity": 100,
+    "toolLevel": 0,
+    "toolEfficiency": 0,
+    "tints": {
+        "glyph": "1E3151",
+        "texture": "1E3151"
+    },
+    "textures": [
+        "default"
+    ],
+    "effects": {
+        "lm_cold_damage": 30
+    },
+    "attributes":{
+        "kubejs:generic.lm_cold_damage": 30
+    },
+    "material": { 
+        "items": [ "twilightforest:alpha_yeti_fur" ] 
+    },
+    "requiredTools": {
+         "cut": "minecraft:gold"
+    }
+}

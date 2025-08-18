@@ -1,0 +1,50 @@
+[
+    {
+        "modules": ["double/basic_axe"],
+        "moduleVariants": ["double_socket/charm_of_keeping_2"],
+        "visibilityKey": "double_socket/charm_of_keeping_2",
+        "tools": {
+            "axe_dig": 3
+        }
+    },
+    {
+        "modules": ["double/adze"],
+        "moduleVariants": ["double_socket/charm_of_keeping_2"],
+        "visibilityKey": "double_socket/charm_of_keeping_2",
+        "tools": {
+            "shovel_dig": 3
+        }
+    },
+    {
+        "modules": ["double/basic_pickaxe"],
+        "moduleVariants": ["double_socket/charm_of_keeping_2"],
+        "visibilityKey": "double_socket/charm_of_keeping_2",
+        "tools": {
+            "pickaxe_dig": 3
+        }
+    },
+    {
+        "modules": ["double/basic_hammer"],
+        "moduleVariants": ["double_socket/charm_of_keeping_2"],
+        "visibilityKey": "double_socket/charm_of_keeping_2",
+        "tools": {
+            "hammer_dig": 3
+        }
+    },
+    {
+        "modules": ["double/claw"],
+        "moduleVariants": ["double_socket/charm_of_keeping_2"],
+        "visibilityKey": "double_socket/charm_of_keeping_2",
+        "tools": {
+            "pry": 3
+        }
+    },
+    {
+        "modules": ["double/hoe"],
+        "moduleVariants": ["double_socket/charm_of_keeping_2"],
+        "visibilityKey": "double_socket/charm_of_keeping_2",
+        "tools": {
+            "hoe_dig": 3
+        }
+    }
+]

@@ -74,12 +74,21 @@ StartupEvents.registry('attribute', event => {
             1000.0
         )
     })
+    event.createCustom('kubejs:generic.lm_cold_damage', () => {
+        return new $RangedAttribute(
+            'attribute.name.generic.lm_cold_damage',
+            0.0,
+            0.0,
+            10000000.0
+        )
+    })
 })
 
 ForgeModEvents.onEvent(
     'net.minecraftforge.event.entity.EntityAttributeModificationEvent', event => {
         if(!event.has('player','kubejs:generic.naga_speed')) {
             event.add('player','kubejs:generic.naga_speed')
+            event.add('player','kubejs:generic.lm_cold_damage')
         }
     }
 )

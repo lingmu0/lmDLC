@@ -58,5 +58,19 @@ let lmCuriosTetraPlayerAttackStrategies = {
             event.setAmount(amount * (1 + Multiplier))
         }
     },
+    /**
+     * 
+     * @param {Internal.LivingHurtEvent} event 
+     * @param {Internal.Player} player 
+     * @param {*} effectValue 
+     * @param {*} item 
+     * @param {*} originalEffectName 
+     */
+    "moonworm_queen": function (event, player, effectValue, item, originalEffectName) {
+        let {entity}= event
+        if (entity && entity.isLiving()) {
+            entity.potionEffects.add('glowing', 20 * 60, 0)
+        }
+    },
 }
 Object.assign(CuriosTetraPlayerAttackStrategies, lmCuriosTetraPlayerAttackStrategies);

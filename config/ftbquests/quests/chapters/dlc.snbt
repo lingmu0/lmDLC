@@ -1,4 +1,5 @@
 {
+	autofocus_id: "3387D35ED4D88118"
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "dlc"
@@ -23,8 +24,8 @@
 				title: "进入暮色森林"
 				type: "dimension"
 			}]
-			x: -3.0d
-			y: 0.0d
+			x: -3.5d
+			y: 3.5d
 		}
 		{
 			description: [
@@ -65,7 +66,7 @@
 			description: [
 				"&b材料种类&r：皮革"
 				"&d可用槽位&r：盔甲内衬"
-				"提供娜迦速度属性,用于搭配娜迦奖杯"
+				"提供娜迦速度属性，用于搭配娜迦奖杯，每一点属性在激活娜迦冲撞时提升一级娜迦冲锋buff等级"
 			]
 			id: "470075E26BA69E3F"
 			tasks: [{
@@ -280,6 +281,11 @@
 			y: -4.5d
 		}
 		{
+			description: [
+				"&b材料种类&r：头颅"
+				"&d可用槽位&r：京观"
+				"右键释放冰爆术，cd20s，对周围半径10生物造成冰霜伤害*5的伤害，并施加10s霜冻buff"
+			]
 			id: "05006C4DB747116F"
 			tasks: [{
 				id: "00249C8D0436C6D8"
@@ -340,6 +346,11 @@
 			y: -4.5d
 		}
 		{
+			description: [
+				"&b材料种类&r：金属"
+				"&d可用槽位&r：大部分槽位"
+				"提高100%攻击力，潜行右键释放神威：清除视线落点周围半径为6区域的事物"
+			]
 			id: "75BB4D577B5AF92F"
 			tasks: [{
 				id: "10EA2C3AC2451CBD"
@@ -348,6 +359,57 @@
 			}]
 			x: 4.0d
 			y: -2.5d
+		}
+		{
+			description: [
+				"&b材料种类&r：荣耀之证"
+				"&d可用槽位&r：可用于tetra饰品荣耀之证"
+				"减少百分之10受到的伤害，攻击时或者受到攻击时，使对方获得60s发光buff"
+			]
+			id: "687FEE5C0CF42DD4"
+			tasks: [{
+				id: "7737DCF4486885F9"
+				item: {
+					Count: 1
+					id: "twilightforest:moonworm_queen"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 1.0d
+			y: -1.5d
+		}
+		{
+			description: [
+				"&b材料种类&r：皮革"
+				"&d可用槽位&r：裹柄、握环、绑定、食指圆环、镶边、绑带、弓弦、裹柄、踏环"
+				"提供30点冰霜伤害属性"
+			]
+			id: "19B890F428D52867"
+			tasks: [{
+				id: "62D6845E5A2E7AB0"
+				item: "twilightforest:alpha_yeti_fur"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -5.5d
+		}
+		{
+			description: [
+				"&b材料种类&r：插槽"
+				"&d可用槽位&r：镶嵌"
+				"使一些工具等级+3（短剑刃，锤子，斧头，稿子）"
+			]
+			id: "5257A73EF0D773B5"
+			tasks: [{
+				id: "29651CEBC5C6173F"
+				item: "twilightforest:charm_of_keeping_2"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -1.5d
 		}
 	]
 	title: "暮色DLC"

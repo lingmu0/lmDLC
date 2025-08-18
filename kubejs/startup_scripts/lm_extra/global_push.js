@@ -24,6 +24,8 @@ const newLMMaterials = [
     { material: '', ftb_id: '', effect_name: 'naga_scale' ,tags:[]},
     { material: '', ftb_id: '', effect_name: 'towerwood' ,tags:[]},
     { material: '', ftb_id: '', effect_name: 'quest_ram_trophy' ,tags:[]},
+    { material: '', ftb_id: '', effect_name: 'moonworm_queen' ,tags:[]},
+    { material: '', ftb_id: '', effect_name: 'lm_cold_damage' ,tags:[]},
 ];
 newLMMaterials.forEach(material => {
     global.materials.push(material);

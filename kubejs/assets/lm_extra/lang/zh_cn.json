@@ -61,6 +61,20 @@
     "tetra.material.lich_trophy.prefix": "巫妖",
     "tetra.material.hydra_trophy": "九头蛇",
     "tetra.material.hydra_trophy.prefix": "九头蛇",
+    "tetra.material.moonworm_queen": "月光蠕虫女王",
+    "tetra.material.moonworm_queen.prefix": "月光蠕虫女王",
+    "tetra.material.ur_ghast_trophy": "暮初恶魂",
+    "tetra.material.alpha_yeti_trophy": "雪怪首领",
+    "tetra.material.snow_queen_trophy": "冰雪女王",
+    "tetra.material.ur_ghast_trophy.prefix": "暮初恶魂",
+    "tetra.material.alpha_yeti_trophy.prefix": "雪怪首领",
+    "tetra.material.snow_queen_trophy.prefix": "冰雪女王",
+    "tetra.material.alpha_yeti_fur": "雪怪首领毛皮",
+    "tetra.material.alpha_yeti_fur.prefix": "雪怪首领毛皮",
+    "tetra.variant.curios/rong_yao_zhi_zheng1/moonworm_queen": "月光蠕虫女王",
+    "tetra.variant.curios/rong_yao_zhi_zheng2/moonworm_queen": "月光蠕虫女王",
+    "tetra.variant.curios/rong_yao_zhi_zheng3/moonworm_queen": "月光蠕虫女王",
+    "tetra.variant.curios/rong_yao_zhi_zheng4/moonworm_queen": "月光蠕虫女王",
 
 
     "tetra.stats.rage_blade": "狂暴",
@@ -97,15 +111,23 @@
     "tetra.stats.knight_phantom_trophy.tooltip_short": "主手技能键（默认为Z）：CD20s，提供5s虚化buff（不受到任何伤害）",
     "tetra.stats.ur_ghast_trophy": "暮初恶魂",
     "tetra.stats.alpha_yeti_trophy": "雪怪首领",
+    "tetra.stats.alpha_yeti_trophy.tooltip_short": "右键释放冰爆术，cd20s，对周围半径10生物造成冰霜伤害*5的伤害，并施加10s霜冻buff",
     "tetra.stats.snow_queen_trophy": "冰雪女王",
     "tetra.stats.naga_scale": "娜迦速度【盔甲】",
+    "tetra.stats.naga_scale.tooltip_short": "提供娜迦速度属性，用于搭配娜迦奖杯，每一点属性在激活娜迦冲撞时提升一级娜迦冲锋buff等级",
 
     "tetra.stats.towerwood": "塔木",
     "tetra.stats.towerwood.tooltip_short": "箭矢攻击无视敌方无敌帧",
+    "tetra.stats.moonworm_queen": "月光的指引",
+    "tetra.stats.moonworm_queen.tooltip_short": "减少百分之10受到的伤害，攻击时或者受到攻击时，使对方获得60s发光buff",
+    "tetra.stats.lm_cold_damage": "冰霜伤害",
+    "tetra.stats.lm_cold_damage.tooltip_short": "提高%s冰霜伤害",
+    
 
-
+    "attribute.name.generic.lm_cold_damage": "冰霜伤害",
+    "attribute.name.generic.lm_cold_damage.desc": "普攻造成额外等同于该数值的冰霜伤害，并根据数值造成10s的缓慢效果，每50提升一级，最高缓慢V",
     "attribute.name.generic.naga_speed": "娜迦速度",
-
+    "attribute.name.generic.naga_speed.desc": "每一点属性在激活娜迦冲撞时提升一级娜迦冲锋buff等级",
 
     "tetra.module.staff_of_homa/staff_of_homa1.material_name": "§c%s护摩头部",
     "tetra.slot.staff_of_homa1": "护摩头部",

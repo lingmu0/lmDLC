@@ -292,3 +292,24 @@ let lmTetraPlayerHurtStrategies = {
     },
 }
 Object.assign(tetraPlayerAttackStrategies, lmTetraPlayerHurtStrategies);
+
+
+let oldPlayerAttack = playerattack;
+
+playerattack = function(event) {
+    myExtraAttackHandler(event); // 新逻辑
+    oldPlayerAttack(event);   // 原逻辑
+}
+
+function myExtraAttackHandler(/** @type{Internal.LivingHurtEvent} */event){
+    let player = event.source.player
+    let entity = event.entity
+    
+    let coldDamageAmount = player.getAttributeValue('kubejs:generic.lm_cold_damage')
+    let type = event.source.getType()
+
+    if (type === 'player' && coldDamageAmount) {
+        simpleAttackEntity(true, player, entity, 'attributeslib:cold_damage', coldDamageAmount)
+        entity.potionEffects.add('slowness', 20 * 10, Math.min(4, coldDamageAmount / 50))
+    }
+}

@@ -1,0 +1,42 @@
+[
+    {
+        "modules": ["single/earthpiercer"],
+        "moduleVariants": ["single_socket/charm_of_keeping_2"],
+        "visibilityKey": "single_socket/charm_of_keeping_2",
+        "tools": {
+            "pickaxe_dig": 3
+        }
+    },
+    {
+        "modules": ["single/unbound_earthpiercer"],
+        "moduleVariants": ["single_socket/charm_of_keeping_2"],
+        "visibilityKey": "single_socket/charm_of_keeping_2",
+        "tools": {
+            "pickaxe_dig": 3
+        }
+    },
+    {
+        "improvements": ["unbound_earthpiercer/wood_attunement"],
+        "moduleVariants": ["single_socket/charm_of_keeping_2"],
+        "visibilityKey": "single_socket/charm_of_keeping_2",
+        "tools": {
+            "axe_dig": 3
+        }
+    },
+    {
+        "improvements": ["unbound_earthpiercer/earth_attunement"],
+        "moduleVariants": ["single_socket/charm_of_keeping_2"],
+        "visibilityKey": "single_socket/charm_of_keeping_2",
+        "tools": {
+            "shovel_dig": 3
+        }
+    },
+    {
+        "modules": ["single/basic_shovel"],
+        "moduleVariants": ["single_socket/charm_of_keeping_2"],
+        "visibilityKey": "single_socket/charm_of_keeping_2",
+        "tools": {
+            "shovel_dig": 3
+        }
+    }
+]
