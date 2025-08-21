@@ -116,8 +116,9 @@
     "tetra.stats.ur_ghast_trophy": "暮初恶魂",
     "tetra.stats.ur_ghast_trophy.tooltip_short": "右键释放火之泪伤，cd20s，对周围半径为10生物持续造成5s伤害，数值等于火焰伤害，同时每有一只生物获得1级5s再生buff",
     "tetra.stats.alpha_yeti_trophy": "雪怪首领",
-    "tetra.stats.alpha_yeti_trophy.tooltip_short": "右键释放冰爆术，cd20s，对周围半径10生物造成冰霜伤害*5的伤害，并施加10s霜冻buff",
+    "tetra.stats.alpha_yeti_trophy.tooltip_short": "右键释放冰爆术，cd20s，对周围半径10生物造成冰霜伤害*5的伤害，并施加10s霜冻X buff",
     "tetra.stats.snow_queen_trophy": "冰雪女王",
+    "tetra.stats.snow_queen_trophy.tooltip_short": "普攻增加目标身上缓慢buff的持续时间，每有1点冰霜伤害增加1s，潜行攻击清除缓慢并造成一段冰霜伤害，数值为缓慢等级*时间",
     "tetra.stats.quest_ram_trophy": "谜题羊",
     "tetra.stats.quest_ram_trophy.tooltip_short": "主手技能键（默认为Z）：提供一个随机5s的正面buff，等级为当前攻速向上取整，最多同时拥有20个buff",
     "tetra.stats.naga_scale": "娜迦速度【盔甲】",
@@ -134,7 +135,7 @@
     
 
     "attribute.name.generic.lm_cold_damage": "冰霜伤害",
-    "attribute.name.generic.lm_cold_damage.desc": "普攻造成额外等同于该数值的冰霜伤害，并根据数值造成10s的缓慢效果，每50提升一级，最高缓慢V",
+    "attribute.name.generic.lm_cold_damage.desc": "普攻造成额外等同于该数值的冰霜伤害，并根据数值造成10s的缓慢效果，每50提升一级，最高缓慢V，同时每次攻击有10%的概率造成2s霜冻buff",
     "attribute.name.generic.naga_speed": "娜迦速度",
     "attribute.name.generic.naga_speed.desc": "每一点属性在激活娜迦冲撞时提升一级娜迦冲锋buff等级",
 

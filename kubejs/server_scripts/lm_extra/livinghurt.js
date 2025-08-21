@@ -290,6 +290,30 @@ let lmTetraPlayerHurtStrategies = {
             player.removeEffect('lm_extra:naga_speed')
         }
     },
+    /**
+     * 冰雪女王奖杯
+     * @param {Internal.LivingHurtEvent} event 
+     * @param {Internal.Player} player 
+     * @param {*} effectValue 
+     * @param {*} item 
+     * @param {*} originalEffectName 
+     */
+    "snow_queen_trophy": function (event, player, effectValue, itemstack, originalEffectName) {
+        let {entity, amount}= event
+        if(event.source.getType() !== "player") return
+        // 检查是否有缓慢效果
+        if (entity.hasEffect('slowness')) {
+            let slowness = entity.getEffect('slowness')
+            let newDuration = slowness.getDuration() + 20 * (player.getAttributeValue('kubejs:generic.lm_cold_damage') + 1); // +10秒
+            let amplifier = slowness.getAmplifier(); // 保留原有等级
+            if(player.isCrouching()) {
+                simpleAttackEntity(true, player, entity, 'attributeslib:cold_damage', (amplifier + 1) * newDuration/20)
+                entity.removeEffect('slowness')
+                return
+            }
+            entity.potionEffects.add('slowness', newDuration, amplifier); 
+        }
+    },
 }
 Object.assign(tetraPlayerAttackStrategies, lmTetraPlayerHurtStrategies);
 
@@ -309,9 +333,19 @@ function myExtraAttackHandler(/** @type{Internal.LivingHurtEvent} */event){
     let type = event.source.getType()
 
     if (type === 'player' && coldDamageAmount) {
-        simpleAttackEntity(true, player, entity, 'attributeslib:cold_damage', coldDamageAmount)
-        entity.potionEffects.add('slowness', 20 * 10, Math.min(4, coldDamageAmount / 50))
+        let time = entity.persistentData.getInt('lm_cold_damage_cd') ?? 0
+        let CD = Math.abs(entity.age - time)
+        if (CD >= 20/player.getAttributeValue('generic.attack_speed')) {
+            entity.persistentData.putInt('lm_cold_damage_cd', entity.age)
+
+            simpleAttackEntity(true, player, entity, 'attributeslib:cold_damage', coldDamageAmount)
+            entity.potionEffects.add('slowness', 20 * 10, Math.min(4, coldDamageAmount / 50))
+        }
     } else if(type === 'attributeslib:cold_damage') {
+        if(entity.isOnFire()) {
+            event.setAmount(amount * 1.5)
+            entity.setRemainingFireTicks(0)
+        }
         if(Math.random() < 0.1) {
             entity.potionEffects.add('twilightforest:frosted', 20 * 2, 0)
         }
