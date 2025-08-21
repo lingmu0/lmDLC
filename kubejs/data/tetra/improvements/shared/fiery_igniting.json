@@ -1,0 +1,11 @@
+[
+    {
+        "key": "fiery_igniting",
+        "effects": {
+            "fiery_day": 1
+        },
+        "attributes":{
+            "**attributeslib:fire_damage": 1
+        }
+    }
+]

@@ -1,0 +1,67 @@
+[
+    {
+        "key": "quenched",
+        "level": 1,
+        "effects": {
+            "fierySelf": [
+                0,
+                -0.1
+            ],
+            "weep_blood": [
+                1, 5
+            ]
+        }
+    },
+    {
+        "key": "quenched",
+        "level": 2,
+        "effects": {
+            "fierySelf": [
+                0,
+                -0.18
+            ],
+            "weep_blood": [
+                2, 7
+            ]
+        }
+    },
+    {
+        "key": "quenched",
+        "level": 3,
+        "effects": {
+            "fierySelf": [
+                0,
+                -0.26
+            ],
+            "weep_blood": [
+                4, 10
+            ]
+        }
+    },
+    {
+        "key": "quenched",
+        "level": 4,
+        "effects": {
+            "fierySelf": [
+                0,
+                -0.34
+            ],
+            "weep_blood": [
+                5, 12
+            ]
+        }
+    },
+    {
+        "key": "quenched",
+        "level": 5,
+        "effects": {
+            "fierySelf": [
+                0,
+                -0.42
+            ],
+            "weep_blood": [
+                6, 15
+            ]
+        }
+    }
+]

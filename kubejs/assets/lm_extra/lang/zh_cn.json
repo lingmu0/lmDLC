@@ -131,7 +131,11 @@
     "tetra.stats.moonworm_queen": "月光的指引",
     "tetra.stats.moonworm_queen.tooltip_short": "减少百分之10受到的伤害，攻击时或者受到攻击时，使对方获得60s发光buff",
     "tetra.stats.lm_cold_damage": "冰霜伤害",
-    "tetra.stats.lm_cold_damage.tooltip_short": "提高%s冰霜伤害",
+    "tetra.stats.lm_cold_damage.tooltip_short": "提高§e %s §r冰霜伤害",
+    "tetra.stats.weep_blood": "泣血",
+    "tetra.stats.weep_blood.tooltip_short": "攻击回复§e %s §r + §e %s%% §r最大生命值的血量，0.5s最多触发一次",
+    "tetra.stats.fiery_day": "昼",
+    "tetra.stats.fiery_day.tooltip_short": "提高§e %s §r倍火焰伤害",
     
 
     "attribute.name.generic.lm_cold_damage": "冰霜伤害",
@@ -290,7 +294,7 @@
     "tetra/schematic/shared/hone_hydral_bond.description": "使用炽热的血液强化蛇之救赎的效果",
     "tetra/schematic/shared/hone_hydral_bond.slot1": "精粹",
     "tetra.stats.hydralBond": "蛇之救赎",
-    "tetra.stats.hydralBond.tooltip": "手持工具时受到火焰伤害，有 \u00a7e%s%%\u00a7r 的概率恢复 \u00a7e%s\u00a7r 点工具耐久度",
+    "tetra.stats.hydralBond.tooltip": "手持工具时受到火焰伤害，有 \u00a7e%s\u00a7r 的概率恢复 \u00a7e%s\u00a7r 点工具耐久度",
     "tetra.improvement.quenched.name": "熄烬",
     "tetra.improvement.quenched.description": "大大降低触发自燃效果的几率",
     "tetra/schematic/shared/hone_quenched.name": "淬炼",

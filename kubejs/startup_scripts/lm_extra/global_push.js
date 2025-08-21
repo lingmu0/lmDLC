@@ -27,6 +27,8 @@ const newLMMaterials = [
     { material: '', ftb_id: '', effect_name: 'moonworm_queen' ,tags:[]},
     { material: '', ftb_id: '', effect_name: 'lm_cold_damage' ,tags:[]},
     { material: '', ftb_id: '', effect_name: 'transformation_sapling' ,tags:[]},
+    { material: '', ftb_id: '', effect_name: 'fiery_day' ,tags:[]},
+    { material: '', ftb_id: '', effect_name: 'weep_blood' ,tags:[]},
 ];
 newLMMaterials.forEach(material => {
     global.materials.push(material);

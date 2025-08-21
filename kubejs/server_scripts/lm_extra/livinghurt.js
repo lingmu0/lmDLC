@@ -314,6 +314,24 @@ let lmTetraPlayerHurtStrategies = {
             entity.potionEffects.add('slowness', newDuration, amplifier); 
         }
     },
+    /**
+     * 泣血
+     * @param {Internal.LivingHurtEvent} event 
+     * @param {Internal.Player} player 
+     * @param {*} effectValue 
+     * @param {*} item 
+     * @param {*} originalEffectName 
+     */
+    "weep_blood": function (event, player, effectValue, itemstack, originalEffectName) {
+        let {entity, amount}= event
+        let time = player.persistentData.getInt(originalEffectName) ?? 0
+        let CD = Math.abs(player.age - time)
+        if (CD < 10) return
+        player.persistentData.putInt(originalEffectName, player.age)
+        let effectEfficiency = lmGetEffectEfficiency(itemstack, originalEffectName)
+        let healAmount = effectValue + player.getMaxHealth() * effectEfficiency * 0.01
+        player.heal(healAmount)
+    },
 }
 Object.assign(tetraPlayerAttackStrategies, lmTetraPlayerHurtStrategies);
 

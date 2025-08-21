@@ -78,6 +78,13 @@
 			y: -2.5d
 		}
 		{
+			description: [
+				"&b材料种类&r：金属"
+				"&d可用槽位&r：大部分槽位"
+				"用作武器头部提高1倍火焰伤害"
+				"用作工具头部获得自动冶炼"
+				"用作手柄获得自燃效果，概率让自己燃烧"
+			]
 			id: "068621ECAC7E3369"
 			tasks: [{
 				id: "19355733DA7EB167"
@@ -477,6 +484,26 @@
 			}]
 			x: -5.5d
 			y: 3.5d
+		}
+		{
+			id: "137C43BCE0B56819"
+			tasks: [{
+				id: "45469B5EBC3485C9"
+				item: "twilightforest:fiery_blood"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -3.5d
+		}
+		{
+			id: "3389F35545E673D9"
+			tasks: [{
+				id: "18D7B82BB6707CC3"
+				item: "twilightforest:fiery_tears"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -4.5d
 		}
 	]
 	title: "暮色DLC"

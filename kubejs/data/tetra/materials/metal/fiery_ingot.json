@@ -1,0 +1,60 @@
+{
+    "conditions": [
+        {
+            "type": "forge:mod_loaded",
+            "modid": "twilightforest"
+        }
+    ],
+    "key": "fiery_ingot",
+    "category": "metal",
+    "primary": 7,
+    "secondary": 5,
+    "tertiary": 1,
+    "durability": 1024,
+    "integrityCost": 2,
+    "integrityGain": 9,
+    "magicCapacity": 60,
+    "toolLevel": "minecraft:netherite",
+    "toolEfficiency": 9,
+    "tints": {
+        "glyph": "fffa96",
+        "texture": "ffc53d"
+    },
+    "textures": [
+        "fiery_ingot",
+        "shiny",
+        "metal"
+    ],
+    "textureOverrides": [
+        "item/module/double/head/adze/",
+        "item/module/double/head/basic_axe/",
+        "item/module/double/head/basic_pickaxe/",
+        "item/module/double/head/basic_hammer/",
+        "item/module/double/head/butt/",
+        "item/module/double/head/claw/",
+        "item/module/double/head/hoe/",
+        "item/module/double/head/sickle/",
+        "item/module/sword/guard/makeshift_guard/",
+        "item/module/sword/guard/wide_guard/",
+        "item/module/sword/guard/forefinger_ring/",
+        "item/module/sword/pommel/decorative_pommel/",
+        "item/module/sword/pommel/grip_loop/",
+        "item/module/sword/pommel/counterweight/",
+        "item/module/sword/blade/basic/",
+        "item/module/sword/blade/short/",
+        "item/module/sword/blade/heavy/",
+        "item/module/sword/blade/machete/"
+    ],
+    "material": {
+        "items": [
+            "twilightforest:fiery_ingot"
+        ]
+    },
+    "requiredTools": {
+        "hammer_dig": 10
+    },
+    "features": [
+        "fiery_igniting",
+        "fiery_auto_smelt"
+    ]
+}
