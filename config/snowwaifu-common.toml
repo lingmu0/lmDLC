@@ -2,7 +2,7 @@
 #SnowWaifu Settings
 [General]
 	#Range: 1.0 ~ 3.4028234663852886E38
-	snowWaifuMaxHealth = 1000.0
+	snowWaifuMaxHealth = 10000.0
 	#Range: 1.0 ~ 3.4028234663852886E38
 	snowWaifuBreathAttackDamage = 10.0
 

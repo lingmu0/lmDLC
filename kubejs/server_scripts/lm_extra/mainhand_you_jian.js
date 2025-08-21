@@ -208,7 +208,7 @@ let lmtetra_player_you_jian_strategies = {
             player.tell("冰爆术还在冷却中")
             return
         } 
-        //player.persistentData.putInt(originalEffectName, player.age)
+        player.persistentData.putInt(originalEffectName, player.age)
         let coldDamageAmount = player.getAttributeValue('kubejs:generic.lm_cold_damage')
 
         let entityList = getLivingWithinRadius(level, player.position(), 10);
@@ -265,6 +265,64 @@ let lmtetra_player_you_jian_strategies = {
 
         // 启动动画（从第0帧开始）
         spawnFrame(0, particleId);
+    },
+    /**
+     * 暮初恶魂奖杯
+     * @param {Internal.ItemClickedEventJS} event 
+     * @param {Internal.Player} player 
+     * @param {*} effectValue 
+     * @param {*} item 
+     * @param {*} originalEffectName 
+     */
+    "ur_ghast_trophy": function (event, player, effectValue, itemstack, originalEffectName) {
+        let {entity, amount, level}= event
+        let time = player.persistentData.getInt(originalEffectName) ?? 0
+
+        let CD = Math.abs(player.age - time)
+        if (CD < 20 * 20){
+            player.tell("火之泪伤还在冷却中")
+            return
+        } 
+        //player.persistentData.putInt(originalEffectName, player.age)
+
+        let entityList = getLivingWithinRadius(level, player.position(), 10);
+        player.potionEffects.add('regeneration', 20 * 5, entityList.length - 1)
+        
+        // 持续时间 & tick 计数
+        let duration = 20 * 5; // 10秒 = 200 tick
+        let tickCount = 0;
+
+        let repeat = player.server.scheduleRepeatingInTicks(1, () => {
+            // 每 5tick 给每个实体刷粒子
+            if (tickCount % 5 === 0) {
+                entityList.forEach(target => {
+                    if (!target.isLiving() || !target.isAlive() || target == player) return
+                    level.spawnParticles('twilightforest:boss_tear', true,
+                        target.getX() + (target.getRandom().nextDouble() - 0.5) * target.getBbWidth() * 0.1,
+                        target.getY() + target.getRandom().nextDouble() * target.getBbHeight() * 0.5 + 5,
+                        target.getZ() + (target.getRandom().nextDouble() - 0.5) * target.getBbWidth() * 0.1,
+                        0, 0, 0,
+                        0, 0
+                    );
+                });
+            }
+
+            tickCount++;
+
+            // 每 10 tick 造成一次攻击
+            if (tickCount % 10 === 0) {
+                entityList.forEach(target => {
+                    if (!target.isLiving() || !target.isAlive() || target == player) return
+                    simpleAttackEntity(true, player, target, 'twilightforest:ghast_tear', player.getAttributeValue('attributeslib:fire_damage'));
+                });
+            }
+
+            // 10秒后停止
+            if (tickCount >= duration) {
+                repeat.clear() // 停止任务
+            }
+        }); // 每 1 tick 执行一次
+
     },
 }
 Object.assign(tetra_player_you_jian_strategies, lmtetra_player_you_jian_strategies)

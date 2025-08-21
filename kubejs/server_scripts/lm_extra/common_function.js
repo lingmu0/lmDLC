@@ -6,6 +6,7 @@ let $LMCriticalHitEvent = Java.loadClass('net.minecraftforge.event.entity.player
 let $LMFlame_Strike_Entity = Java.loadClass('com.github.L_Ender.cataclysm.entity.effect.Flame_Strike_Entity')
 let $LMDeath_Laser_Beam_Entity = Java.loadClass('com.github.L_Ender.cataclysm.entity.projectile.Death_Laser_Beam_Entity')
 let $LMModEntities = Java.loadClass('com.github.L_Ender.cataclysm.init.ModEntities')
+let $BuiltInRegistries = Java.loadClass('net.minecraft.core.registries.BuiltInRegistries')
 
 const difficultLevelDef = [
     { healthMulti: 1, attackMulti: 1, armorMulti: 1, toughnessMulti: 1 },
@@ -30,6 +31,25 @@ const difficultLevelDef = [
  */
 function createDamagetype(modId, damageTypeName) {
     return $LMResourceKey.create($LMRegistries.DAMAGE_TYPE,new ResourceLocation(modId,damageTypeName))
+}
+
+/**
+ * 获取所有正面buff
+ * @returns {Array<Internal.MobEffect>}
+ */
+function getAllBuff() {
+    let mobEffects = $BuiltInRegistries.MOB_EFFECT.stream().toList()
+
+    let positiveBuffs = [];
+
+    mobEffects.forEach(effect => {
+        // effect 是 Internal.MobEffect
+        if (effect.isBeneficial()) { // 检查是否是正面效果
+            positiveBuffs.push(effect);
+        }
+    });
+
+    return positiveBuffs
 }
 
 /**

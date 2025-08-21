@@ -107,5 +107,40 @@ let lmtetraPlayerkeybindStrategies = {
         // 启动动画（从第0帧开始）
         spawnFrame(0, particleId);
     },
+    /**
+     * 谜题羊奖杯
+     * @param {*} event 
+     * @param {Internal.Player} player 
+     * @param {*} effectValue 
+     * @param {*} itemstack 
+     * @param {*} originalEffectName 
+     */
+    "quest_ram_trophy": function (event, player, effectValue, itemstack, originalEffectName) {
+        if(player.potionEffects.map.size() >= 20) return
+        let atkSpeed = player.getAttributeValue("minecraft:generic.attack_speed");
+        let buffLevel = Math.ceil(atkSpeed);
+
+        // 正面buff列表
+        let positiveBuffs = getAllBuff()
+
+        // 随机数量（1~3）
+        let buffCount = 1
+
+        // 复制列表（不用扩展语法）
+        let tempList = positiveBuffs.slice();
+        let selectedBuffs = [];
+
+        // 随机选择 buffCount 个 buff
+        for (let i = 0; i < buffCount && tempList.length > 0; i++) {
+            let idx = Math.floor(Math.random() * tempList.length);
+            selectedBuffs.push(tempList[idx]);
+            tempList.splice(idx, 1);
+        }
+
+        // 给玩家添加 buff（等级buffLevel-1，持续30秒）
+        for (let j = 0; j < selectedBuffs.length; j++) {
+            player.potionEffects.add(selectedBuffs[j], 20 * 5, buffLevel - 1);
+        }
+    }
 }
 Object.assign(tetraPlayerkeybindStrategies, lmtetraPlayerkeybindStrategies)

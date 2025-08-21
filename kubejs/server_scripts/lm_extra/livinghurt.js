@@ -303,7 +303,7 @@ playerattack = function(event) {
 
 function myExtraAttackHandler(/** @type{Internal.LivingHurtEvent} */event){
     let player = event.source.player
-    let entity = event.entity
+    let {entity, amount} = event
     
     let coldDamageAmount = player.getAttributeValue('kubejs:generic.lm_cold_damage')
     let type = event.source.getType()
@@ -311,5 +311,18 @@ function myExtraAttackHandler(/** @type{Internal.LivingHurtEvent} */event){
     if (type === 'player' && coldDamageAmount) {
         simpleAttackEntity(true, player, entity, 'attributeslib:cold_damage', coldDamageAmount)
         entity.potionEffects.add('slowness', 20 * 10, Math.min(4, coldDamageAmount / 50))
+    } else if(type === 'attributeslib:cold_damage') {
+        if(Math.random() < 0.1) {
+            entity.potionEffects.add('twilightforest:frosted', 20 * 2, 0)
+        }
+    } else if(type === 'attributeslib:fire_damage') {
+        if(entity.hasEffect('twilightforest:frosted')) {
+            entity.removeEffect('twilightforest:frosted')
+            event.setAmount(amount * 2)
+        }
+        else if(entity.hasEffect('slowness')) {
+            entity.removeEffect('slowness')
+            event.setAmount(amount * 1.2)
+        }
     }
 }

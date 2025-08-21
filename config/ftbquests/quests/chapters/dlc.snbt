@@ -271,6 +271,11 @@
 			y: -4.5d
 		}
 		{
+			description: [
+				"&b材料种类&r：头颅"
+				"&d可用槽位&r：京观"
+				"右键释放火之泪伤，cd20s，对周围半径为10生物持续造成5s伤害，数值等于火焰伤害，同时每有一只生物获得1级5s再生buff"
+			]
 			id: "15C3296A03D6A566"
 			tasks: [{
 				id: "15C0E66F1EB7DB60"
@@ -306,6 +311,11 @@
 			y: -5.5d
 		}
 		{
+			description: [
+				"&b材料种类&r：头颅"
+				"&d可用槽位&r：京观"
+				"提供100%迅捷，主手技能键（默认为Z）：提供一个随机5s的正面buff，等级为当前攻速向上取整，最多同时拥有20个buff"
+			]
 			id: "618554C72B5FF270"
 			tasks: [{
 				id: "3298FC6B35B77589"
@@ -318,7 +328,7 @@
 		{
 			description: [
 				"现在娜迦移速翻倍，并且会间歇性隐身"
-				"建议使用佩戴奇异饰品，并使用萤石粉做材料，可让攻击使其发光"
+				"建议使用佩戴奇异饰品，并使用萤石粉做材料，可让攻击使其发光或者月光蠕虫女王"
 			]
 			id: "4D6DF2B64EAE208B"
 			tasks: [{
@@ -410,6 +420,43 @@
 			}]
 			x: 2.0d
 			y: -1.5d
+		}
+		{
+			id: "2AFB8F5C58D7D83E"
+			tasks: [{
+				entity: "twilightforest:lich"
+				id: "0E52932BB2750AD8"
+				type: "kill"
+				value: 1L
+			}]
+			x: 0.5d
+			y: 3.5d
+		}
+		{
+			id: "701BB972984B380F"
+			tasks: [{
+				entity: "twilightforest:minoshroom"
+				id: "64977BD0765E5F17"
+				type: "kill"
+				value: 1L
+			}]
+			x: 2.0d
+			y: 3.5d
+		}
+		{
+			description: [
+				"九头蛇非常抽象，任何附加伤害以及技能都无法对其造成伤害"
+				"基本上只能靠普通攻击和弓箭进行攻击"
+			]
+			id: "114567E8718AC9FE"
+			tasks: [{
+				entity: "twilightforest:hydra"
+				id: "29A6196E81DEFD28"
+				type: "kill"
+				value: 1L
+			}]
+			x: 3.5d
+			y: 3.5d
 		}
 	]
 	title: "暮色DLC"
