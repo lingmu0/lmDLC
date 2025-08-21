@@ -199,7 +199,7 @@ ServerEvents.tick(event => {
         if (entity.type == 'cataclysm:death_laser_beam') {
             /** @type{Internal.LivingEntity} */
             let caster = entity.caster
-            if(caster.type !== 'twilightforest:minoshroom') return
+            if(caster.type !== 'twilightforest:minoshroom' && !caster.isPlayer()) return
             entity.setYaw( (caster.yHeadRot + 90) * JavaMath.PI / 180);
             entity.setPitch( -caster.getViewXRot(1) * JavaMath.PI / 180);
             entity.setPos(caster.getX() ,caster.getY() + 1.5 , caster.getZ());
