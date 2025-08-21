@@ -1839,8 +1839,6 @@ kubejs/assets/tetra/textures/item/module/sword/blade/heavy/kobole/kobole2.png
 kubejs/assets/tetra/textures/item/module/sword/blade/heavy/kobole/kobole3.png
 kubejs/assets/tetra/textures/item/module/sword/blade/heavy/kobole/kobole4.png
 usercache.json
-mods/
-mods/\[暮色森林] twilightforest-1.20.1-4.3.2508-universal.jar
 mods/\[forge]ctov-3.4.14.jar
 mods/\[Forge1.20.1]TetraClip-1.0.5.jar
 mods/0Pack2Reload-Forge-1.20.1-1.0.1.jar
@@ -3893,3 +3891,5 @@ config/underground_village/common.json5
 kubejs/.gitignore
 kubejs/README.md
 config/smartkeyprompts-client.toml
+mods/I18nUpdateMod-3.6.2-all.jar.disabled
+mods/\[精致存储附属] refinedstorageaddons-0.10.0.jar
