@@ -1,0 +1,72 @@
+[
+    {
+        "key": "hydral_bond",
+        "level": 1,
+        "effects": {
+            "hydralBond": [
+                10,
+                0.33
+            ],
+            "fierySelf": [
+                5,
+                0.1
+            ]
+        }
+    },
+    {
+        "key": "hydral_bond",
+        "level": 2,
+        "effects": {
+            "hydralBond": [
+                20,
+                0.66
+            ],
+            "fierySelf": [
+                10,
+                0.2
+            ]
+        }
+    },
+    {
+        "key": "hydral_bond",
+        "level": 3,
+        "effects": {
+            "hydralBond": [
+                50,
+                1
+            ],
+            "fierySelf": [
+                20,
+                0.3
+            ]
+        }
+    },
+    {
+        "key": "hydral_bond",
+        "level": 4,
+        "effects": {
+            "hydralBond": [
+                100,
+                1
+            ],
+            "fierySelf": [
+                35,
+                0.4
+            ]
+        }
+    },
+    {
+        "key": "hydral_bond",
+        "level": 5,
+        "effects": {
+            "hydralBond": [
+                200,
+                1
+            ],
+            "fierySelf": [
+                50,
+                0.5
+            ]
+        }
+    }
+]
