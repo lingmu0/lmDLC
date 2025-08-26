@@ -1,0 +1,38 @@
+{
+    "replace": true,
+    "hidden": true,
+    "slots": [
+        "double/head_left",
+        "double/head_right",
+        "chestplate",
+        "feet",
+        "helmet",
+        "belt",
+        "bow/stave",
+        "crossbow/stave",
+        "single/head",
+        "single/head",
+        "sword/blade",
+        "staff_of_homa1"
+    ],
+    "materialSlotCount": 1,
+    "materialRevealSlot": 0,
+    "rarity": "temporary",
+    "displayType": "major",
+    "glyph": {
+        "textureX": 72,
+        "textureY": 112
+    },
+    "outcomes": [
+        {
+            "material": {
+                "items": [
+                    "kubejs:whetstone"
+                ]
+            },
+            "improvements": {
+                "shared/air": 0
+            }
+        }
+    ]
+}
