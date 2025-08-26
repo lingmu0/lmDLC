@@ -546,6 +546,17 @@
 			x: 1.0d
 			y: -0.5d
 		}
+		{
+			id: "3B9538A795D3F639"
+			tasks: [{
+				entity: "jerotesvillage:boss_show_entity_second_rounder_golem"
+				id: "77D0153A451AB82B"
+				type: "kill"
+				value: 1L
+			}]
+			x: 6.5d
+			y: 3.5d
+		}
 	]
 	title: "暮色DLC"
 }
