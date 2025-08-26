@@ -324,5 +324,17 @@ let lmtetra_player_you_jian_strategies = {
         }); // 每 1 tick 执行一次
 
     },
+    /**
+     * 蛇之救赎
+     * @param {Internal.ItemClickedEventJS} event 
+     * @param {Internal.Player} player 
+     * @param {*} effectValue 
+     * @param {*} item 
+     * @param {*} originalEffectName 
+     */
+    "hydralBond": function (event, player, effectValue, itemstack, originalEffectName) {
+        let firetime = Math.max(0, player.remainingFireTicks * 0.05)
+        player.tell("剩余燃烧时间："+firetime.toFixed(1)+" s")
+    },
 }
 Object.assign(tetra_player_you_jian_strategies, lmtetra_player_you_jian_strategies)

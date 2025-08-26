@@ -332,6 +332,37 @@ let lmTetraPlayerHurtStrategies = {
         let healAmount = effectValue + player.getMaxHealth() * effectEfficiency * 0.01
         player.heal(healAmount)
     },
+    /**
+     * 自燃
+     * @param {Internal.LivingHurtEvent} event 
+     * @param {Internal.Player} player 
+     * @param {*} effectValue 
+     * @param {*} item 
+     * @param {*} originalEffectName 
+     */
+    "fierySelf": function (event, player, effectValue, itemstack, originalEffectName) {
+        let {entity, amount}= event
+        if(event.source.getType() !== "player" || !player.isOnFire()) return
+        if(Math.random() <= lmGetEffectEfficiency(itemstack, originalEffectName)) {
+            player.remainingFireTicks = player.remainingFireTicks + effectValue * 20
+        }
+    },
+    /**
+     * 蛇之救赎
+     * @param {Internal.LivingHurtEvent} event 
+     * @param {Internal.Player} player 
+     * @param {*} effectValue 
+     * @param {*} item 
+     * @param {*} originalEffectName 
+     */
+    "hydralBond": function (event, player, effectValue, itemstack, originalEffectName) {
+        let {entity, amount}= event
+        if(event.source.getType() !== "player" || !player.isOnFire()) return
+        if(player.isCrouching()) {
+            simpleAttackEntity(true, player, entity, 'attributeslib:fire_damage', player.getAttributeValue('attributeslib:fire_damage') * player.remainingFireTicks * 0.005)
+            player.remainingFireTicks = -20
+        }
+    },
 }
 Object.assign(tetraPlayerAttackStrategies, lmTetraPlayerHurtStrategies);
 

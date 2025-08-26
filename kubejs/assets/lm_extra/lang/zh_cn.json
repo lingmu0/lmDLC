@@ -294,7 +294,7 @@
     "tetra/schematic/shared/hone_hydral_bond.description": "使用炽热的血液强化蛇之救赎的效果",
     "tetra/schematic/shared/hone_hydral_bond.slot1": "精粹",
     "tetra.stats.hydralBond": "蛇之救赎",
-    "tetra.stats.hydralBond.tooltip": "手持工具时受到火焰伤害，有 \u00a7e%s\u00a7r 的概率恢复 \u00a7e%s\u00a7r 点工具耐久度",
+    "tetra.stats.hydralBond.tooltip": "手持工具时受到火焰伤害，有 \u00a7e%s\u00a7r 的概率恢复 \u00a7e%s\u00a7r 点工具耐久度\n右键查看剩余燃烧时间\n潜行攻击消耗所有燃烧时间，造成一段火伤，数值为火焰伤害*燃烧时间/10",
     "tetra.improvement.quenched.name": "熄烬",
     "tetra.improvement.quenched.description": "大大降低触发自燃效果的几率并提供吸血效果",
     "tetra/schematic/shared/hone_quenched.name": "淬炼",
