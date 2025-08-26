@@ -79,6 +79,10 @@
     "tetra.variant.curios/rong_yao_zhi_zheng2/moonworm_queen": "月光蠕虫女王",
     "tetra.variant.curios/rong_yao_zhi_zheng3/moonworm_queen": "月光蠕虫女王",
     "tetra.variant.curios/rong_yao_zhi_zheng4/moonworm_queen": "月光蠕虫女王",
+    "tetra.variant.curios/rong_yao_zhi_zheng1/magic_beans": "魔豆",
+    "tetra.variant.curios/rong_yao_zhi_zheng2/magic_beans": "魔豆",
+    "tetra.variant.curios/rong_yao_zhi_zheng3/magic_beans": "魔豆",
+    "tetra.variant.curios/rong_yao_zhi_zheng4/magic_beans": "魔豆",
 
 
     "tetra.stats.rage_blade": "狂暴",
@@ -136,6 +140,8 @@
     "tetra.stats.weep_blood.tooltip_short": "攻击回复§e %s §r + §e %s%% §r最大生命值的血量，0.5s最多触发一次",
     "tetra.stats.fiery_day": "昼",
     "tetra.stats.fiery_day.tooltip_short": "提高§e %s §r倍火焰伤害",
+    "tetra.stats.magic_beans": "魔豆",
+    "tetra.stats.magic_beans.tooltip_short": "使受到伤害不超过最大生命值的10%%，当攻击目标血量大于100时，造成伤害不超过对方生命值的10%%",
     
 
     "attribute.name.generic.lm_cold_damage": "冰霜伤害",

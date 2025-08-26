@@ -531,6 +531,21 @@
 			x: 2.0d
 			y: -3.5d
 		}
+		{
+			description: [
+				"&b材料种类&r：荣耀之证"
+				"&d可用槽位&r：可用于tetra饰品荣耀之证"
+				"使受到伤害不超过最大生命值的10%，当攻击目标血量大于100时，造成伤害不超过对方生命值的10%"
+			]
+			id: "5F7E6F1A818F94FF"
+			tasks: [{
+				id: "66788E4DF51B318A"
+				item: "twilightforest:magic_beans"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -0.5d
+		}
 	]
 	title: "暮色DLC"
 }

@@ -29,6 +29,7 @@ const newLMMaterials = [
     { material: '', ftb_id: '', effect_name: 'transformation_sapling' ,tags:[]},
     { material: '', ftb_id: '', effect_name: 'fiery_day' ,tags:[]},
     { material: '', ftb_id: '', effect_name: 'weep_blood' ,tags:[]},
+    { material: '', ftb_id: '', effect_name: 'magic_beans' ,tags:[]},
 ];
 newLMMaterials.forEach(material => {
     global.materials.push(material);
