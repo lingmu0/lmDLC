@@ -189,6 +189,12 @@
 			y: 1.5d
 		}
 		{
+			description: [
+				"&b材料种类&r：金属"
+				"&d可用槽位&r：大部分槽位"
+				"用作剑刃、镐头提供50惩戒，对有护甲生物造成额外最多50伤害"
+				"用作斧头提供50穿击，对无护甲生物造成额外最多50伤害"
+			]
 			id: "0AB22DF5BA386F2D"
 			tasks: [{
 				id: "0A88EE22E5ACBAFC"
@@ -356,7 +362,7 @@
 			description: [
 				"&b材料种类&r：木"
 				"&d可用槽位&r：大部分槽位"
-				"减少0.4拉弓耗时，箭矢攻击无视敌方无敌帧"
+				"减少0.3拉弓耗时，箭矢攻击无视敌方无敌帧"
 			]
 			id: "454418C9CF4F675D"
 			tasks: [{
@@ -516,18 +522,33 @@
 			y: -4.5d
 		}
 		{
+			description: ["放入加工台进行改造，提供50冲锋：疾跑时额外造成50点伤害"]
 			id: "48DCB659FCE3F5A3"
-			tasks: [{
-				id: "11BB6047BD479DD4"
-				item: {
-					Count: 1
-					id: "twilightforest:diamond_minotaur_axe"
-					tag: {
-						Damage: 0
+			tasks: [
+				{
+					id: "11BB6047BD479DD4"
+					item: {
+						Count: 1
+						id: "twilightforest:diamond_minotaur_axe"
+						tag: {
+							Damage: 0
+						}
 					}
+					type: "item"
 				}
-				type: "item"
-			}]
+				{
+					id: "56D6FF9891C80BC3"
+					item: {
+						Count: 1
+						id: "twilightforest:gold_minotaur_axe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "米诺陶战斧"
 			x: 2.0d
 			y: -3.5d
 		}
@@ -547,10 +568,11 @@
 			y: -0.5d
 		}
 		{
+			description: ["生成在终焉城堡，伤害非常高，建议佩戴魔豆挑战"]
 			id: "3B9538A795D3F639"
 			tasks: [{
-				entity: "jerotesvillage:boss_show_entity_second_rounder_golem"
-				id: "77D0153A451AB82B"
+				entity: "jerotesvillage:second_rounder_golem"
+				id: "4BD39EC778ED0498"
 				type: "kill"
 				value: 1L
 			}]
@@ -571,6 +593,152 @@
 			}]
 			x: 2.0d
 			y: -0.5d
+		}
+		{
+			id: "2E7298B27AAD67CB"
+			tasks: [{
+				id: "51811BC96DDDA912"
+				item: "lm_extra:white_silk"
+				type: "item"
+			}]
+			x: -5.0d
+			y: -4.5d
+		}
+		{
+			id: "6756304EF0FEC044"
+			tasks: [{
+				id: "66984997F89B0572"
+				item: "lm_extra:black_silk"
+				type: "item"
+			}]
+			x: -6.0d
+			y: -4.5d
+		}
+		{
+			id: "3C040A149A03013E"
+			tasks: [{
+				id: "081A4514E32C0FDA"
+				item: "lm_extra:manbo"
+				type: "item"
+			}]
+			x: -5.0d
+			y: -3.5d
+		}
+		{
+			id: "0C1E42CD11909DA5"
+			tasks: [{
+				id: "241D94AD85B054A3"
+				item: "lm_extra:maodie_breathe_out"
+				type: "item"
+			}]
+			x: -6.0d
+			y: -3.5d
+		}
+		{
+			id: "1AD4C6C02D18E6B0"
+			tasks: [{
+				id: "6759C70E34F6D792"
+				item: "lm_extra:pearlescent_hand_protection"
+				type: "item"
+			}]
+			x: -5.0d
+			y: -2.5d
+		}
+		{
+			id: "77B99B22242EBAE5"
+			tasks: [{
+				id: "29FA0F9CB495C158"
+				item: "lm_extra:color_ingot"
+				type: "item"
+			}]
+			x: -6.0d
+			y: -2.5d
+		}
+		{
+			id: "657264EFE6828473"
+			tasks: [{
+				id: "7830E27338E36BFB"
+				item: "lm_extra:rainbow_gemstone"
+				type: "item"
+			}]
+			x: -7.0d
+			y: -2.5d
+		}
+		{
+			id: "0BACDFD3B5A81DCA"
+			tasks: [{
+				id: "0E29E42163408B1E"
+				item: "lm_extra:rage_blade"
+				type: "item"
+			}]
+			x: -5.0d
+			y: -1.5d
+		}
+		{
+			id: "2D4552C17E10164A"
+			tasks: [{
+				id: "23A712AB19174E81"
+				item: "lm_extra:dominate"
+				type: "item"
+			}]
+			x: -6.0d
+			y: -1.5d
+		}
+		{
+			id: "0B67684722A452CB"
+			tasks: [{
+				id: "51AF105B80D39AAB"
+				item: "lm_extra:nature_heart"
+				type: "item"
+			}]
+			x: -5.0d
+			y: -0.5d
+		}
+		{
+			id: "1BA0F33A98BA6988"
+			tasks: [{
+				id: "58FE498BDB236BB1"
+				item: "lm_extra:gambling"
+				type: "item"
+			}]
+			x: -6.0d
+			y: -0.5d
+		}
+		{
+			id: "1123C29289EDDDAB"
+			tasks: [{
+				id: "13D21983B3F8770F"
+				item: "lm_extra:glory"
+				type: "item"
+			}]
+			x: -5.0d
+			y: 0.5d
+		}
+		{
+			id: "7E6E2892C4B54901"
+			tasks: [{
+				id: "70DD33ACE41AD56F"
+				item: "lm_extra:sacred_sword"
+				type: "item"
+			}]
+			x: -6.0d
+			y: 0.5d
+		}
+		{
+			id: "3CB788AA8BA29F17"
+			tasks: [{
+				id: "20E2DEC1F64AECB6"
+				item: {
+					Count: 1
+					id: "lm_extra:staff_of_homa"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -5.0d
+			y: 1.5d
 		}
 	]
 	title: "暮色DLC"

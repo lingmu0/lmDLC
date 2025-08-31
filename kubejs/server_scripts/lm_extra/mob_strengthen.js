@@ -42,7 +42,8 @@ NativeEvents.onEvent($LivingHurtEvent, (/** @type{Internal.LivingHurtEvent} */ev
     let {source, amount, entity} = event
     if(entity.level.dimension.toString() !== "twilightforest:twilight_forest") return
     let sourceActual = source.actual
-    if((sourceActual && sourceActual.isLiving() && sourceActual.isMonster()) || sourceActual.type === "jerotesvillage:second_rounder_golem") {
+    if(!sourceActual || !sourceActual.isLiving()) return
+    if(sourceActual.isMonster() || sourceActual.type === "jerotesvillage:second_rounder_golem") {
         if(sourceActual.persistentData.contains("owner")) return
         let diffLevelNum = 10
         let diffLevel = difficultLevelDef[diffLevelNum - 1]
