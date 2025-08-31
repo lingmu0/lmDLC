@@ -557,6 +557,21 @@
 			x: 6.5d
 			y: 3.5d
 		}
+		{
+			description: [
+				"&b材料种类：&f杂项"
+				"&d可用槽位：&f镶嵌"
+				"对满血敌人造成10倍伤害"
+			]
+			id: "1CE0AC9B774740DE"
+			tasks: [{
+				id: "7B38606C464A4037"
+				item: "lm_extra:wildly_arrogant"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -0.5d
+		}
 	]
 	title: "暮色DLC"
 }

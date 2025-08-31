@@ -126,7 +126,7 @@ ServerEvents.recipes(event =>{
     // 狂妄
     event.shaped('lm_extra:wildly_arrogant',[
         ['','born_in_chaos_v1:dark_upgrade',''],
-        ['born_in_chaos_v1:armor_plate_from_dark_metal','born_in_chaos_v1:seedof_chaos','born_in_chaos_v1:armor_plate_from_dark_metal'],
+        ['born_in_chaos_v1:armor_plate_from_dark_metal','twilightforest:charm_of_life_1','born_in_chaos_v1:armor_plate_from_dark_metal'],
         ['', 'faded_conquest_2:abyssal_device','']
     ])
 })
