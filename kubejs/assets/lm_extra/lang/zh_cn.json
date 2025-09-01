@@ -172,6 +172,23 @@
     "tetra/schematic/staff_of_homa/hone_refine5.description": "精炼武器，获得强化",
     "tetra/schematic/staff_of_homa/hone_refine5.slot1": "放入护摩之杖",
     "tetra.improvement.staff_of_homa/hone_refine.name": "精炼",
+    "tetra.improvement.armor/shared/naga_speed.name": "横冲直撞",
+    "tetra/schematic/armor/shared/naga_speed1.slot1": "放入钢叶",
+    "tetra/schematic/armor/shared/naga_speed1.name": "横冲直撞 I",
+    "tetra/schematic/armor/shared/naga_speed1.description": "用于强化娜迦速度属性",
+    "tetra/schematic/armor/shared/naga_speed2.slot1": "放入铁木锭",
+    "tetra/schematic/armor/shared/naga_speed2.name": "横冲直撞 II",
+    "tetra/schematic/armor/shared/naga_speed2.description": "用于强化娜迦速度属性",
+    "tetra/schematic/armor/shared/naga_speed3.slot1": "放入迷宫地图核心",
+    "tetra/schematic/armor/shared/naga_speed3.name": "横冲直撞 III",
+    "tetra/schematic/armor/shared/naga_speed3.description": "用于强化娜迦速度属性",
+    "tetra/schematic/armor/shared/naga_speed4.slot1": "放入塔钥匙",
+    "tetra/schematic/armor/shared/naga_speed4.name": "横冲直撞 IV",
+    "tetra/schematic/armor/shared/naga_speed4.description": "用于强化娜迦速度属性",
+    "tetra/schematic/armor/shared/naga_speed5.slot1": "放入保管符咒三",
+    "tetra/schematic/armor/shared/naga_speed5.name": "横冲直撞 V",
+    "tetra/schematic/armor/shared/naga_speed5.description": "用于强化娜迦速度属性",
+
 
     "tetra.slot.staff_of_homa2": "附加",
     "tetra.module.staff_of_homa/staff_of_homa2.material_name": "镶嵌[%s]",
@@ -197,8 +214,8 @@
     "effect.lm_extra.blurring.description": "不受到任何伤害",
     "effect.lm_extra.blurring.desc": "不受到任何伤害",
 
-    "information.lm_extra.staff_of_homa": "放在加工台上可转化为护摩之杖武器类型(类似于剑，但是双镶嵌位，无圆头，无法使用剑刃的某些特殊改造)\n当打磨进度满后，可使用其他护摩之杖进行精炼\n\n精炼I：需要周围半径为5的范围有8个岩浆块，8个熔炉\n精炼II：需要在沙漠群系\n精炼III：需要周围半径为5的范围有1个下届合金巨兽\n精炼IV：需要周围半径为5的范围有2个焰魔\n精炼V：需要在下界基岩层上方，拥有抗火buff，强化时有75%概率失败",
-
+    "information.lm_extra.staff_of_homa": "放在加工台上可转化为护摩之杖武器类型(类似于剑，但是双镶嵌位，无圆头，无法使用剑刃的某些特殊改造)\n当打磨进度满后，可使用其他护摩之杖进行精炼，且更换材料时精炼等级不会重置\n\n精炼I：需要周围半径为5的范围有8个岩浆块，8个熔炉\n精炼II：需要在沙漠群系\n精炼III：需要周围半径为5的范围有1个下届合金巨兽\n精炼IV：需要周围半径为5的范围有2个焰魔\n精炼V：需要在下界基岩层上方，拥有抗火buff，强化时有75%概率失败",
+    "tetra.aspect.naga": "娜迦",
     
     "tetra.material.bronze": "青铜",
     "tetra.material.bronze.prefix": "青铜",
@@ -348,7 +365,7 @@
     "tetra.stats.sapping": "嗜命",
     "tetra.stats.sapping.tooltip": "命中生物会回复§e%s§r点生命值和饱食度，并恢复§e%s§r点饱和度。触发效果时，此物品会损失§e%s%%§r的耐久度.",
     "tetra.stats.twilightBolt": "沉日",
-    "tetra.stats.twilightBolt.tooltip": "\n挥舞时发射出黄昏珍珠，对击中的第一个实体造成\u00a7e6\u00a7r点伤害。触发此效果会使物品消耗\u00a7e%s%%\u00a7r的耐久度，并进入\u00a7e400%%\u00a7r（\u00a7e%s\u00a7r秒）冷却时间.",
+    "tetra.stats.twilightBolt.tooltip": "挥舞时发射出黄昏珍珠，对击中的第一个实体造成\u00a7e6\u00a7r点基础魔法伤害。触发此效果会使物品消耗\u00a7e%s%%\u00a7r的耐久度，并进入\u00a7e400%%\u00a7r（\u00a7e%s\u00a7r秒）冷却时间.\n\n并使玩家造成的魔法伤害提高200%%",
     "tetra.module.bow/tri_stave.name": "三重杖",
     "tetra.module.bow/tri_stave.description": "一种弓的弓身，可在暮色森林中寻找，一次性能射出三支箭.",
     "tetra.module.bow/tri_stave.item_name": "三重弓",

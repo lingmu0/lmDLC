@@ -25,7 +25,7 @@
 				type: "dimension"
 			}]
 			x: -3.5d
-			y: 3.5d
+			y: 5.0d
 		}
 		{
 			description: [
@@ -67,6 +67,8 @@
 				"&b材料种类&r：皮革"
 				"&d可用槽位&r：盔甲内衬"
 				"提供娜迦速度属性，用于搭配娜迦奖杯，每一点属性在激活娜迦冲撞时提升一级娜迦冲锋buff等级"
+				""
+				"当打磨完成后，显示强化横冲直撞，最高五级，可用对应材料强化娜迦速度"
 			]
 			id: "470075E26BA69E3F"
 			tasks: [{
@@ -91,8 +93,8 @@
 				item: "twilightforest:fiery_ingot"
 				type: "item"
 			}]
-			x: 2.0d
-			y: -2.5d
+			x: 3.0d
+			y: -3.5d
 		}
 		{
 			description: [
@@ -125,6 +127,13 @@
 			y: -3.5d
 		}
 		{
+			description: [
+				"&b材料种类&r：权杖"
+				"&d可用槽位&r：暮色核心"
+				"挥舞时发射出黄昏珍珠，对击中的第一个实体造成6点基础魔法伤害。触发此效果会使物品消耗1%的耐久度，并进入1.6秒冷却时间."
+				""
+				"并使玩家造成的魔法伤害提高200%"
+			]
 			id: "0E0A715473E2BA46"
 			tasks: [{
 				id: "56B2198CF4AAF355"
@@ -141,6 +150,11 @@
 			y: -1.5d
 		}
 		{
+			description: [
+				"&b材料种类&r：权杖"
+				"&d可用槽位&r：暮色核心"
+				"命中生物会回复1点生命值和饱食度，并恢复0.2点饱和度。触发效果时，此物品会损失1%的耐久度."
+			]
 			id: "366065E47D10B7BF"
 			tasks: [{
 				id: "76D38E336EE8CB89"
@@ -157,6 +171,12 @@
 			y: -0.5d
 		}
 		{
+			description: [
+				"&b材料种类&r：权杖"
+				"&d可用槽位&r：暮色核心"
+				"击杀生物后会将其复生并使其受使用者控制，复生的生物将在60秒后彻底死亡"
+				"击杀亡灵生物（如僵尸或骷髅）不会触发此效果。触发效果时，此物品会损失5%的耐久度."
+			]
 			id: "01722487B3A40212"
 			tasks: [{
 				id: "79665A251B30BA32"
@@ -173,6 +193,14 @@
 			y: 0.5d
 		}
 		{
+			description: [
+				"&b材料种类&r：权杖"
+				"&d可用槽位&r：暮色核心"
+				"击杀生物会为使用者提供护盾，抵挡下一次受到的伤害"
+				""
+				"护盾最多可叠加4层，每抵挡一次伤害消耗一层。护盾持续12秒，击杀生物刷新持续时间。"
+				"触发效果时，此物品损失5%耐久度."
+			]
 			id: "34F49397061FD754"
 			tasks: [{
 				id: "4C826E898C137DA3"
@@ -202,9 +230,10 @@
 				type: "item"
 			}]
 			x: 3.0d
-			y: -2.5d
+			y: -4.5d
 		}
 		{
+			description: ["放入加工台进行改造"]
 			id: "057570C6A7210AED"
 			tasks: [{
 				id: "1CE3B711B977BB74"
@@ -221,6 +250,7 @@
 			y: -1.5d
 		}
 		{
+			description: ["放入加工台进行改造"]
 			id: "74D4EC8171A7CCBA"
 			tasks: [{
 				id: "4A93B531D368EE1A"
@@ -237,6 +267,7 @@
 			y: -0.5d
 		}
 		{
+			description: ["放入加工台进行改造"]
 			id: "473B7CB385FDBA03"
 			tasks: [{
 				id: "3AF264CA7EB50EA2"
@@ -253,6 +284,7 @@
 			y: 0.5d
 		}
 		{
+			description: ["放入加工台进行改造"]
 			id: "541E0BC6F5FD210F"
 			tasks: [{
 				id: "426E33AE292407E6"
@@ -356,7 +388,7 @@
 				value: 1L
 			}]
 			x: -1.0d
-			y: 3.5d
+			y: 5.0d
 		}
 		{
 			description: [
@@ -385,8 +417,8 @@
 				item: "lm_extra:final_metal_ingot"
 				type: "item"
 			}]
-			x: 4.0d
-			y: -2.5d
+			x: 2.0d
+			y: -5.5d
 		}
 		{
 			description: [
@@ -440,6 +472,7 @@
 			y: -1.5d
 		}
 		{
+			dependencies: ["4D6DF2B64EAE208B"]
 			id: "2AFB8F5C58D7D83E"
 			tasks: [{
 				entity: "twilightforest:lich"
@@ -448,9 +481,11 @@
 				value: 1L
 			}]
 			x: 0.5d
-			y: 3.5d
+			y: 5.0d
 		}
 		{
+			dependencies: ["2AFB8F5C58D7D83E"]
+			description: ["米诺陶能使用新的技能"]
 			id: "701BB972984B380F"
 			tasks: [{
 				entity: "twilightforest:minoshroom"
@@ -462,9 +497,13 @@
 			y: 3.5d
 		}
 		{
+			dependencies: ["701BB972984B380F"]
 			description: [
-				"九头蛇非常抽象，任何附加伤害以及技能都无法对其造成伤害"
+				"九头蛇免疫任何附加伤害以及技能"
+				""
 				"基本上只能靠普通攻击和弓箭进行攻击"
+				""
+				"同时九头蛇能使用新的技能"
 			]
 			id: "114567E8718AC9FE"
 			tasks: [{
@@ -489,7 +528,7 @@
 				type: "checkmark"
 			}]
 			x: -5.5d
-			y: 3.5d
+			y: 5.0d
 		}
 		{
 			description: [
@@ -568,6 +607,11 @@
 			y: -0.5d
 		}
 		{
+			dependencies: [
+				"05C750257CCB7E6D"
+				"407E64899B96EBFF"
+			]
+			dependency_requirement: "one_completed"
 			description: ["生成在终焉城堡，伤害非常高，建议佩戴魔豆挑战"]
 			id: "3B9538A795D3F639"
 			tasks: [{
@@ -577,7 +621,7 @@
 				value: 1L
 			}]
 			x: 6.5d
-			y: 3.5d
+			y: 5.0d
 		}
 		{
 			description: [
@@ -739,6 +783,153 @@
 			}]
 			x: -5.0d
 			y: 1.5d
+		}
+		{
+			description: [
+				"&b材料种类&r：金属"
+				"&d可用槽位&r：大部分槽位"
+				"用制作工具的主要部件时自带抢夺II"
+				""
+				"同时可用于强化横冲直撞I"
+			]
+			id: "2838680D8D3B2D85"
+			tasks: [{
+				id: "3C70FA175593358E"
+				item: "twilightforest:steeleaf_ingot"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -2.5d
+		}
+		{
+			description: [
+				"&b材料种类&r：金属"
+				"&d可用槽位&r：大部分槽位"
+				"用制作工具的主要部件时自带耐久I"
+				""
+				"同时可用于强化横冲直撞II"
+			]
+			id: "2B29464149BC110D"
+			tasks: [{
+				id: "010D038E6B51A732"
+				item: "twilightforest:ironwood_ingot"
+				type: "item"
+			}]
+			x: 3.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["2AFB8F5C58D7D83E"]
+			id: "2FD5931013B2F64A"
+			tasks: [{
+				entity: "twilightforest:knight_phantom"
+				id: "5527DDB8822E2BDC"
+				type: "kill"
+				value: 1L
+			}]
+			x: 2.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["2FD5931013B2F64A"]
+			id: "653FF9B3EC26B41E"
+			tasks: [{
+				entity: "twilightforest:ur_ghast"
+				id: "237B9EA1AAE0EA84"
+				type: "kill"
+				value: 1L
+			}]
+			x: 3.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["2AFB8F5C58D7D83E"]
+			id: "2EF6191B2F3BA8B1"
+			tasks: [{
+				entity: "twilightforest:alpha_yeti"
+				id: "69F08391E7EF6314"
+				type: "kill"
+				value: 1L
+			}]
+			x: 2.0d
+			y: 6.5d
+		}
+		{
+			dependencies: ["2EF6191B2F3BA8B1"]
+			id: "5C44951972AEC7D1"
+			tasks: [{
+				entity: "twilightforest:snow_queen"
+				id: "7C1110C1568EF902"
+				type: "kill"
+				value: 1L
+			}]
+			x: 3.5d
+			y: 6.5d
+		}
+		{
+			dependencies: [
+				"114567E8718AC9FE"
+				"653FF9B3EC26B41E"
+				"5C44951972AEC7D1"
+			]
+			id: "05C750257CCB7E6D"
+			tasks: [{
+				entity: "twilightforest:armored_giant"
+				id: "58BFEAA4390551CB"
+				type: "kill"
+				value: 1L
+			}]
+			x: 5.0d
+			y: 4.0d
+		}
+		{
+			dependencies: [
+				"5C44951972AEC7D1"
+				"653FF9B3EC26B41E"
+				"114567E8718AC9FE"
+			]
+			id: "407E64899B96EBFF"
+			tasks: [{
+				entity: "twilightforest:giant_miner"
+				id: "1DD9C1CC578E09A3"
+				type: "kill"
+				value: 1L
+			}]
+			x: 5.0d
+			y: 6.0d
+		}
+		{
+			description: ["可用于强化横冲直撞III"]
+			id: "3135B89D46EAD22F"
+			tasks: [{
+				id: "752E7BAA918B2E4F"
+				item: "twilightforest:maze_map_focus"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -2.5d
+		}
+		{
+			description: ["可用于强化横冲直撞IV"]
+			id: "07E1FBBFE69FA645"
+			tasks: [{
+				id: "10BD0153818DA1BE"
+				item: "twilightforest:tower_key"
+				type: "item"
+			}]
+			x: 5.0d
+			y: -2.5d
+		}
+		{
+			description: ["可用于强化横冲直撞V"]
+			id: "2A4350A392CAB020"
+			tasks: [{
+				id: "096794C659ED741D"
+				item: "twilightforest:charm_of_keeping_3"
+				type: "item"
+			}]
+			x: 6.0d
+			y: -2.5d
 		}
 	]
 	title: "暮色DLC"

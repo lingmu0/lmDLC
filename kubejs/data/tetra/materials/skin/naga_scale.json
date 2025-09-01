@@ -20,6 +20,9 @@
     "effects": {
         "naga_scale": 1
     },
+    "aspects": {
+        "naga": 1
+    },
     "material": { 
         "items": [ "twilightforest:naga_scale" ] 
     },

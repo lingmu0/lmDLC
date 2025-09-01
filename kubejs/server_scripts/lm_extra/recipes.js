@@ -6,10 +6,10 @@ ServerEvents.recipes(event =>{
     create.sequenced_assembly('lm_extra:white_silk',
         'minecraft:string',
         [
-            create.deploying(incomplete,[incomplete,'protection_pixel:reinforcedfiber']),
+            create.deploying(incomplete,[incomplete,'minecraft:white_dye']),
             create.deploying(incomplete,[incomplete,'biomancy:tough_fibers']),
             create.deploying(incomplete,[incomplete,'biomancy:elastic_fibers']),
-            create.deploying(incomplete,[incomplete,'minecraft:white_dye']),
+            create.deploying(incomplete,[incomplete,'protection_pixel:reinforcedfiber']),
             create.cutting(incomplete,incomplete),
             create.pressing(incomplete,incomplete)
         ]
@@ -21,10 +21,10 @@ ServerEvents.recipes(event =>{
     create.sequenced_assembly('lm_extra:black_silk',
         'minecraft:string',
         [
-            create.deploying(incomplete,[incomplete,'protection_pixel:reinforcedfiber']),
+            create.deploying(incomplete,[incomplete,'minecraft:black_dye']),
             create.deploying(incomplete,[incomplete,'biomancy:tough_fibers']),
             create.deploying(incomplete,[incomplete,'biomancy:elastic_fibers']),
-            create.deploying(incomplete,[incomplete,'minecraft:black_dye']),
+            create.deploying(incomplete,[incomplete,'protection_pixel:reinforcedfiber']),
             create.cutting(incomplete,incomplete),
             create.pressing(incomplete,incomplete)
         ]

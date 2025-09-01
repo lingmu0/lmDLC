@@ -1,0 +1,48 @@
+{
+    "slots": [
+        "helmet_lining",
+        "chestplate_lining",
+        "legging_lining",
+        "feet_lining"
+    ],
+    "materialSlotCount": 1,
+    "hone": true,
+    "rarity": "hone",
+    "displayType": "major",
+    "glyph": {
+        "textureX": 72,
+        "textureY": 112
+    },
+    "requirement": {
+        "type": "tetra:and",
+        "requirements": [
+            {
+                "type": "tetra:not",
+                "requirement": {
+                    "type": "tetra:improvement",
+                    "improvement": "armor/shared/naga_speed"
+                }
+            },
+            {
+                "type": "tetra:aspect",
+                "aspect": "naga"
+            }
+        ]
+    },
+    "outcomes": [
+        {
+            "material": {
+                "items": [
+                    "twilightforest:steeleaf_ingot"
+                ],
+                "count": 5
+            },
+            "requiredTools": {
+                "hammer_dig": 9
+            },
+            "improvements": {
+                "armor/shared/naga_speed": 1
+            }
+        }
+    ]
+}

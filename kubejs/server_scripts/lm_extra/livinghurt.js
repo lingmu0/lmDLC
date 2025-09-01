@@ -363,6 +363,19 @@ let lmTetraPlayerHurtStrategies = {
             player.remainingFireTicks = -20
         }
     },
+    /**
+     * 沉日
+     * @param {Internal.LivingHurtEvent} event 
+     * @param {Internal.Player} player 
+     * @param {*} effectValue 
+     * @param {*} item 
+     * @param {*} originalEffectName 
+     */
+    "twilightBolt": function (event, player, effectValue, itemstack, originalEffectName) {
+        let {entity, amount}= event
+        if(event.source.getType() !== "magic" && event.source.getType() !== "indirectMagic") return
+        event.setAmount(amount*3)
+    },
 }
 Object.assign(tetraPlayerAttackStrategies, lmTetraPlayerHurtStrategies);
 
@@ -377,6 +390,7 @@ playerattack = function(event) {
 function myExtraAttackHandler(/** @type{Internal.LivingHurtEvent} */event){
     let player = event.source.player
     let {entity, amount} = event
+    
     
     let coldDamageAmount = player.getAttributeValue('kubejs:generic.lm_cold_damage')
     let type = event.source.getType()
