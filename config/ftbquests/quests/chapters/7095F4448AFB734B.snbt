@@ -209,6 +209,7 @@
 			y: -3.0d
 		}
 		{
+			dependencies: ["0DE415863C8D336B"]
 			id: "4684C9C078D8F06F"
 			tasks: [{
 				id: "51EFE73718A8E505"
@@ -218,6 +219,18 @@
 			x: 0.0d
 			y: 4.5d
 		}
+		{
+			dependencies: ["4684C9C078D8F06F"]
+			id: "3723BCD9D66691F0"
+			tasks: [{
+				id: "6AC3EC0240CF703A"
+				item: "dungeonnowloading:catalyzed_redstone"
+				type: "item"
+			}]
+			title: "击杀欧洛斯"
+			x: 0.0d
+			y: 6.0d
+		}
 	]
-	title: "暮色前"
+	title: "暮色之外"
 }
