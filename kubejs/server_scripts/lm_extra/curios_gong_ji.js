@@ -2,7 +2,7 @@
 
 let lmCuriosTetraPlayerAttackStrategies = {
     /**
-     * 
+     * 彩虹宝石
      * @param {Internal.LivingHurtEvent} event 
      * @param {Internal.Player} player 
      * @param {*} effectValue 
@@ -30,7 +30,7 @@ let lmCuriosTetraPlayerAttackStrategies = {
         }
     },
     /**
-     * 
+     * 自然之心
      * @param {Internal.LivingHurtEvent} event 
      * @param {Internal.Player} player 
      * @param {*} effectValue 
@@ -44,7 +44,7 @@ let lmCuriosTetraPlayerAttackStrategies = {
         }
     },
     /**
-     * 
+     * 主宰
      * @param {Internal.LivingHurtEvent} event 
      * @param {Internal.Player} player 
      * @param {*} effectValue 
@@ -59,7 +59,7 @@ let lmCuriosTetraPlayerAttackStrategies = {
         }
     },
     /**
-     * 
+     * 月光蠕虫女王
      * @param {Internal.LivingHurtEvent} event 
      * @param {Internal.Player} player 
      * @param {*} effectValue 

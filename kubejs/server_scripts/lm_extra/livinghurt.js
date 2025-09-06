@@ -68,17 +68,11 @@ let lmTetraPlayerHurtStrategies = {
         let criticalStrikeLevel = 0;
         let critMultiplier = 1; // 默认暴击倍率
         
-        // 获取所有效果
-        let effects = getAllEffects(itemstack);
-        for(let effectName of effects) {
-            if(effectName.key === "pearlescent_hand_protection") {
-                hasPearlescentHand = true;
-            }
-            else if(effectName.key === "criticalStrike") {
-                criticalStrikeLevel = simpleGetTetraEffectLevel(itemstack, "criticalStrike");
-                // 获取暴击倍率（假设通过效率值或固定倍率）
-                critMultiplier = itemstack.item.getEffectEfficiency(itemstack, "criticalStrike") || 1.5;
-            }
+        hasPearlescentHand = simpleGetTetraEffectLevel(itemstack, "pearlescent_hand_protection") ?? 0;
+        criticalStrikeLevel = simpleGetTetraEffectLevel(itemstack, "criticalStrike") ?? 0;
+        if(criticalStrikeLevel) {
+            // 获取暴击倍率（假设通过效率值或固定倍率）
+            critMultiplier = Math.max(itemstack.item.getEffectEfficiency(itemstack, "criticalStrike"), 1)
         }
         
         // 仅当暴击率超过100%且满足触发条件时处理
@@ -109,18 +103,17 @@ let lmTetraPlayerHurtStrategies = {
     "manbo": function (event, player, effectValue, itemstack, originalEffectName) {
         let { source}= event
         if(source.getType() !== "player") return
-        let effects = getAllEffects(itemstack);
-        for(let effectName of effects){
-            if(effectName.key == "criticalStrike"){
-                let critEffectValue = simpleGetTetraEffectLevel(itemstack, "criticalStrike");
-                if (player.hasEffect('lm_extra:luck')) {
-                    let amplifier  = player.getEffect('lm_extra:luck').getAmplifier()
-                    player.potionEffects.add('lm_extra:luck', 20 * 5, Math.min(critEffectValue/20 - 1, amplifier + 1));
-                } else {
-                    player.potionEffects.add('lm_extra:luck', 20 * 5, 0);
-                }
+        let critEffectValue = simpleGetTetraEffectLevel(itemstack, "criticalStrike") ?? 0;
+                
+        if(critEffectValue){
+            if (player.hasEffect('lm_extra:luck')) {
+                let amplifier  = player.getEffect('lm_extra:luck').getAmplifier()
+                player.potionEffects.add('lm_extra:luck', 20 * 5, Math.min(critEffectValue/20 - 1, amplifier + 1));
+            } else {
+                player.potionEffects.add('lm_extra:luck', 20 * 5, 0);
             }
-        };
+        }
+        
         player.level.playSound(
             null,
             player.x,
@@ -142,20 +135,18 @@ let lmTetraPlayerHurtStrategies = {
      */
     "pearlescent_hand_protection": function (event, player, effectValue, itemstack, originalEffectName) {
         let {source, amount, entity}= event
-        let effects = getAllEffects(itemstack);
-        for(let effectName of effects){
-            if(effectName.key == "criticalStrike"){
-                let critEffectValue = simpleGetTetraEffectLevel(itemstack, "criticalStrike");
-                let efficiency = itemstack.item.getEffectEfficiency(itemstack, "criticalStrike")
-                if(efficiency < 1) return
-                if(player.getRandom().nextDouble() < critEffectValue/100) {
-                    if(source.getType() === "player") {
-                        critHit(player, entity)
-                    }
-                    event.setAmount(amount * efficiency)
+        let critEffectValue = simpleGetTetraEffectLevel(itemstack, "criticalStrike") ?? 0;
+            
+        if(critEffectValue){
+            let efficiency = itemstack.item.getEffectEfficiency(itemstack, "criticalStrike")
+            if(efficiency < 1) return
+            if(player.getRandom().nextDouble() < critEffectValue/100) {
+                if(source.getType() === "player") {
+                    critHit(player, entity)
                 }
+                event.setAmount(amount * efficiency)
             }
-        };
+        }
     },
     // 赌徒
     "gambling": function (event, player, effectValue, itemstack, originalEffectName) {

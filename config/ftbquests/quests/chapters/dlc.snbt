@@ -3,10 +3,10 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "dlc"
-	group: "147866ECC0F93DF0"
+	group: "51C2B35906538FE8"
 	icon: "twilightforest:twilight_portal_miniature_structure"
 	id: "4B6FEDD595B1A8C4"
-	order_index: 2
+	order_index: 1
 	quest_links: [ ]
 	quests: [
 		{
@@ -473,6 +473,11 @@
 		}
 		{
 			dependencies: ["4D6DF2B64EAE208B"]
+			description: [
+				"巫妖的盾需要使用魔法伤害才能破除"
+				""
+				"可以使用喷溅型治疗药水或者打回巫妖的珍珠"
+			]
 			id: "2AFB8F5C58D7D83E"
 			tasks: [{
 				entity: "twilightforest:lich"
@@ -527,8 +532,8 @@
 				title: "元素反应"
 				type: "checkmark"
 			}]
-			x: -5.5d
-			y: 5.0d
+			x: -3.5d
+			y: 3.5d
 		}
 		{
 			description: [
@@ -612,7 +617,11 @@
 				"407E64899B96EBFF"
 			]
 			dependency_requirement: "one_completed"
-			description: ["生成在终焉城堡，伤害非常高，建议佩戴魔豆挑战"]
+			description: [
+				"生成在终焉城堡，伤害非常高，建议佩戴魔豆挑战"
+				""
+				"自带99%减伤效果，每次受到攻击减少1%的减伤效果，直到0"
+			]
 			id: "3B9538A795D3F639"
 			tasks: [{
 				entity: "jerotesvillage:second_rounder_golem"
@@ -637,152 +646,6 @@
 			}]
 			x: 2.0d
 			y: -0.5d
-		}
-		{
-			id: "2E7298B27AAD67CB"
-			tasks: [{
-				id: "51811BC96DDDA912"
-				item: "lm_extra:white_silk"
-				type: "item"
-			}]
-			x: -5.0d
-			y: -4.5d
-		}
-		{
-			id: "6756304EF0FEC044"
-			tasks: [{
-				id: "66984997F89B0572"
-				item: "lm_extra:black_silk"
-				type: "item"
-			}]
-			x: -6.0d
-			y: -4.5d
-		}
-		{
-			id: "3C040A149A03013E"
-			tasks: [{
-				id: "081A4514E32C0FDA"
-				item: "lm_extra:manbo"
-				type: "item"
-			}]
-			x: -5.0d
-			y: -3.5d
-		}
-		{
-			id: "0C1E42CD11909DA5"
-			tasks: [{
-				id: "241D94AD85B054A3"
-				item: "lm_extra:maodie_breathe_out"
-				type: "item"
-			}]
-			x: -6.0d
-			y: -3.5d
-		}
-		{
-			id: "1AD4C6C02D18E6B0"
-			tasks: [{
-				id: "6759C70E34F6D792"
-				item: "lm_extra:pearlescent_hand_protection"
-				type: "item"
-			}]
-			x: -5.0d
-			y: -2.5d
-		}
-		{
-			id: "77B99B22242EBAE5"
-			tasks: [{
-				id: "29FA0F9CB495C158"
-				item: "lm_extra:color_ingot"
-				type: "item"
-			}]
-			x: -6.0d
-			y: -2.5d
-		}
-		{
-			id: "657264EFE6828473"
-			tasks: [{
-				id: "7830E27338E36BFB"
-				item: "lm_extra:rainbow_gemstone"
-				type: "item"
-			}]
-			x: -7.0d
-			y: -2.5d
-		}
-		{
-			id: "0BACDFD3B5A81DCA"
-			tasks: [{
-				id: "0E29E42163408B1E"
-				item: "lm_extra:rage_blade"
-				type: "item"
-			}]
-			x: -5.0d
-			y: -1.5d
-		}
-		{
-			id: "2D4552C17E10164A"
-			tasks: [{
-				id: "23A712AB19174E81"
-				item: "lm_extra:dominate"
-				type: "item"
-			}]
-			x: -6.0d
-			y: -1.5d
-		}
-		{
-			id: "0B67684722A452CB"
-			tasks: [{
-				id: "51AF105B80D39AAB"
-				item: "lm_extra:nature_heart"
-				type: "item"
-			}]
-			x: -5.0d
-			y: -0.5d
-		}
-		{
-			id: "1BA0F33A98BA6988"
-			tasks: [{
-				id: "58FE498BDB236BB1"
-				item: "lm_extra:gambling"
-				type: "item"
-			}]
-			x: -6.0d
-			y: -0.5d
-		}
-		{
-			id: "1123C29289EDDDAB"
-			tasks: [{
-				id: "13D21983B3F8770F"
-				item: "lm_extra:glory"
-				type: "item"
-			}]
-			x: -5.0d
-			y: 0.5d
-		}
-		{
-			id: "7E6E2892C4B54901"
-			tasks: [{
-				id: "70DD33ACE41AD56F"
-				item: "lm_extra:sacred_sword"
-				type: "item"
-			}]
-			x: -6.0d
-			y: 0.5d
-		}
-		{
-			id: "3CB788AA8BA29F17"
-			tasks: [{
-				id: "20E2DEC1F64AECB6"
-				item: {
-					Count: 1
-					id: "lm_extra:staff_of_homa"
-					tag: {
-						Damage: 0
-					}
-				}
-				type: "item"
-			}]
-			x: -5.0d
-			y: 1.5d
 		}
 		{
 			description: [
@@ -832,6 +695,7 @@
 		}
 		{
 			dependencies: ["2FD5931013B2F64A"]
+			description: ["暮初恶魂刚生成的前5s有着99%减伤"]
 			id: "653FF9B3EC26B41E"
 			tasks: [{
 				entity: "twilightforest:ur_ghast"
@@ -932,5 +796,5 @@
 			y: -2.5d
 		}
 	]
-	title: "暮色DLC"
+	title: "暮色"
 }

@@ -1,0 +1,8 @@
+{
+	chapter_groups: [
+		{ id: "7A0CD336ADC99F10", title: "阶段一" }
+		{ id: "0D7251909E849728", title: "阶段二" }
+		{ id: "147866ECC0F93DF0", title: "阶段三—终末" }
+		{ id: "51C2B35906538FE8", title: "暮色DLC" }
+	]
+}

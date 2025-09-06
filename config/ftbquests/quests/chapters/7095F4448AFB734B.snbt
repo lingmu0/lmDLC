@@ -1,0 +1,223 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "7095F4448AFB734B"
+	group: "51C2B35906538FE8"
+	icon: "dungeonnowloading:chaotic_hexahedron"
+	id: "7095F4448AFB734B"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"该结构生成于二轮世界地表"
+				"{\"text\":\"️ └ \",\"color\":\"#FFFFFF\"               ,\"extra\":[{\"text\":                  \"点我复制结构名\"                  ,          \"color\":          \"#ffe600\"          , \"underlined\": true,\"italic\": true,\"clickEvent\": {\"action\": \"copy_to_clipboard\",                                                                                    \"value\":                \"Temple Of Duality\"         },               \"hoverEvent\": {\"action\": \"show_text\",                                                                                                                                                                                                                                                            \"value\":{\"text\":         \"双生神庙\"             ,     \"color\":\"#ffFFFF\"         }}  }]}"
+			]
+			id: "0DE415863C8D336B"
+			tasks: [{
+				id: "3D34C1F205754A21"
+				structure: "dungeonnowloading:temple_of_duality"
+				type: "structure"
+			}]
+			title: "发现结构双生神庙"
+			x: 0.0d
+			y: 3.0d
+		}
+		{
+			description: [
+				"该结构生成与二轮世界的地下"
+				"{\"text\":\"️ └ \",\"color\":\"#FFFFFF\"               ,\"extra\":[{\"text\":                  \"点我复制结构名\"                  ,          \"color\":          \"#ffe600\"          , \"underlined\": true,\"italic\": true,\"clickEvent\": {\"action\": \"copy_to_clipboard\",                                                                                    \"value\":                \"Labyrinth\"         },               \"hoverEvent\": {\"action\": \"show_text\",                                                                                                                                                                                                                                                            \"value\":{\"text\":         \"迷宫\"             ,     \"color\":\"#ffFFFF\"         }}  }]}"
+			]
+			id: "6563E0E019DEE795"
+			tasks: [{
+				id: "69A2CBB5AD2FCEB4"
+				structure: "dungeonnowloading:labyrinth"
+				type: "structure"
+			}]
+			title: "发现结构迷宫"
+			x: -1.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["6563E0E019DEE795"]
+			description: ["合成混沌颅骨用于激活中心的混沌刷怪笼boss"]
+			id: "47BC5994143DBBDB"
+			tasks: [{
+				id: "757827C64A16914E"
+				item: "dungeonnowloading:skull_of_chaos"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["47BC5994143DBBDB"]
+			id: "0BFEF1B36BBD2A81"
+			tasks: [{
+				id: "38035E946EBDF849"
+				item: "dungeonnowloading:chaotic_hexahedron"
+				type: "item"
+			}]
+			title: "击杀混沌刷怪笼"
+			x: -1.5d
+			y: 6.0d
+		}
+		{
+			id: "3CB788AA8BA29F17"
+			tasks: [{
+				id: "20E2DEC1F64AECB6"
+				item: {
+					Count: 1
+					id: "lm_extra:staff_of_homa"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 0.0d
+			y: 1.0d
+		}
+		{
+			id: "1123C29289EDDDAB"
+			tasks: [{
+				id: "13D21983B3F8770F"
+				item: "lm_extra:glory"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			id: "7E6E2892C4B54901"
+			tasks: [{
+				id: "70DD33ACE41AD56F"
+				item: "lm_extra:sacred_sword"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 0.0d
+		}
+		{
+			id: "1BA0F33A98BA6988"
+			tasks: [{
+				id: "58FE498BDB236BB1"
+				item: "lm_extra:gambling"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -1.0d
+		}
+		{
+			id: "0B67684722A452CB"
+			tasks: [{
+				id: "51AF105B80D39AAB"
+				item: "lm_extra:nature_heart"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -1.0d
+		}
+		{
+			id: "0BACDFD3B5A81DCA"
+			tasks: [{
+				id: "0E29E42163408B1E"
+				item: "lm_extra:rage_blade"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -2.0d
+		}
+		{
+			id: "2D4552C17E10164A"
+			tasks: [{
+				id: "23A712AB19174E81"
+				item: "lm_extra:dominate"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -2.0d
+		}
+		{
+			id: "77B99B22242EBAE5"
+			tasks: [{
+				id: "29FA0F9CB495C158"
+				item: "lm_extra:color_ingot"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -3.0d
+		}
+		{
+			id: "1AD4C6C02D18E6B0"
+			tasks: [{
+				id: "6759C70E34F6D792"
+				item: "lm_extra:pearlescent_hand_protection"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -3.0d
+		}
+		{
+			id: "3C040A149A03013E"
+			tasks: [{
+				id: "081A4514E32C0FDA"
+				item: "lm_extra:manbo"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -4.0d
+		}
+		{
+			id: "0C1E42CD11909DA5"
+			tasks: [{
+				id: "241D94AD85B054A3"
+				item: "lm_extra:maodie_breathe_out"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -4.0d
+		}
+		{
+			id: "6756304EF0FEC044"
+			tasks: [{
+				id: "66984997F89B0572"
+				item: "lm_extra:black_silk"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -5.0d
+		}
+		{
+			id: "2E7298B27AAD67CB"
+			tasks: [{
+				id: "51811BC96DDDA912"
+				item: "lm_extra:white_silk"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -5.0d
+		}
+		{
+			id: "657264EFE6828473"
+			tasks: [{
+				id: "7830E27338E36BFB"
+				item: "lm_extra:rainbow_gemstone"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -3.0d
+		}
+		{
+			id: "4684C9C078D8F06F"
+			tasks: [{
+				id: "51EFE73718A8E505"
+				item: "dungeonnowloading:redstone_idol"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 4.5d
+		}
+	]
+	title: "暮色前"
+}

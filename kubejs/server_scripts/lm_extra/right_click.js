@@ -4,19 +4,6 @@ ItemEvents.rightClicked('lm_extra:glory',event =>{
     let count = player.persistentData.getInt('glory') ?? 0
     if(player.isCrouching()) {
         if(count) {
-            let mainItem = player.getMainHandItem()
-            if (mainItem.item instanceof $ModularItem){
-                let pearlescentLevel = simpleGetTetraEffectLevel(mainItem,"pearlescent_hand_protection")
-                if(pearlescentLevel) {
-                    let critLevel = simpleGetTetraEffectLevel(mainItem,"criticalStrike")
-                    let critEfficiency = lmGetEffectEfficiency(mainItem,"criticalStrike")
-                    if(critEfficiency < 1) return
-                    if(player.getRandom().nextDouble() < critLevel/100) {
-                        count *= critEfficiency
-                    }
-                }
-            }
-
             let entityList = getLivingWithinRadius(player.getLevel(), player.position(), 10)
             // 对范围内的实体造成伤害（排除玩家自己）
             entityList.forEach(entity => {
@@ -35,7 +22,7 @@ ItemEvents.rightClicked('lm_extra:glory',event =>{
     
         }
         else {
-            player.tell(`当前荣耀值为0`)
+            player.tell(`当前荣耀值：0`)
         }
     }
     else {

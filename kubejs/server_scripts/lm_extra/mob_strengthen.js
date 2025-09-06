@@ -33,21 +33,51 @@ EntityEvents.spawned(event => {
     if (diffLevel.toughnessMulti != 0 && entity.attributes.hasAttribute('minecraft:generic.armor_toughness')) {
         entity.setAttributeBaseValue('minecraft:generic.armor_toughness', entity.getAttribute('minecraft:generic.armor_toughness').getValue() * diffLevel.toughnessMulti)
     }
+    
     if (entityName === 'twilightforest:naga') {
         entity.modifyAttribute('generic.movement_speed', 'naga_movement_speed', 1, 'multiply_total')
     }
+    else if (entityName === 'twilightforest:ur_ghast') {
+        entity.persistentData.putInt('damage_reduction', 1)
+        entity.server.scheduleInTicks(100, callback =>{
+            entity.persistentData.remove('damage_reduction')
+        })
+    }
+    else if(entityName === "jerotesvillage:second_rounder_golem") {
+        entity.persistentData.putInt('damage_reduction', 100)
+    }
 })
-
+// 怪物受伤
 NativeEvents.onEvent($LivingHurtEvent, (/** @type{Internal.LivingHurtEvent} */event) =>{
     let {source, amount, entity} = event
-    if(entity.level.dimension.toString() !== "twilightforest:twilight_forest") return
+    let entityName = entity.type
+    if(entityName === 'twilightforest:ur_ghast'&&entity.persistentData.contains('damage_reduction')) {
+        event.setAmount(amount * (1-0.99))
+    }
+    else if(entityName === "jerotesvillage:second_rounder_golem"&&entity.persistentData.contains('damage_reduction')) {
+        let count = entity.persistentData.getInt('damage_reduction') - 1
+        if(count <= 0) entity.persistentData.remove('damage_reduction')
+        event.setAmount(amount * (1-0.01 * count))
+        entity.persistentData.putInt('damage_reduction', count)
+    }
+})
+
+// 怪物攻击
+NativeEvents.onEvent($LivingHurtEvent, (/** @type{Internal.LivingHurtEvent} */event) =>{
+    let {source, amount, entity} = event
     let sourceActual = source.actual
     if(!sourceActual || !sourceActual.isLiving()) return
-    if(sourceActual.isMonster() || sourceActual.type === "jerotesvillage:second_rounder_golem") {
-        if(sourceActual.persistentData.contains("owner")) return
-        let diffLevelNum = 10
-        let diffLevel = difficultLevelDef[diffLevelNum - 1]
-        event.setAmount(amount * diffLevel.attackMulti)
+    let entityName = entity.type
+    if(entity.level.dimension.toString() === "twilightforest:twilight_forest" || entityName.startsWith('dungeonnowloading')){
+        if(sourceActual.isMonster() || sourceActual.type === "jerotesvillage:second_rounder_golem") {
+            if(sourceActual.persistentData.contains("owner")) return
+            let diffLevelNum = 10
+            let diffLevel = difficultLevelDef[diffLevelNum - 1]
+            event.setAmount(amount * diffLevel.attackMulti)
+        }
+        if(entityName === 'twilightforest:snow_queen') {
+    
+        }
     }
 })
 
