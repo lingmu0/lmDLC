@@ -1,7 +1,7 @@
 // priority: 8
 const lmtetraPlayerAttackStrategies = {
     /**
-     * 
+     * 塔木
      * @param {Internal.LivingAttackEvent} event 
      * @param {Internal.Player} player 
      * @param {*} effectValue 
@@ -14,7 +14,7 @@ const lmtetraPlayerAttackStrategies = {
         }
     },
     /**
-     * 
+     * 鬼索的狂暴碎片
      * @param {Internal.LivingAttackEvent} event 
      * @param {Internal.Player} player 
      * @param {*} effectValue 

@@ -16,6 +16,7 @@
     "item.lm_extra.staff_of_homa": "§c护摩之杖",
     "item.lm_extra.polearm_billet": "长柄武器原胚",
     "item.lm_extra.final_metal_ingot": "终焉金属锭",
+    "item.lm_extra.protein_powder": "蛋白粉",
     
     "tetra.material.final_metal_ingot": "终焉金属",
     "tetra.material.final_metal_ingot.prefix": "终焉金属",
@@ -83,6 +84,12 @@
     "tetra.variant.curios/rong_yao_zhi_zheng2/magic_beans": "魔豆",
     "tetra.variant.curios/rong_yao_zhi_zheng3/magic_beans": "魔豆",
     "tetra.variant.curios/rong_yao_zhi_zheng4/magic_beans": "魔豆",
+    "tetra.material.socket_meltdream_crystal_0": "融梦水晶",
+    "tetra.material.socket_meltdream_crystal_0.prefix": "融梦水晶",
+    "tetra.material.socket_nether_star": "下界之心",
+    "tetra.material.socket_nether_star.prefix": "下界之心",
+    "tetra.material.leaves": "树叶",
+    "tetra.material.leaves.prefix": "树叶",
 
 
     "tetra.stats.rage_blade": "狂暴",

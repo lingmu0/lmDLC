@@ -1,9 +1,9 @@
 {
     "key": "final_metal_ingot",
     "category": "metal",
-    "primary": 8.5,
-    "secondary": 2.8,
-    "tertiary": 2,
+    "primary": 25,
+    "secondary": 15,
+    "tertiary": 15,
     "durability": 1000,
     "integrityCost": 1,
     "integrityGain": 8,

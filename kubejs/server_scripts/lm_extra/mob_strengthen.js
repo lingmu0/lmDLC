@@ -67,16 +67,29 @@ NativeEvents.onEvent($LivingHurtEvent, (/** @type{Internal.LivingHurtEvent} */ev
     let {source, amount, entity} = event
     let sourceActual = source.actual
     if(!sourceActual || !sourceActual.isLiving()) return
-    let entityName = entity.type
-    if(entity.level.dimension.toString() === "twilightforest:twilight_forest" || entityName.startsWith('dungeonnowloading')){
+    if(entity.level.dimension.toString() === "twilightforest:twilight_forest" || sourceActual.type.startsWith('dungeonnowloading')){
+        
         if(sourceActual.isMonster() || sourceActual.type === "jerotesvillage:second_rounder_golem") {
             if(sourceActual.persistentData.contains("owner")) return
             let diffLevelNum = 10
             let diffLevel = difficultLevelDef[diffLevelNum - 1]
             event.setAmount(amount * diffLevel.attackMulti)
         }
-        if(entityName === 'twilightforest:snow_queen') {
-    
+        if(sourceActual.type === 'twilightforest:snow_queen') {
+            if(entity.hasEffect('slowness')) {
+                let slowness = entity.getEffect('slowness')
+                let newDuration = slowness.getDuration(); // +10秒
+                if(newDuration > 20*120){
+                    entity.kill()
+                    return
+                }
+                let amplifier = slowness.getAmplifier(); // 保留原有等级
+
+                entity.potionEffects.add('slowness', newDuration  + 20 * 30, amplifier); 
+            } 
+            else{
+                entity.potionEffects.add('slowness', 20*30, 2); 
+            }
         }
     }
 })

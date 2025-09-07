@@ -720,6 +720,7 @@
 		}
 		{
 			dependencies: ["2EF6191B2F3BA8B1"]
+			description: ["每次被冰雪女王下坠攻击会给予30s缓慢IIIbuff，当buff时长大于120s时被下坠攻击到会直接死亡"]
 			id: "5C44951972AEC7D1"
 			tasks: [{
 				entity: "twilightforest:snow_queen"

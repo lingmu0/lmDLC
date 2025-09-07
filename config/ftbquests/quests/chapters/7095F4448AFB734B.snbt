@@ -25,7 +25,7 @@
 		}
 		{
 			description: [
-				"该结构生成与二轮世界的地下"
+				"该结构生成于二轮世界的地下"
 				"{\"text\":\"️ └ \",\"color\":\"#FFFFFF\"               ,\"extra\":[{\"text\":                  \"点我复制结构名\"                  ,          \"color\":          \"#ffe600\"          , \"underlined\": true,\"italic\": true,\"clickEvent\": {\"action\": \"copy_to_clipboard\",                                                                                    \"value\":                \"Labyrinth\"         },               \"hoverEvent\": {\"action\": \"show_text\",                                                                                                                                                                                                                                                            \"value\":{\"text\":         \"迷宫\"             ,     \"color\":\"#ffFFFF\"         }}  }]}"
 			]
 			id: "6563E0E019DEE795"
@@ -63,6 +63,7 @@
 			y: 6.0d
 		}
 		{
+			description: ["放在加工台上可转化为护摩之杖武器类型(类似于剑，但是双镶嵌位，无圆头，无法使用剑刃的某些特殊改造)\\n当打磨进度满后，可使用其他护摩之杖进行精炼，且更换材料时精炼等级不会重置\\n\\n精炼I：需要周围半径为5的范围有8个岩浆块，8个熔炉\\n精炼II：需要在沙漠群系\\n精炼III：需要周围半径为5的范围有1个下届合金巨兽\\n精炼IV：需要周围半径为5的范围有2个焰魔\\n精炼V：需要在下界基岩层上方，拥有抗火buff，强化时有75%概率失败"]
 			id: "3CB788AA8BA29F17"
 			tasks: [{
 				id: "20E2DEC1F64AECB6"
@@ -230,6 +231,24 @@
 			title: "击杀欧洛斯"
 			x: 0.0d
 			y: 6.0d
+		}
+		{
+			description: [
+				"&b材料种类&r：血肉药剂"
+				"&d可用槽位&r：原初温床饰品的注射槽位"
+				""
+				"存在活体酿造台部件时"
+				""
+				"按下技能按键&8(默认x)&r使营养值快速消耗，根据不同的营养阈值给予增伤效果"
+			]
+			id: "51F30CFA6C1BD4DF"
+			tasks: [{
+				id: "67D7D3B55E0BC875"
+				item: "lm_extra:protein_powder"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 1.0d
 		}
 	]
 	title: "暮色之外"
