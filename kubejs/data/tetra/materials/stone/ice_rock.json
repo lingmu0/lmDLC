@@ -1,0 +1,29 @@
+{
+    "key": "ice_rock",
+    "category": "stone",
+    "primary": 15,
+    "secondary": 9,
+    "tertiary": 8,
+    "durability": 180,
+    "integrityCost": 1,
+    "integrityGain": 7,
+    "magicCapacity": 90,
+    "toolLevel": "minecraft:diamond",
+    "toolEfficiency": 4.5,
+    "tints": {
+        "glyph": "28357B",
+        "texture": "28357B"
+    },
+    "textures": [
+        "default"
+    ],
+    "effects": {
+        "lm_cold_damage": 40
+    },
+    "attributes":{
+        "kubejs:generic.lm_cold_damage": 40
+    },
+    "material": {"items": [ "jerotesvillage:ice_rock" ]},
+    "requiredTools": { "hammer_dig": 5}
+    
+}
