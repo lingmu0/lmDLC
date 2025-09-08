@@ -53,7 +53,7 @@ let lmCuriosTetraPlayerAttackStrategies = {
      */
     "dominate": function (event, player, effectValue, item, originalEffectName) {
         let {amount}= event
-        let Multiplier = (player.getMaxHealth() - 20 + player.getAbsorptionAmount()) * 0.04
+        let Multiplier = (player.getMaxHealth() - 20 + player.getAbsorptionAmount()) * 0.02
         if(Multiplier>0) {
             event.setAmount(amount * (1 + Multiplier))
         }
@@ -72,5 +72,26 @@ let lmCuriosTetraPlayerAttackStrategies = {
             entity.potionEffects.add('glowing', 20 * 60, 0)
         }
     },
+    /**
+     * 蛋白粉
+     * @param {Internal.LivingHurtEvent} event 
+     * @param {Internal.Player} player 
+     * @param {*} effectValue 
+     * @param {*} item 
+     * @param {*} originalEffectName 
+     */
+    'protein_powder': function (event, player, effectLevel, originalEffectName) {
+        let {amount}= event
+        let flag = player.persistentData.getInt(originalEffectName) ?? 0;
+        if(flag) {
+            let count = player.persistentData.getInt(YingYangCount)
+            if(count >=90)
+                event.setAmount(amount*4)
+             else if(count >= 50 && count < 90)
+                event.setAmount(amount*2)
+            else if(count >= 0 && count < 50)
+                event.setAmount(amount*1.25)
+        }
+    }
 }
 Object.assign(CuriosTetraPlayerAttackStrategies, lmCuriosTetraPlayerAttackStrategies);

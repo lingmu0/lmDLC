@@ -80,6 +80,7 @@
 			y: 1.0d
 		}
 		{
+			description: ["在背包时每击杀一只怪物，积累一点荣耀值，右键查看当前荣耀值，潜行右键释放，对周围造成等同于荣耀值的普攻伤害"]
 			id: "1123C29289EDDDAB"
 			tasks: [{
 				id: "13D21983B3F8770F"
@@ -90,6 +91,7 @@
 			y: 0.0d
 		}
 		{
+			description: ["使暴击率每超过100%的部分可多次触发额外暴击"]
 			id: "7E6E2892C4B54901"
 			tasks: [{
 				id: "70DD33ACE41AD56F"
@@ -100,6 +102,7 @@
 			y: 0.0d
 		}
 		{
+			description: ["攻击时40%几率造成50%伤害，60%几率造成3倍伤害"]
 			id: "1BA0F33A98BA6988"
 			tasks: [{
 				id: "58FE498BDB236BB1"
@@ -110,6 +113,7 @@
 			y: -1.0d
 		}
 		{
+			description: ["唯一生效，站在草方块上获得20%减伤与30%增伤"]
 			id: "0B67684722A452CB"
 			tasks: [{
 				id: "51AF105B80D39AAB"
@@ -120,6 +124,7 @@
 			y: -1.0d
 		}
 		{
+			description: ["每次攻击给予1级急迫效果，最高5级；当玩家攻速大于5时，普通攻击伤害类型无视无敌帧"]
 			id: "0BACDFD3B5A81DCA"
 			tasks: [{
 				id: "0E29E42163408B1E"
@@ -130,6 +135,7 @@
 			y: -2.0d
 		}
 		{
+			description: ["根据最大生命值与临时生命值提供增伤，超过20点的部分每点提升2%伤害"]
 			id: "2D4552C17E10164A"
 			tasks: [{
 				id: "23A712AB19174E81"
@@ -150,6 +156,7 @@
 			y: -3.0d
 		}
 		{
+			description: ["使所有伤害都能触发暴击，并禁止跳劈暴击"]
 			id: "1AD4C6C02D18E6B0"
 			tasks: [{
 				id: "6759C70E34F6D792"
@@ -160,6 +167,7 @@
 			y: -3.0d
 		}
 		{
+			description: ["普攻时触发曼波效果，强运等级+1（提升10%幸运），最高不超过当前暴击率×5"]
 			id: "3C040A149A03013E"
 			tasks: [{
 				id: "081A4514E32C0FDA"
@@ -170,6 +178,7 @@
 			y: -4.0d
 		}
 		{
+			description: ["攻击时哈气，每次伤害会造成额外1点虚空伤害，单次普攻造成额外伤害次数不高于攻速*2（向上取整）"]
 			id: "0C1E42CD11909DA5"
 			tasks: [{
 				id: "241D94AD85B054A3"
@@ -180,6 +189,7 @@
 			y: -4.0d
 		}
 		{
+			description: ["提供25%暴击，120%暴伤"]
 			id: "6756304EF0FEC044"
 			tasks: [{
 				id: "66984997F89B0572"
@@ -190,6 +200,7 @@
 			y: -5.0d
 		}
 		{
+			description: ["提高1点攻速"]
 			id: "2E7298B27AAD67CB"
 			tasks: [{
 				id: "51811BC96DDDA912"
@@ -200,14 +211,15 @@
 			y: -5.0d
 		}
 		{
+			description: ["普攻时每2.5攻速额外造成伤害分别为1的雷伤、火伤、冰伤、毒伤、法伤、摔落伤害"]
 			id: "657264EFE6828473"
 			tasks: [{
 				id: "7830E27338E36BFB"
 				item: "lm_extra:rainbow_gemstone"
 				type: "item"
 			}]
-			x: -2.0d
-			y: -3.0d
+			x: -1.0d
+			y: 1.0d
 		}
 		{
 			dependencies: ["0DE415863C8D336B"]
@@ -239,7 +251,11 @@
 				""
 				"存在活体酿造台部件时"
 				""
-				"按下技能按键&8(默认x)&r使营养值快速消耗，根据不同的营养阈值给予增伤效果"
+				"按下技能按键&8(默认x)&r使营养值每秒减少5，根据不同的营养阈值给予增伤效果"
+				""
+				"大于90时，300%增伤；"
+				"50-90时，100%增伤；"
+				"0-50时，25%增伤"
 			]
 			id: "51F30CFA6C1BD4DF"
 			tasks: [{
@@ -247,8 +263,39 @@
 				item: "lm_extra:protein_powder"
 				type: "item"
 			}]
-			x: -1.0d
-			y: 1.0d
+			x: 5.0d
+			y: -5.0d
+		}
+		{
+			id: "4F90C292D4042CE8"
+			tasks: [{
+				id: "78DF92E7B63D165E"
+				title: "活体"
+				type: "checkmark"
+			}]
+			title: "活体材料"
+			x: 4.0d
+			y: -5.0d
+		}
+		{
+			id: "69307A437E37450D"
+			tasks: [{
+				id: "596D61AFBAA579AB"
+				title: "一般材料"
+				type: "checkmark"
+			}]
+			x: -2.0d
+			y: -5.0d
+		}
+		{
+			id: "6BC2F0FE37C306DE"
+			tasks: [{
+				id: "7F0AAC78C3D10D97"
+				item: "lm_extra:delicious_potato"
+				type: "item"
+			}]
+			x: 6.0d
+			y: -5.0d
 		}
 	]
 	title: "暮色之外"

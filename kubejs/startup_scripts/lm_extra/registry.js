@@ -17,6 +17,12 @@ StartupEvents.registry('item', event => {
     event.create("lm_extra:protein_powder", "basic")
     event.create("lm_extra:final_metal_ingot", "basic")
         .fireResistant()
+
+    event.create("lm_extra:delicious_potato")
+        .food(foodBuilder =>{
+            foodBuilder.hunger(6)
+            foodBuilder.saturation(2)
+        })
         
 
     event.create("lm_extra:staff_of_homa","sword")

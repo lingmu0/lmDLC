@@ -10,8 +10,8 @@ JEIEvents.information(event =>{
     event.addItem('lm_extra:pearlescent_hand_protection', Text.black("(镶嵌材料) 使所有伤害都能触发暴击，并禁止跳劈暴击"));
     event.addItem('lm_extra:sacred_sword', Text.black("(剑刃材料) 使暴击率每超过100%的部分可多次触发额外暴击"));
     event.addItem('lm_extra:manbo', Text.black("(头颅材料) 普攻时触发曼波效果，强运等级+1（提升10%幸运），最高不超过当前暴击率×5"));
-    event.addItem('lm_extra:dominate', Text.black("(灾变之心强化) 根据最大生命值与临时生命值提供增伤，超过20点的部分每点提升4%伤害"));
-    event.addItem('lm_extra:gambling', Text.black("(镶嵌材料) 攻击时40%几率造成50%伤害，60%几率造成4倍伤害"));
+    event.addItem('lm_extra:dominate', Text.black("(灾变之心强化) 根据最大生命值与临时生命值提供增伤，超过20点的部分每点提升2%伤害"));
+    event.addItem('lm_extra:gambling', Text.black("(镶嵌材料) 攻击时40%几率造成50%伤害，60%几率造成3倍伤害"));
     event.addItem('lm_extra:wildly_arrogant', Text.black("(镶嵌材料) 对满血生物造成10倍伤害"));
     event.addItem('lm_extra:polearm_billet', Text.black("杀死灾变怪物有5%的概率掉落"));
 

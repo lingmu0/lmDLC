@@ -154,7 +154,7 @@ let lmTetraPlayerHurtStrategies = {
         if(player.getRandom().nextDouble() < 0.4) {
             event.setAmount(amount * 0.5)
         }else {
-            event.setAmount(amount * 4)
+            event.setAmount(amount * 3)
         }
     },
     // 狂妄
