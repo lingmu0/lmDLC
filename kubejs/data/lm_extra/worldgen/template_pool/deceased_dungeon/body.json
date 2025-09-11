@@ -1,0 +1,16 @@
+{
+  "name": "lm_extra:deceased_dungeon/body",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 1,
+      "element": {
+        "location": "lm_extra:deceased_dungeon/body",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element",
+        "terrain_adjustment": "bury"
+      }
+    }
+  ]
+}

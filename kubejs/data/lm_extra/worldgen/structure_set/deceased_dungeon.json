@@ -1,0 +1,14 @@
+{
+    "structures": [
+    {
+        "structure": "lm_extra:deceased_dungeon",
+        "weight": 1
+    }
+    ],
+    "placement": {
+        "salt": 2134538,
+        "spacing": 85,
+        "separation": 50,
+        "type": "minecraft:random_spread"
+    }
+}

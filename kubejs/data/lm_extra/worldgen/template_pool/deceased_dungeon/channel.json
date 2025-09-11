@@ -1,0 +1,16 @@
+{
+  "name": "lm_extra:deceased_dungeon/channel",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 1,
+      "element": {
+        "location": "lm_extra:deceased_dungeon/channel",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element",
+        "terrain_adjustment": "none"
+      }
+    }
+  ]
+}

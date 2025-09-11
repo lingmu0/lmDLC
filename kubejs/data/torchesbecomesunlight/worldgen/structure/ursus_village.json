@@ -1,0 +1,7 @@
+{
+  "type": "torchesbecomesunlight:ursus_village",
+  "biomes": "jerotesvillage:bitter_cold",
+  "step": "surface_structures",
+  "terrain_adaptation": "beard_thin",
+  "spawn_overrides": {}
+}

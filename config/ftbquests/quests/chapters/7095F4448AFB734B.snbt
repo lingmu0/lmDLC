@@ -298,7 +298,11 @@
 			y: -5.0d
 		}
 		{
-			description: ["提供40冰霜伤害"]
+			description: [
+				"&b材料种类&r：石"
+				"&d可用槽位&r：剑刃、锹头、矛头"
+				"攻击附加自身攻击力百分之50的虚空伤害提供40冰霜伤害"
+			]
 			id: "0C73C2A53C9FABF2"
 			tasks: [{
 				id: "389D78EADF0B0F9E"
@@ -307,6 +311,26 @@
 			}]
 			x: 1.0d
 			y: -5.0d
+		}
+		{
+			id: "33FD197636E82244"
+			tasks: [{
+				id: "079D559C30795D03"
+				structure: "torchesbecomesunlight:sankta_statue"
+				type: "structure"
+			}]
+			x: 1.5d
+			y: 3.0d
+		}
+		{
+			id: "6F8CE6FFBDDF32DC"
+			tasks: [{
+				id: "1517591303594CD5"
+				structure: "torchesbecomesunlight:rhode_island_office"
+				type: "structure"
+			}]
+			x: 3.0d
+			y: 3.0d
 		}
 	]
 	title: "暮色之外"

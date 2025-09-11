@@ -3636,8 +3636,6 @@ config/terrablender.toml
 config/tetra.toml
 config/tetratic_combat_expanded-common.toml
 config/tips.json
-config/torchesbecomesunlight-client.toml
-config/torchesbecomesunlight-common.toml
 config/touhou_little_maid-common.toml
 config/transmog.json
 config/trashslot-common.toml
@@ -3838,7 +3836,7 @@ config/incontrol/rightclicks.json
 config/incontrol/spawn.json
 config/incontrol/spawner.json
 config/incontrol/summonaid.json
-config/inventoryprofilesnext/inventoryprofiles.json
+config/inventoryprofilesnext/
 config/inventoryprofilesnext/villager-trading-config.json
 config/inventoryprofilesnext/integrationHints/exampleIntegrationHints.json
 config/inventoryprofilesnext/maoxian/prev-villager-trading-config.json
@@ -4169,3 +4167,12 @@ mods/Xaeros_Minimap_25.2.10_Forge_1.20.jar
 mods/xaeros_waystones_compability-1.0.jar
 mods/xlpackets-1.18.2-2.1.jar
 lmDLC-1.json
+config/torchesbecomesunlight-client.toml
+mods/\[实体渲染机制优化] entityculling-forge-1.8.2-mc1.20.1.jar
+config/bbb.json
+config/better_structure_block-common.toml
+config/midnightlib.json
+config/inventoryprofilesnext/cund/villager-trading-config.json
+screenshots/
+mods/liolib-forge-1.20.1-0.0.2.jar.disabled
+config/terra_entity/attribute_config.json

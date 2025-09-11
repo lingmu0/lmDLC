@@ -1,0 +1,7 @@
+{
+  "type": "torchesbecomesunlight:sankta_statue",
+  "biomes": ["jerotesvillage:bitter_cold", "jerotesvillage:bright_grassland"],
+  "terrain_adaptation": "none",
+  "step": "surface_structures",
+  "spawn_overrides": {}
+}
