@@ -414,3 +414,14 @@ function myExtraAttackHandler(/** @type{Internal.LivingHurtEvent} */event){
         }
     }
 }
+
+NativeEvents.onEvent($LivingHurtEvent, (/** @type{Internal.LivingHurtEvent} */event) => {
+    let player = event.source.player
+    let entity = event.entity
+    if(entity && entity.isLiving()) {
+        if(event.source.getType() === "dungeonnowloading.spike"){
+            event.amount *= 5
+        }
+    }
+
+});

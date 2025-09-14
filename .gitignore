@@ -1228,7 +1228,6 @@ kubejs/data/tetra/modules/single/light_handle.json
 kubejs/data/tetra/modules/single/long_handle.json
 kubejs/data/tetra/modules/single/scythe.json
 kubejs/data/tetra/modules/single/trident.json
-kubejs/data/tetra/modules/sword/basic_blade.json
 kubejs/data/tetra/modules/sword/bastard_blade.json
 kubejs/data/tetra/modules/sword/dream_aurorian_blade.json
 kubejs/data/tetra/modules/sword/executioner_blade.json
@@ -1239,7 +1238,6 @@ kubejs/data/tetra/modules/sword/huo_ti_jian_ren.json
 kubejs/data/tetra/modules/sword/jingguan.json
 kubejs/data/tetra/modules/sword/kaipi_kongjian.json
 kubejs/data/tetra/modules/sword/rapier_blade.json
-kubejs/data/tetra/modules/sword/reinforced_fuller.json
 kubejs/data/tetra/modules/sword/saber_blade.json
 kubejs/data/tetra/modules/sword/short_blade.json
 kubejs/data/tetra/modules/sword/tonal_blade.json
@@ -1542,7 +1540,6 @@ kubejs/data/tetra/schematics/sword/heavy_blade.json
 kubejs/data/tetra/schematics/sword/huo_ti_jian_ren.json
 kubejs/data/tetra/schematics/sword/jingguan.json
 kubejs/data/tetra/schematics/sword/kobole.json
-kubejs/data/tetra/schematics/sword/reinforced_fuller.json
 kubejs/data/tetra/schematics/sword/tonal_blade.json
 kubejs/data/tetra/schematics/sword/basic_blade/lei_1.json
 kubejs/data/tetra/schematics/sword/basic_blade/lei_2.json
@@ -4175,4 +4172,22 @@ config/midnightlib.json
 config/inventoryprofilesnext/cund/villager-trading-config.json
 screenshots/
 mods/liolib-forge-1.20.1-0.0.2.jar.disabled
+mods/better_structure_block-forge1.20.1-2.0.2.jar
 config/terra_entity/attribute_config.json
+kubejs/data/tetra/modules/sword/basic_blade.json
+kubejs/data/tetra/schematics/sword/reinforced_fuller.json
+kubejs/data/tetra/modules/sword/reinforced_fuller.json
+kubejs/data/tetra/modules/double/butt.json
+config/goety_revelation.toml
+config/ending_library/ending_library-common.toml
+config/goety/goety-attributes.toml
+config/goety/goety-spells.toml
+config/goety/goety-brews.toml
+config/goety/goety-items.toml
+config/goety/goety-mobs.toml
+config/goety/goety.toml
+config/revelationfix/revelationfix-block.toml
+config/revelationfix/revelationfix-client.toml
+config/revelationfix/revelationfix-common.toml
+config/revelationfix/revelationfix-item.toml
+config/revelationfix/revelationfix-modpack-common.toml

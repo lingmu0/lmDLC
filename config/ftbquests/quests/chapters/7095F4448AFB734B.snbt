@@ -5,7 +5,7 @@
 	group: "51C2B35906538FE8"
 	icon: "dungeonnowloading:chaotic_hexahedron"
 	id: "7095F4448AFB734B"
-	order_index: 0
+	order_index: 1
 	quest_links: [ ]
 	quests: [
 		{
@@ -330,6 +330,16 @@
 				type: "structure"
 			}]
 			x: 3.0d
+			y: 3.0d
+		}
+		{
+			id: "7EE2E005DB1D144D"
+			tasks: [{
+				id: "731206B6B98342AA"
+				structure: "lm_extra:deceased_dungeon"
+				type: "structure"
+			}]
+			x: 4.5d
 			y: 3.0d
 		}
 	]

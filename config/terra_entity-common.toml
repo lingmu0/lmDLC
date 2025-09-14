@@ -22,10 +22,10 @@
 	boss_clear_when_no_target = true
 	#Multiplier for boss attributes health.
 	#Range: 0.0625 ~ 10.0
-	boss_attributes_multiplier_health = 0.5
+	boss_attributes_multiplier_health = 1.0
 	#Multiplier for boss attributes damage.
 	#Range: 0.0625 ~ 10.0
-	boss_attributes_multiplier_damage = 0.5
+	boss_attributes_multiplier_damage = 1.0
 	#Should the boss have no physics? Only for some bosses.
 	boss_no_physics = true
 	#Should the boss leave on day? Only for some bosses.
@@ -35,13 +35,13 @@
 	enhance_all_monster = false
 	#Multiplier for monster attributes health.
 	#Range: 0.0625 ~ 100.0
-	monster_attributes_multiplier_health = 0.5
+	monster_attributes_multiplier_health = 1.0
 	#Multiplier for monster attributes damage.
 	#Range: 0.0625 ~ 100.0
-	monster_attributes_multiplier_damage = 0.5
+	monster_attributes_multiplier_damage = 1.0
 	#Should the built-in attributes setting be disabled for monsters?
 	#For kjs modify
-	disable_builtin_health_attack_modifier = true
+	disable_builtin_health_attack_modifier = false
 	#Should monsters spawn without light?
 	spawn_without_light = false
 	#Chance to spawn slime on zombie head.

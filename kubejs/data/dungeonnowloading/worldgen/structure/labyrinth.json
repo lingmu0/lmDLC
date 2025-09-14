@@ -1,6 +1,14 @@
 {
   "type": "dungeonnowloading:generic_jigsaw_structure",
-  "biomes": ["jerotesvillage:damaged_ruins", "jerotesvillage:bright_grassland"],
+  "biomes": [
+    "jerotesvillage:damaged_ruins", 
+    "jerotesvillage:bitter_cold",
+    "jerotesvillage:purple_desert",
+    "jerotesvillage:drought_fire",
+    "jerotesvillage:harmonious_wonderland",
+    "jerotesvillage:sand_beach",
+    "jerotesvillage:wilderness_woodland"
+  ],
   "step": "surface_structures",
   "spawn_overrides": {
     "monster": {

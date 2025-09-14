@@ -29,3 +29,44 @@ ItemEvents.rightClicked('lm_extra:glory',event =>{
         player.tell(`当前荣耀值：${count}`)
     }
 })
+
+BlockEvents.rightClicked(event => {
+    let { player, level, block, hand } = event;
+    // 只处理主手
+    if (hand != "MAIN_HAND") return;
+
+    summonSkeletron(level, block, hand)
+    summonHadeanEnforcer(level, block, hand)
+});
+
+function summonHadeanEnforcer(level, block, hand) {
+    // 配置
+    let prefix = "bbb:red_nether_brick_layer"; // 方块 ID 前缀
+    let requiredCount = 4;         // 需要的数量
+
+    let startId = block.id.toString();
+    if (!startId.startsWith(prefix)) return;
+
+
+    let total = lmsearchBlocks(block.pos, prefix, requiredCount, level);
+
+    if (total >= requiredCount) {
+        level.runCommandSilent(`summon hadean_breathe:hadean_enforcer ${block.pos.x} ${block.pos.y+1} ${block.pos.z}`)
+    } 
+}
+
+function summonSkeletron(level, block, hand) {
+    // 配置
+    let prefix = "realmrpg_skeletons"; // 方块 ID 前缀
+    let requiredCount = 6;         // 需要的数量
+
+    let startId = block.id.toString();
+    if (!startId.startsWith(prefix)) return;
+
+
+    let total = lmsearchBlocks(block.pos, prefix, requiredCount, level);
+
+    if (total >= requiredCount) {
+        level.runCommandSilent(`summon terra_entity:skeletron ${block.pos.x} ${block.pos.y+1} ${block.pos.z}`)
+    } 
+}

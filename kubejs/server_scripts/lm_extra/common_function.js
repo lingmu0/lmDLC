@@ -253,6 +253,66 @@ function lmdrawSingleRandomSlashLineWithOffset(entity, particleType, angleOffset
 }
 
 /**
+ * DFS / BFS 搜索
+ * @param {BlockPos} startPos 起始方块位置
+ * @param {String} prefix 方块前缀
+ * @param {number} requiredCount 所需数量
+ * @param {Internal.Level} level
+ * @returns 
+ */
+function lmsearchBlocks(startPos, prefix, requiredCount, level) {
+    let visited = new Set(); // 记录访问过的方块
+    let stack = [startPos];  // 用栈 DFS，换成队列就是 BFS
+
+    let found = 0;
+
+    while (stack.length > 0 && found < requiredCount) {
+        let current = stack.pop();
+        let key = `${current.x},${current.y},${current.z}`;
+        if (visited.has(key)) continue;
+        visited.add(key);
+
+        let blockId = level.getBlock(current).id.toString();
+        if (!blockId.startsWith(prefix)) continue;
+
+        found++;
+
+        // 相邻 6 个方向
+        let offsets = [
+            [ 1, 0, 0],
+            [-1, 0, 0],
+            [ 0, 1, 0],
+            [ 0,-1, 0],
+            [ 0, 0, 1],
+            [ 0, 0,-1]
+        ];
+
+        for (let [dx, dy, dz] of offsets) {
+            let newPos = current.offset(dx, dy, dz);
+            let newKey = `${newPos.x},${newPos.y},${newPos.z}`;
+            if (!visited.has(newKey)) {
+                stack.push(newPos);
+            }
+        }
+    }
+
+    return found;
+}
+/**
+ * 
+ * @param {Internal.Level} level 
+ * @param {String} entityid 
+ * @param {number} x
+ * @param {number} y
+ * @param {number} z
+ */
+function lmsummonCreature(level, entityid, x, y, z) {
+        let entity = level.createEntity(entityid)
+        entity.setPosition(x, y, z)
+        entity.spawn()
+}
+
+/**
  * 暴击特效
  * @param {Internal.Player} player 
  * @param {Internal.Entity} entity 
