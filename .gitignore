@@ -3397,7 +3397,7 @@ local/kubejs/event_groups/PlayerEvents/loggedOut.md
 local/kubejs/event_groups/PlayerEvents/respawned.md
 local/kubejs/event_groups/PlayerEvents/tick.md
 local/kubejs/event_groups/ProbeJSEvents/fileSaved.md
-local/kubejs/event_groups/ProbeJSEvents/generateDoc.md
+local/kubejs/
 local/kubejs/event_groups/ServerEvents/afterRecipes.md
 local/kubejs/event_groups/ServerEvents/blockLootTables.md
 local/kubejs/event_groups/ServerEvents/chestLootTables.md
@@ -4188,3 +4188,4 @@ config/revelationfix/revelationfix-block.toml
 config/revelationfix/revelationfix-client.toml
 config/revelationfix/revelationfix-item.toml
 config/revelationfix/revelationfix-modpack-common.toml
+kubejs/server_scripts/lm_extra/others_event.js

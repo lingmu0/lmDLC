@@ -9,6 +9,7 @@ let $LMModEntities = Java.loadClass('com.github.L_Ender.cataclysm.init.ModEntiti
 let $BuiltInRegistries = Java.loadClass('net.minecraft.core.registries.BuiltInRegistries')
 let $LMMobEffectEvent$Applicable = Java.loadClass('net.minecraftforge.event.entity.living.MobEffectEvent$Applicable')
 let $LMMobEffectEvent$Remove = Java.loadClass('net.minecraftforge.event.entity.living.MobEffectEvent$Remove')  
+let lmeffectRegistry = Utils.lazy(() => Utils.getServer().registryAccess().registryOrThrow($Registries.MOB_EFFECT))
 
 
 const difficultLevelDef = [

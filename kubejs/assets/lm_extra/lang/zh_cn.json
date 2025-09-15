@@ -141,7 +141,7 @@
     "tetra.stats.naga_scale": "娜迦速度【盔甲】",
     "tetra.stats.naga_scale.tooltip_short": "提供娜迦速度属性，用于搭配娜迦奖杯，每一点属性在激活娜迦冲撞时提升一级娜迦冲锋buff等级",
     "tetra.stats.protein_powder": "蛋白粉",
-    "tetra.stats.protein_powder.tooltip_short": "存在活体酿造台部件时\n按下技能按键&8(默认x)&r使营养值每秒减少5，根据不同的营养阈值给予增伤效果\n大于90时，300%%增伤；\n50-90时，100%%增伤；\n0-50时，25%%增伤",
+    "tetra.stats.protein_powder.tooltip_short": "存在活体酿造台部件时\n按下技能按键(默认x)使营养值每秒减少5，根据不同的营养阈值给予增伤效果\n大于90时，300%%增伤；\n50-90时，100%%增伤；\n0-50时，25%%增伤",
 
 
     "tetra.stats.charm_of_keeping_2": "强化+3",
@@ -158,6 +158,8 @@
     "tetra.stats.fiery_day.tooltip_short": "提高§e %s §r倍火焰伤害",
     "tetra.stats.magic_beans": "魔豆",
     "tetra.stats.magic_beans.tooltip_short": "使受到伤害不超过最大生命值的10%%，当攻击目标血量大于100时，造成伤害不超过对方生命值的10%%",
+    "tetra.stats.steroid": "类固醇",
+    "tetra.stats.steroid.tooltip_short": "按下技能按键(默认x)获得15s激素buff,CD30s",
     
 
     "attribute.name.generic.lm_cold_damage": "冰霜伤害",
@@ -236,8 +238,8 @@
     "effect.lm_extra.forbid_heal": "禁疗",
     "effect.lm_extra.forbid_heal.description": "每级减少10%治疗效果",
     "effect.lm_extra.steroid": "激素",
-    "effect.lm_extra.steroid.description": "提供大量增益效果，效果结束时获得debuff",
-    "effect.lm_extra.steroid.desc": "提供大量增益效果，效果结束时获得debuff",
+    "effect.lm_extra.steroid.description": "使造成伤害翻倍，受到伤害减半，效果结束时获得debuff",
+    "effect.lm_extra.steroid.desc": "使造成伤害翻倍，受到伤害减半，效果结束时获得debuff",
 
     "information.lm_extra.staff_of_homa": "放在加工台上可转化为护摩之杖武器类型(类似于剑，但是双镶嵌位，无圆头，无法使用剑刃的某些特殊改造)\n当打磨进度满后，可使用其他护摩之杖进行精炼，且更换材料时精炼等级不会重置\n\n精炼I：需要周围半径为5的范围有8个岩浆块，8个熔炉\n精炼II：需要在沙漠群系\n精炼III：需要周围半径为5的范围有1个下届合金巨兽\n精炼IV：需要周围半径为5的范围有2个焰魔\n精炼V：需要在下界基岩层上方，拥有抗火buff，强化时有75%概率失败",
     "tetra.aspect.naga": "娜迦",

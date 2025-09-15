@@ -372,16 +372,24 @@ Object.assign(tetraPlayerAttackStrategies, lmTetraPlayerHurtStrategies);
 
 
 let oldPlayerAttack = playerattack;
+let oldPlayerHurt = playerhurt
 
 playerattack = function(event) {
-    myExtraAttackHandler(event); // 新逻辑
     oldPlayerAttack(event);   // 原逻辑
+    myExtraAttackHandler(event); // 新逻辑
+}
+
+playerhurt = function(event) {
+    myExtraHurtHandler(event)
+    oldPlayerHurt(event) 
 }
 
 function myExtraAttackHandler(/** @type{Internal.LivingHurtEvent} */event){
     let player = event.source.player
     let {entity, amount} = event
-    
+    if(player.hasEffect("lm_extra:steroid")) {
+        event.setAmount(amount * 2)
+    }
     
     let coldDamageAmount = player.getAttributeValue('kubejs:generic.lm_cold_damage')
     let type = event.source.getType()
@@ -415,6 +423,14 @@ function myExtraAttackHandler(/** @type{Internal.LivingHurtEvent} */event){
     }
 }
 
+function myExtraHurtHandler(/** @type{Internal.LivingHurtEvent} */event) {
+    let entity = event.entity
+    let { amount} = event
+    if(entity.hasEffect("lm_extra:steroid")) {
+        event.setAmount(amount * 0.5)
+    }
+}
+
 NativeEvents.onEvent($LivingHurtEvent, (/** @type{Internal.LivingHurtEvent} */event) => {
     let player = event.source.player
     let entity = event.entity
@@ -423,5 +439,4 @@ NativeEvents.onEvent($LivingHurtEvent, (/** @type{Internal.LivingHurtEvent} */ev
             event.amount *= 5
         }
     }
-
 });

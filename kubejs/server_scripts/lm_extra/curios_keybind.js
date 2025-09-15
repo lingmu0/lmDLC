@@ -14,7 +14,18 @@ const lmcurios_tetra_keybind_Strategies = {
                 player.tell('停止注射蛋白粉')
             }
         }
-    }
+    },
+    // 类固醇
+    'steroid': function (event, player, effectLevel, originalEffectName) {
+        let time = player.persistentData.getInt(originalEffectName) ?? 0
+        let CD = Math.abs(player.age - time)
+        if (CD < 20 * 30){
+            player.tell("嗑药还在冷却中")
+            return
+        } 
+        player.persistentData.putInt(originalEffectName, player.age)
+        player.potionEffects.add('lm_extra:steroid', 20 * 15, 0)
+    },
 }
 
 Object.assign(curios_tetra_keybind_Strategies, lmcurios_tetra_keybind_Strategies)

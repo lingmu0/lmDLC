@@ -2,7 +2,7 @@
 
 let lmcuriostetraplayerhurtStrategies = {
     /**
-     * 
+     * 自然之心
      * @param {Internal.LivingHurtEvent} event 
      * @param {Internal.Player} player 
      * @param {*} effectValue 
@@ -16,7 +16,7 @@ let lmcuriostetraplayerhurtStrategies = {
         }
     },
     /**
-     * 
+     * 月光蠕虫女王
      * @param {Internal.LivingHurtEvent} event 
      * @param {Internal.Player} player 
      * @param {*} effectValue 
