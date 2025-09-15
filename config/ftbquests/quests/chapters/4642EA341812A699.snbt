@@ -442,6 +442,38 @@
 			x: 1.5d
 			y: 5.0d
 		}
+		{
+			id: "318601E8124CACA6"
+			tasks: [{
+				id: "170D3E6ED04F9667"
+				item: {
+					Count: 1
+					id: "patchouli:guide_book"
+					tag: {
+						"patchouli:book": "goety:black_book"
+					}
+				}
+				type: "item"
+			}]
+			x: -0.5d
+			y: 7.0d
+		}
+		{
+			id: "081C8BFC3E6EADB7"
+			tasks: [{
+				id: "605E52DF719357C9"
+				item: {
+					Count: 1
+					id: "patchouli:guide_book"
+					tag: {
+						"patchouli:book": "goety:witches_brew"
+					}
+				}
+				type: "item"
+			}]
+			x: 0.5d
+			y: 7.0d
+		}
 	]
 	title: "诡厄巫法"
 }

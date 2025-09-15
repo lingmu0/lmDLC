@@ -23,7 +23,7 @@ NativeEvents.onEvent($LMMobEffectEvent$Remove, (/** @type{Internal.MobEffectEven
     if(effectName == "lm_extra:steroid") {
         entity.server.scheduleInTicks(1, callback =>{
             entity.potionEffects.add('slowness', 20 * 15, 3)
-            entity.potionEffects.add('weakness', 20 * 15, 9)
+            entity.potionEffects.add('weakness', 20 * 15, 24)
             entity.potionEffects.add('nausea', 20 * 15, 0)
         })
     }

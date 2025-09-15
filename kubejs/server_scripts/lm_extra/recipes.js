@@ -47,6 +47,21 @@ ServerEvents.recipes(event =>{
     .transitionalItem(incomplete)
     .loops(3)
 
+    // 蛋白粉
+    create.sequenced_assembly('lm_extra:protein_powder',
+        'minecraft:chicken',
+        [
+            create.deploying(incomplete,[incomplete,'biomancy:exotic_compound']),
+            create.deploying(incomplete,[incomplete,'biomancy:unstable_compound']),
+            create.deploying(incomplete,[incomplete,'biomancy:cleansing_serum']),
+            create.deploying(incomplete,[incomplete,'pasterdream:guiding_drug']),
+            create.cutting(incomplete,incomplete),
+            create.pressing(incomplete,incomplete)
+        ]
+    )
+    .transitionalItem(incomplete)
+    .loops(3)
+
     create.mixing('lm_extra:color_ingot',[
         Fluid.of({fluid: 'create:tea', amount: 1000}),
         Fluid.of({fluid: 'biofactory:nutrients_fluid', amount: 1000}),
