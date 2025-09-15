@@ -1,0 +1,24 @@
+{
+    "replace": true,
+    "slots": [
+        "sheng_chan"
+    ],
+    "improvements": [
+        "tetra:shared/"
+    ],
+    "type": "tetra:basic_major_module",
+    "variants": [
+        {
+            "materials": [ "tetra:misc/bio_lab" ],
+            "key": "sheng_chan/",
+            "extract": {
+                "glyph": {
+                    "textureX": 72,
+                    "textureY": 112
+                },
+                "availableTextures": [ "default" ],
+                "models": [ { "location": "tetra:item/module/sword/fuller/reinforced_fuller/" } ]
+            }
+        }
+    ]
+}

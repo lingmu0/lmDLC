@@ -1,0 +1,29 @@
+{
+    "replace": true,
+    "slots": [
+        "sheng_chan"
+    ],
+    "materialSlotCount": 1,
+    "displayType": "minor",
+    "glyph": {
+        "textureX": 72,
+        "textureY": 112
+    },
+    "requirement": 
+    {
+        "type": "tetra:module",
+        "materials": [ "tetra:misc/bio_lab" ]
+    },
+    "outcomes": [
+        {
+            "material": {
+                "items": [
+                    "lm_extra:steroid"
+                ]
+            },
+            "improvements": {
+                "yuan_chu_wen_chuang/apply_pesticide": 1
+            }
+        }
+    ]
+}

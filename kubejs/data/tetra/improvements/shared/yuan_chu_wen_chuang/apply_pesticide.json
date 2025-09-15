@@ -1,0 +1,16 @@
+[
+    {
+        "key": "yuan_chu_wen_chuang/apply_pesticide",
+        "level": 1,
+        "effects": {
+            "steroid": 1
+        }
+    },
+    {
+        "key": "yuan_chu_wen_chuang/apply_pesticide",
+        "level": 2,
+        "effects": {
+            "steroid": 2
+        }
+    }
+]

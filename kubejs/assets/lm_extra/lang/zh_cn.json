@@ -18,6 +18,7 @@
     "item.lm_extra.final_metal_ingot": "终焉金属锭",
     "item.lm_extra.protein_powder": "蛋白粉",
     "item.lm_extra.delicious_potato": "大理石土豆",
+    "item.lm_extra.steroid": "类固醇",
     
     "tetra.material.final_metal_ingot": "终焉金属",
     "tetra.material.final_metal_ingot.prefix": "终焉金属",
@@ -164,6 +165,10 @@
     "attribute.name.generic.naga_speed": "娜迦速度",
     "attribute.name.generic.naga_speed.desc": "每一点属性在激活娜迦冲撞时提升一级娜迦冲锋buff等级",
 
+    "tetra/schematic/yuan_chu_wen_chuang/apply_pesticide1.name": "§3打药 I",
+    "tetra/schematic/yuan_chu_wen_chuang/apply_pesticide1.description": "变强就要稳扎稳打",
+    "tetra/schematic/yuan_chu_wen_chuang/apply_pesticide1.slot1": "放入类固醇",
+    "tetra.improvement.yuan_chu_wen_chuang/apply_pesticide.name": "打药",
     "tetra.module.staff_of_homa/staff_of_homa1.material_name": "§c%s护摩头部",
     "tetra.slot.staff_of_homa1": "护摩头部",
     "tetra/schematic/staff_of_homa/staff_of_homa1.slot1": "护摩头部材料",
@@ -228,6 +233,11 @@
     "effect.lm_extra.blurring": "虚化",
     "effect.lm_extra.blurring.description": "不受到任何伤害",
     "effect.lm_extra.blurring.desc": "不受到任何伤害",
+    "effect.lm_extra.forbid_heal": "禁疗",
+    "effect.lm_extra.forbid_heal.description": "每级减少10%治疗效果",
+    "effect.lm_extra.steroid": "激素",
+    "effect.lm_extra.steroid.description": "提供大量增益效果，效果结束时获得debuff",
+    "effect.lm_extra.steroid.desc": "提供大量增益效果，效果结束时获得debuff",
 
     "information.lm_extra.staff_of_homa": "放在加工台上可转化为护摩之杖武器类型(类似于剑，但是双镶嵌位，无圆头，无法使用剑刃的某些特殊改造)\n当打磨进度满后，可使用其他护摩之杖进行精炼，且更换材料时精炼等级不会重置\n\n精炼I：需要周围半径为5的范围有8个岩浆块，8个熔炉\n精炼II：需要在沙漠群系\n精炼III：需要周围半径为5的范围有1个下届合金巨兽\n精炼IV：需要周围半径为5的范围有2个焰魔\n精炼V：需要在下界基岩层上方，拥有抗火buff，强化时有75%概率失败",
     "tetra.aspect.naga": "娜迦",

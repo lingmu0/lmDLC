@@ -342,6 +342,16 @@
 			x: 4.5d
 			y: 3.0d
 		}
+		{
+			id: "381F06ED6A085E4F"
+			tasks: [{
+				id: "05A0897DECF50C66"
+				item: "lm_extra:steroid"
+				type: "item"
+			}]
+			x: 7.0d
+			y: -5.0d
+		}
 	]
 	title: "暮色之外"
 }

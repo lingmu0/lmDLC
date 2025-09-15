@@ -15,6 +15,7 @@ StartupEvents.registry('item', event => {
     event.create("lm_extra:sacred_sword","basic")
     event.create("lm_extra:polearm_billet", "basic")
     event.create("lm_extra:protein_powder", "basic")
+    event.create("lm_extra:steroid", "basic")
     event.create("lm_extra:final_metal_ingot", "basic")
         .fireResistant()
 
@@ -68,6 +69,8 @@ StartupEvents.registry('mob_effect', event => {
         .modifyAttribute("attributeslib:healing_received","forbid_heal_healing_received",-0.1, "multiply_base")
 
     event.create("lm_extra:blurring").beneficial().color(Color.BLACK)
+
+    event.create("lm_extra:steroid").color(Color.RED)
 })
 
 const $RangedAttribute = Java.loadClass(

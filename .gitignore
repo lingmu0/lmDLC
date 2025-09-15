@@ -1244,7 +1244,6 @@ kubejs/data/tetra/modules/sword/tonal_blade.json
 kubejs/data/tetra/modules/wrench/wrench1.json
 kubejs/data/tetra/modules/wrench/wrench2.json
 kubejs/data/tetra/modules/wrench/wrench3.json
-kubejs/data/tetra/modules/yuan_chu_wen_chuang/sheng_chan.json
 kubejs/data/tetra/modules/yuan_chu_wen_chuang/xiao_hua.json
 kubejs/data/tetra/modules/yuan_chu_wen_chuang/xue_rou_he_xin.json
 kubejs/data/tetra/modules/yuan_chu_wen_chuang/yao_ji.json
@@ -4178,7 +4177,6 @@ kubejs/data/tetra/modules/sword/basic_blade.json
 kubejs/data/tetra/schematics/sword/reinforced_fuller.json
 kubejs/data/tetra/modules/sword/reinforced_fuller.json
 kubejs/data/tetra/modules/double/butt.json
-config/goety_revelation.toml
 config/ending_library/ending_library-common.toml
 config/goety/goety-attributes.toml
 config/goety/goety-spells.toml
@@ -4188,6 +4186,5 @@ config/goety/goety-mobs.toml
 config/goety/goety.toml
 config/revelationfix/revelationfix-block.toml
 config/revelationfix/revelationfix-client.toml
-config/revelationfix/revelationfix-common.toml
 config/revelationfix/revelationfix-item.toml
 config/revelationfix/revelationfix-modpack-common.toml

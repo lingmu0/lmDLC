@@ -7,6 +7,9 @@ let $LMFlame_Strike_Entity = Java.loadClass('com.github.L_Ender.cataclysm.entity
 let $LMDeath_Laser_Beam_Entity = Java.loadClass('com.github.L_Ender.cataclysm.entity.projectile.Death_Laser_Beam_Entity')
 let $LMModEntities = Java.loadClass('com.github.L_Ender.cataclysm.init.ModEntities')
 let $BuiltInRegistries = Java.loadClass('net.minecraft.core.registries.BuiltInRegistries')
+let $LMMobEffectEvent$Applicable = Java.loadClass('net.minecraftforge.event.entity.living.MobEffectEvent$Applicable')
+let $LMMobEffectEvent$Remove = Java.loadClass('net.minecraftforge.event.entity.living.MobEffectEvent$Remove')  
+
 
 const difficultLevelDef = [
     { healthMulti: 1, attackMulti: 1, armorMulti: 1, toughnessMulti: 1 },
@@ -333,14 +336,3 @@ let critHit = (player, entity) => {
     player.crit(entity)
 }
 
-NativeEvents.onEvent(Java.loadClass('net.minecraftforge.event.entity.player.CriticalHitEvent'), (/** @type{Internal.CriticalHitEvent} */event)=>{
-    let player = event.entity
-    if(!player.isPlayer()) return
-
-    let item = player.getMainHandItem();
-    if (!item.item instanceof $ModularItem) return;
-
-    let effect = simpleGetTetraEffectLevel(item, "pearlescent_hand_protection")
-    if(!effect) return
-    event.setResult('deny')
-})
