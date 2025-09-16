@@ -223,6 +223,7 @@
 		}
 		{
 			dependencies: ["0DE415863C8D336B"]
+			description: ["用于激活boss"]
 			id: "4684C9C078D8F06F"
 			tasks: [{
 				id: "51EFE73718A8E505"
